@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="FOMOSv2-CL" targetName="FOMOSv2-CL" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41d378e-ec2f-4669-bb37-604c78930998" name="Default Changelist" comment="" />
+    <list default="true" id="a41d378e-ec2f-4669-bb37-604c78930998" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/FOMOSv2-CL.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +24,14 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598711762297</updated>
-      <workItem from="1598711763444" duration="312000" />
+      <workItem from="1598711763444" duration="627000" />
     </task>
     <servers />
   </component>
