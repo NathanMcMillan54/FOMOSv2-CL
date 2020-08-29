@@ -1,4 +1,5 @@
 #include "stdint.h"
+#include "stdlib.h"
 
 enum color {
     BLACK = 0,
@@ -32,5 +33,6 @@ void clear(enum color bg) {
 int __attribute__((noreturn)) main() {
     clear(BLACK);
     puts(0, 0, BRIGHT, BLACK, "Starting FOMOSv2-CL");
+    system("sh ../FOMOStest.sh");
     while (1);
 }
