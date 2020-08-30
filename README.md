@@ -6,10 +6,11 @@ The first version of FOMOS is just a GUI replacement for Linux but this will be 
 
 In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this version of FOMOS).
 
-# BIOS
-This probably only works on Linux
+# Setup
 
-Run this to setup the BIOS:
+Run
 ```shell script
-make -C BIOS run
+sh compile.sh
 ```
+
+That will compile ```main.c``` into a ```.iso``` file and ```.img``` file.
