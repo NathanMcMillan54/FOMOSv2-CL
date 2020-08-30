@@ -12,5 +12,3 @@ Run
 ```shell script
 sh compile.sh
 ```
-
-That will compile ```main.c``` into a ```.iso``` file and ```.img``` file.
