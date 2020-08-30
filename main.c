@@ -1,7 +1,8 @@
 /* This file is for starting FOMOS */
-#include "include/output/print.h"
+#include "include/output/stdio.h"
 
 int main() {
-    print("test");
+    printf("\a");
+    printf("FOMOSv2-CL\n");
     return 0;
 }
