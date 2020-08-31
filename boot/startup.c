@@ -10,5 +10,7 @@ void main(void) {
     cpu();
     ram();
     disk();
+    system("../setup");
+    system("rm -rf ../setup");
     system("../main");
 }

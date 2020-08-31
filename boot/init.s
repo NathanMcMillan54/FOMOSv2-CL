@@ -20,8 +20,8 @@ hang:
 .globl jump_to_el1
 jump_to_el1:
     mrs x0, currentel        // check if already in el1
-    cmp x0, #4
-    beq 1f
+    cmp x0 #4
+    beq 1
 
     ldr x0, 0xffffff0001000000
     msr sp_el1, x0           // init the stack of el1
@@ -77,7 +77,7 @@ el1_mmu_activate:
     msr tcr_el1, x2
     isb
 
-    ldr x5, main
+    ldr x5, startup
     mrs x3, sctlr_el1
     ldr x4, 0x80000
     bic x3, x3, x4
