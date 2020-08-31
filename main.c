@@ -1,11 +1,14 @@
-/* This file is for starting FOMOS */
-
-#include <stdio.h>
-#include <unistd.h>
+/* #include <stdio.h>
+ * // #include "include/output/stdio.h"
+ * // #include "include/system/unistd.h"
+ *
+ * void main(void) {
+ *     printf("FOMOSv2-CL\n");
+ *     sleep(0xFFFFFFFF);
+ * }
+ *
+ * */
 
 int main() {
-    printf("\a");
-    printf("FOMOSv2-CL\n");
-    sleep(0xFFFFFFFF);
     return 0;
 }
