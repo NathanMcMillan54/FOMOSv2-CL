@@ -1,8 +1,10 @@
+/* This file will run on startup soon */
+
 #include <stdio.h>
-#include <unistd.h>
+#include "../include/system/cpu.h"
 
 int main() {
-    printf("Loading FOMSOv2-CL... \n");
-    sleep(0xFFFFFFFF);
+    printf("Starting FOMSOv2-CL... \n");
+    cpu();
     return 0;
 }
