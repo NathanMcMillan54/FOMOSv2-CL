@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 echo "Compiling main.c"
-gcc -Wall FOMOS.c -o FOMOS
-gcc -Wall boot.boot.c -o boot/boot.c
+gcc -Wall main.c -o main
 # compile it to .iso
 # compile it to .img
