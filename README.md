@@ -12,3 +12,8 @@ Run
 ```shell script
 sh compile.sh
 ```
+
+## TODO
+
+- [ ] Get boot working
+- [ ] Get everything from [FOMOSv2-CLtest](https://github.com/NathanMcMillan54/FOMOSv2-CLtest) into this FOMSOv2-CL

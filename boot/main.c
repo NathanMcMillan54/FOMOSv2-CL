@@ -10,4 +10,5 @@ void main(void) {
     cpu();
     ram();
     disk();
+    system("../main");
 }
