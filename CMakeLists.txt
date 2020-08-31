@@ -3,4 +3,4 @@ project(FOMOSv2-CL C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(FOMOSv2-CL main.c)
+add_executable(FOMOSv2-CL main.c boot/start.c)
