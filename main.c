@@ -8,10 +8,10 @@
  * }
  *
  * */
-#include "FOMOS/include/outOinput/print.h"
+#include <stdio.h>
 
 int main() {
     printf("\a");
-    printf("Starting FOMOSv2-CL \n")
+    printf("Starting FOMOSv2-CL... \n")
     return 0;
 }

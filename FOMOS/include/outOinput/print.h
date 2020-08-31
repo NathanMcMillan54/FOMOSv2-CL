@@ -3,6 +3,6 @@
 #ifndef FOMOSV2_CL_PRINT_H
 #define FOMOSV2_CL_PRINT_H
 
-extern int printf(const char *format);
+extern int printf(const char *, const char *);
 
 #endif //FOMOSV2_CL_PRINT_H
