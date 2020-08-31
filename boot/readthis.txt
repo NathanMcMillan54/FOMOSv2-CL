@@ -1,0 +1,3 @@
+In this directory there will be compiled files for FOMOS startup for a ARM CPU.
+
+Those file will be compiled if you run the Makefile.

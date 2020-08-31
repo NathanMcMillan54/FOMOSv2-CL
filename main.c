@@ -1,5 +1,5 @@
 /* #include <stdio.h>
- * // #include "include/output/stdio.h"
+ * // #include "include/outOinput/stdio.h"
  * // #include "include/system/unistd.h"
  *
  * void main(void) {
@@ -8,7 +8,10 @@
  * }
  *
  * */
+#include "FOMOS/include/outOinput/print.h"
 
 int main() {
+    printf("\a");
+    printf("Starting FOMOSv2-CL \n")
     return 0;
 }

@@ -1,9 +1,8 @@
+// #include "include/outOinput/print.h"
 #include <stdio.h>
-#include <unistd.h>
 
-int main(void) {
+int main() {
     printf("\a");
-    printf("FOMOSv2-CL\n");
-    sleep(0xFFFFFFFF);
+    printf("FOMOSv2-CL \n");
     return 0;
 }
