@@ -2,9 +2,12 @@
 
 #include <stdio.h>
 #include "../include/system/cpu.h"
+#include "../include/system/ram.h"
+#include "../include/system/disk.h"
 
-int main() {
+void main(void) {
     printf("Starting FOMSOv2-CL... \n");
     cpu();
-    return 0;
+    ram();
+    disk();
 }

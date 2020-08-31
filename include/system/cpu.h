@@ -1,4 +1,4 @@
-/* This is for showing everythin about the cpu on startup */
+/* This is for showing everything about the cpu on startup */
 
 #ifndef FOMOSV2_CL_CPU_H
 #define FOMOSV2_CL_CPU_H
