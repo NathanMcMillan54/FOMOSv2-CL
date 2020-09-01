@@ -1,20 +1,13 @@
 #include <stdio.h>
-#include <unistd.h>
-#include "include/FOMOS/time.h"
+#include "include/FOMOS/countTime.h"
 
 int main() {
     printf("\a");
     printf("FOMOSv2-CL \n");
 
-    time_t rawtime;
-    struct tm *timeinfo;
-    time(&rawtime);
-    timeinfo = localtime(&rawtime);
+    s1();
 
-    char *currentTime = asctime(timeinfo);
+    printf("test");
 
-    printf("%s", currentTime);
-
-    sleep(0xFFFFFFFF);
     return 0;
 }

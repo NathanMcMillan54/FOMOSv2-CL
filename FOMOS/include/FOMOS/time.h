@@ -1,4 +1,5 @@
-/* This is a header file for telling the time */
+/* This is a copy of the C library time.h */
+// The problem with time is that there is no way of setting it
 
 #ifndef FOMOSV2_CL_TIME_H
 #define FOMOSV2_CL_TIME_H
