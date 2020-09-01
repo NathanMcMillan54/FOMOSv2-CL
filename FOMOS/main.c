@@ -5,9 +5,7 @@ int main() {
     printf("\a");
     printf("FOMOSv2-CL \n");
 
+    // wait 1 second
     s1();
-
-    printf("test");
-
     return 0;
 }
