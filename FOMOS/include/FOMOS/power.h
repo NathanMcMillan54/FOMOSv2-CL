@@ -9,13 +9,15 @@
 void restart() {
     printf("Restarting... \n");
     system("sh ../../makePower.sh");
-    system("../../power/restart")
+    system("../../power/restart");
+    exit(0);
 }
 
 void shutdown() {
     printf("Shutting down... \n");
     system("sh ../../makePower.sh");
-    system("../../power/shutdown")
+    system("../../power/shutdown");
+    exit(0);
 }
 
 #endif //FOMOSV2_CL_POWER_H

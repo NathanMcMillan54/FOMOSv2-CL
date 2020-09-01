@@ -38,5 +38,5 @@ It's for ARM CPUs only. (Hopefully)
 
 ## TODO
 
-- [ ] Get boot working
+- [ ] Get bootloader working
 - [ ] Get everything from [FOMOSv2-CLtest](https://github.com/NathanMcMillan54/FOMOSv2-CLtest) into this FOMSOv2-CL

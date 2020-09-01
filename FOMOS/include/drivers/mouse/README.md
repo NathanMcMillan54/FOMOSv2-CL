@@ -1,0 +1,1 @@
+This directory is used for making mouse work on FOMOS
