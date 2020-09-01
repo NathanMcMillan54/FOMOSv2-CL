@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "include/FOMOS/countTime.h"
+#include "include/FOMOS/power.h"
+#include "include/time/countTime.h"
+
+int power = 1;
 
 int main() {
     int f = 0;
@@ -10,13 +13,16 @@ int main() {
     s1();
     for (;;) {
         f ++;
-        printf("%d \n", f);
         m1();
         if (f == 8) {
+            printf("FOMOS is shutting down \n");
+            power = 0;
             exit(0);
         } else {
             // nothing
         }
-    }
+        if (power == 0) {
 
+        }
+    }
 }

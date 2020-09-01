@@ -1,5 +1,5 @@
 /* #include <stdio.h>
- * // #include "include/outOinput/print.h"
+ * // #include "include/textOutAndInput/print.h"
  * // #include "include/FOMOS/countTime.h"
  *
  * void main(void) {
