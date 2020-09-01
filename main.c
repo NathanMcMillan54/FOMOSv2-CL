@@ -1,17 +1,20 @@
 /* #include <stdio.h>
- * // #include "include/outOinput/stdio.h"
- * // #include "include/system/unistd.h"
+ * // #include "include/outOinput/print.h"
+ * // #include "include/FOMOS/countTime.h"
  *
  * void main(void) {
  *     printf("FOMOSv2-CL\n");
- *     sleep(0xFFFFFFFF);
+ *     m1();
  * }
- *
  * */
-#include <stdio.h>
 
-int main() {
+#include <stdio.h>
+#include <unistd.h>
+
+int main(void) {
     printf("\a");
     printf("Starting FOMOSv2-CL... \n")
+    // this never ends
+    sleep(0xFFFFFFFF);
     return 0;
 }
