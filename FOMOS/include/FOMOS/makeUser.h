@@ -6,28 +6,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void makeUserName() {
-    FILE * usrFile;
-    char usrName[100];
+void makeUser() {
+    char userName[100];
+    char userPassword[6];
 
     printf("Enter your name: ");
-    scanf("%s", usrName);
+    scanf("%s", userName);
 
-    usrFile = fopen(usrName, "w");
+    printf("Enter a 6 digit password: ");
+    scanf("%s", userPassword);
 
-    if(usrFile == NULL) {
-        printf("Unable to make user name \n");
-        exit(EXIT_FAILURE);
+    FILE *usrFile;
+    char l8p33[100] = "if [ "$password" = ";
+    char l8p66[100] = userPassword;
+    char l8p99[100] = " ]; then \n";
+
+    if ( (usrFile = fopen("users/user.sh", "a") ) == NULL)
+        printf("Cannot open add user");
+    else {
+        fputs(l8p33, usrFile);
+        fputs(l8p66, usrFile);
+        fputs(l8p99, usrFile);
+        fclose(usrFile);
     }
 
-    fclose(usrFile);
-
-
-    printf("User name created successfully \n");
-
-}
-
-void makeUserPassword() {
+    printf("User created successfully \n");
 
 }
 

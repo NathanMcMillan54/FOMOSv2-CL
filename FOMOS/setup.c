@@ -3,9 +3,8 @@
 #include "include/FOMOS/makeUser.h"
 
 int startSetup() {
-    makeUserName();
+    makeUser();
     s1();
-    makeUserPassword();
     return 0;
 }
 
