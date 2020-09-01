@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include "include/FOMOS/countTime.h"
+#include "include/FOMOS/makeUser.h"
 
 int startSetup() {
+    makeUserName();
+    s1();
+    makeUserPassword();
     return 0;
 }
 
@@ -14,11 +18,11 @@ int restart() {
 }
 
 int main() {
-    int setup == 1;
+    int setup = 1;
 
-    if (setup == 1) {
+    if (setup = 1) {
         startSetup();
-    } else if (setup == 0) {
+    } else if (setup = 0) {
         startFomos();
     } else {
         printf("\a");
