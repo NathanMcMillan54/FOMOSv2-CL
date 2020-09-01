@@ -20,18 +20,18 @@ void makeUser() {
     // this is adding stuff to user/sh
     char l8p33[100] = "if [ $password = ";
     // char l8p66[100] = userPassword[6];
-    char l8p99[100] = " ]; then \n";
+    char l8p66[100] = " ]; then \n";
     char l9p33[100] = "    ./main\n";
     char l10p33[100] = "else \n";
-    char l11p33[100] = "    echo Wrong password";
-    char l12p33[100] = "    ./power/restart";
+    char l11p33[100] = "    echo Wrong password\n";
+    char l12p33[100] = "    ./power/restart\n";
 
-    if ( (usrFile = fopen("users/user.sh", "a") ) == NULL)
+    if ( (usrFile = fopen("users/makePower.sh", "a") ) == NULL)
         printf("Cannot open add user");
     else {
         fputs(l8p33, usrFile);
         fputs(userPassword, usrFile);
-        fputs(l8p99, usrFile);
+        fputs(l8p66, usrFile);
         fputs(l9p33, usrFile);
         fputs(l10p33, usrFile);
         fputs(l11p33, usrFile);
