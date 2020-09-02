@@ -20,5 +20,6 @@ int main() {
     start_app(app_start, app_sp);
 
     // should never be reached
+    // if the bootloader gets to this then there is a big problem
     while (1);
 }

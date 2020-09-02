@@ -12,7 +12,7 @@ void finish_setup() {
                        "#include <stdlib.h>\n"
                        "\n"
                        "void main(void) {\n"
-                       "\tprintf('Starting FOMOS 2/2 finished \\n');\n"
+                       "\tprintf('Starting FOMOS 2/2 Finished \\n');\n"
                        "\tsystem('make all');\n"
                        "\tsystem('./main');\n"
                        "\treturn 0;\n"

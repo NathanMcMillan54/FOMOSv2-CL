@@ -8,6 +8,15 @@ In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this 
 
 # Setup
 
+Run:
+```commandline
+sh FOMOS.sh
+```
+
+That'll explain most things about FOMOS.
+
+#
+
 Compile with GCC (GNU, Compiler, Collection) on Linux.
 
 ```commandline
