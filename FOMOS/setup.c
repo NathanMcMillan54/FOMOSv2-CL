@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "include/time/countTime.h"
-#include "include/FOMOS/makeUser.h"
+#include "include/FOMOS/user/makeUser.h"
 
 int startSetup() {
     makeUser();

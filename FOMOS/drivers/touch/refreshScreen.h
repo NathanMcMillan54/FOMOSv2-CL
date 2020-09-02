@@ -5,7 +5,7 @@
 
 #include <unistd.h>
 #include <stdio.h>
-#include "../../FOMOS/power.h"
+#include "../../include/FOMOS/power/power.h"
 
 int fps;
 

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd power/
+cd drivers/power/
 make all

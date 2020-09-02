@@ -4,7 +4,7 @@
 #define FOMOSV2_CL_ACTIVESCREEN_H
 
 #include <stdio.h>
-#include "../../FOMOS/power.h"
+#include "../../include/FOMOS/power/power.h"
 
 // the screen has been active/used recently
 int active = 1;

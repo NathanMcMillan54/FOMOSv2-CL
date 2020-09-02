@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "include/FOMOS/power.h"
+#include "include/FOMOS/power/power.h"
 #include "include/time/countTime.h"
 
 int power = 1;
