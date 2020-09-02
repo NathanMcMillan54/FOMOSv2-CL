@@ -12,13 +12,13 @@ void finish_setup() {
                        "#include <stdlib.h>\n"
                        "\n"
                        "void main(void) {\n"
-                       "\tprintf(“Starting FOMOS 2/2 finished \\n”);\n"
-                       "\tsystem(“make all”);\n"
-                       "\tsystem(“./main”);\n"
+                       "\tprintf('Starting FOMOS 2/2 finished \\n');\n"
+                       "\tsystem('make all');\n"
+                       "\tsystem('./main');\n"
                        "\treturn 0;\n"
-                       "}"
+                       "}";
 
-    if ((usrFile = fopen("setup.c", "w")) == NULL); {
+    if ((usrFile = fopen("setup.c", "w")) == NULL) {
         printf("Cannot finish setting up FOMOS \n");
         printf("Restarting to try to fix this problem \n");
         restart();

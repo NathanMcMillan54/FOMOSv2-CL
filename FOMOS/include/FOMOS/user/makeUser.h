@@ -26,8 +26,8 @@ void makeUser() {
     char l11p33[100] = "    echo Wrong password\n";
     char l12p33[100] = "    ./power/restart\n";
 
-    if ( (usrFile = fopen("users/makePower.sh", "a") ) == NULL)
-        printf("Cannot open add user");
+    if ((usrFile = fopen("users/user.sh", "a")) == NULL)
+        printf("Cannot  add user");
     else {
         fputs(l8p33, usrFile);
         fputs(userPassword, usrFile);

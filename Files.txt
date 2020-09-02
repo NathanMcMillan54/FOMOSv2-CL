@@ -8,4 +8,4 @@ In FOMOS/ there is a file called main.c, that is FOMOS, after setup.c is finishe
 In FOMOS/users/ there is a file called user.sh, that is used for login for FOMOS.
 In FOMOS/include/ there are many directories that are all header files that make FOMOS work.
 In FOMOS/drivers/ there are many directories that are all header files that make hardware work on FOMOS.
-In bootloader/ it will add FOMOS to an ARM device and run FOMOS on startup.
+In FOMOS/boot it will add FOMOS to an ARM device and run FOMOS on startup.

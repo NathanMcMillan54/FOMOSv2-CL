@@ -1,0 +1,5 @@
+This directory is full of files that run FOMOS's bootloader.
+
+This bootloader is made for ARM CPU's because FOMOS is meant to work on mobile devices and most mobile devices have an ARM CPU.
+
+This is just a test but it might actually work. Copied from https://interrupt.memfault.com/blog/how-to-write-a-bootloader-from-scratch
