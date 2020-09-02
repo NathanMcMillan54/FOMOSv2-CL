@@ -15,6 +15,12 @@ sh FOMOS.sh
 
 That'll explain most things about FOMOS.
 
+```commandline
+make all
+```
+
+That'll tell you if your CPU can run FOMOS.
+
 #
 
 Compile with GCC (GNU, Compiler, Collection) on Linux.
