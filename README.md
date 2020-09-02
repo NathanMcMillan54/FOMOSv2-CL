@@ -22,9 +22,7 @@ That'll compile and run FOMOS.
 ## TODO
 
 FOMOS is supposed to be for mobile devices. Most mobile devices have an ARM CPU so the bootloader has to work on ARM CPU devices.
-The most powerful ARM device that runs any software I can think of is the RaspberryPi. So that will probably be the first device to support FOMOS.
-
-The bootloader is being based off a Linux directory, click [here](https://github.com/torvalds/linux/tree/master/arch/arm/boot) to see it.   
+The most powerful ARM device that runs any software I can think of is the RaspberryPi. So that will probably be the first device to support FOMOS.  
 
 - [ ] Get bootloader working
 - [ ] Make support for RPi 3 and 4
