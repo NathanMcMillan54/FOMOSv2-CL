@@ -1,2 +1,5 @@
 cmake-build-debug
 .idea
+FOMOS/drivers/keyboard
+FOMOS/drivers/mouse
+FOMOS/drivers/touch

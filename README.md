@@ -21,5 +21,9 @@ That'll compile and run FOMOS.
 
 ## TODO
 
+FOMOS is supposed to be for mobile devices. Most mobile devices have an ARM CPU so the bootloader has to work on ARM CPU devices.
+The most powerful ARM device that runs any software I can think of is the RaspberryPi. So that will probably be the first device to support FOMOS.
+
 - [ ] Get bootloader working
-- [ ] Get everything from [FOMOSv2-CLtest](https://github.com/NathanMcMillan54/FOMOSv2-CLtest) into this FOMSOv2-CL
+- [ ] Make support for RPi
+- [ ] Get everything from [FOMOSv2-CL v2.1.1-beta](https://github.com/NathanMcMillan54/FOMOSv2-CLtest) into this FOMSOv2-CL
