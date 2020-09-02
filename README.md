@@ -12,29 +12,12 @@ Compile with GCC (GNU, Compiler, Collection) on Linux.
 
 ```commandline
 cd FOMOS/
-```
-
-```commandline
 make all
-```
-
-```commandline
 make run
 ```
 
-That'll compile and run FOMOS
+That'll compile and run FOMOS.
 
-#
-
-```commandline
-make all
-```
-
-If you do this in ```FOMOSv2-CL``` (very top of the the project) 
-
-That will compile ```main.c```, ```start.ld```, and ```startup.s``` and put them in ```lib/``` that will run everything on startup.
-
-It's for ARM CPUs only. (Hopefully)
 
 ## TODO
 
