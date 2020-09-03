@@ -13,32 +13,14 @@ In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this 
 
 # Setup
 
-Run:
 ```commandline
-sh FOMOS.sh
+sh BUILDFOMOS.sh
 ```
 
-That'll explain most things about FOMOS.
-
 ```commandline
-make all
-make run
+cd buildroot
+make menuconfig
 ```
-
-That'll tell you if your CPU can run FOMOS.
-
-#
-
-Compile with GCC (GNU, Compiler, Collection) on Linux.
-
-```commandline
-cd FOMOS/
-make all
-make run
-```
-
-That'll compile and run FOMOS.
-
 
 ## TODO
 

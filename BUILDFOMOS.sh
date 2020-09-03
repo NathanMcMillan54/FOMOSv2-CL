@@ -192,7 +192,7 @@ echo "rpi-userland Git master @ $(get_package_version rpi-userland)" >> "$BUILD_
 echo "rpi-firmware Git master @ $(get_package_version rpi-firmware)" >> "$BUILD_INFO"
 echo "rpi-linux Git rpi-4.14.y @ $(get_kernel_version)" >> "$BUILD_INFO"
 
-cd ..
+cd ../
 
 clear
 echo "Build complete. Copy files in '$NOOBS_OUTPUT_DIR' directory onto a clean FAT formatted SD card to use."
