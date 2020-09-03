@@ -15,13 +15,11 @@ In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this 
 
 # Setup
 
-```commandline
-sh BUILDFOMOS.sh
-```
+This tells you if your CPU is supported
 
 ```commandline
-cd buildroot
-make menuconfig
+make all
+make runn
 ```
 
 ## TODO
