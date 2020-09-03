@@ -17,6 +17,7 @@ That'll explain most things about FOMOS.
 
 ```commandline
 make all
+make run
 ```
 
 That'll tell you if your CPU can run FOMOS.
