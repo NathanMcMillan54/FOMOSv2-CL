@@ -1,0 +1,6 @@
+menu "Bootloaders"
+
+source "boot/syslinux/Config.in"
+source "boot/uboot/Config.in"
+
+endmenu

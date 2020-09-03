@@ -1,5 +1,3 @@
-# This file was copied from RaspberryPi OS
-
 UBOOT_VERSION = $(call qstrip,$(BR2_TARGET_UBOOT_VERSION))
 UBOOT_BOARD_NAME = $(call qstrip,$(BR2_TARGET_UBOOT_BOARDNAME))
 
@@ -193,4 +191,3 @@ endif # BR2_TARGET_UBOOT_CUSTOM_GIT || BR2_TARGET_UBOOT_CUSTOM_HG
 
 endif # filter source
 endif # BR2_TARGET_UBOOT
-

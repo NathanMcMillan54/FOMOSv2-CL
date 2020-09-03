@@ -1,0 +1,1 @@
+I think u-boot is the rpi bootloader so I'm gonna keep it until I find out it doesn't actually work
