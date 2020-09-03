@@ -6,6 +6,16 @@
 
 int power = 1;
 
+/* void CL() {
+ *     char command[50]:
+ *
+ *     printf("\n$ ");
+ *     scanf("%s", command);
+ *     printf("You entered %s", command);
+ *
+ *     return 0;
+ * } */
+
 int main() {
     // finish_setup();
     int f = 0;
@@ -15,6 +25,7 @@ int main() {
     for (;;) {
         f ++;
         sleep(60);
+        // CL();
         if (f == 8) {
             printf("Shutting down FOMOS... \n");
             shutdown();
