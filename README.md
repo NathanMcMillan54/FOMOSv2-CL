@@ -20,4 +20,5 @@ FOMOS is supposed to be for mobile devices. Most mobile devices have an ARM CPU 
 The most powerful ARM device that runs any software I can think of is the RaspberryPi. So that will probably be the first device to support FOMOS.  
 
 - [ ] Get boot working
+- [ ] Make support for RPi 3
 - [ ] Get everything from [FOMOSv2-CL v2.1.1-beta](https://github.com/NathanMcMillan54/FOMOSv2-CLtest) into this FOMSOv2-CL
