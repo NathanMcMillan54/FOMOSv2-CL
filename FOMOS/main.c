@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include "include/FOMOS/finishSetup.h"
 #include "include/FOMOS/power/power.h"
+#include "include/FOMOS/commands/commands.h"
 
 int power = 1;
 
@@ -13,18 +14,18 @@ void CL() {
     printf("\n$ ");
     scanf("%s", command);
     if(!strcmp(command, "help")) {
-        // help
+        help();
     } else if (!strcmp(command, "shutdown")) {
-        // shutdown
+        shutdown();
         power = 0;
     } else if (!strcmp(command, "restart")) {
-        // restart
+        restart();
         power = 0;
     } else if (!strcmp(command, "rndmstf")) {
-        // wao;uegfw93333333333333oua;woeuyr320k
+        system("sh waouegfw93333333333333ouawoeuyr320k.sh");
     } else if (!strcmp(command, "Fopen")) {
-        // i forgot about this command
-        // fopen
+        // not fopen() from stdio.h
+        Fopen();
     }
     else {
         printf("%s is not a command\n", command);
