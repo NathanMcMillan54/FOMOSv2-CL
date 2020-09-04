@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
     int i = 1;
     // serial_init();
@@ -5,7 +7,7 @@ int main() {
 
     printf("FOMOSV2-CL\n");
     printf("Starting FOMOS 1/2 Finished \n");
-    // something to start ../setup.c
+    // something to start ../FOMOS/setup.c
     // this makes FOMOS never stop
     while (i == 1) {
         // port_pin_toggle_output_level(LED_0_PIN);
