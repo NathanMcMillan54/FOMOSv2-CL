@@ -1,1 +1,4 @@
 I think u-boot is the rpi bootloader so I'm gonna keep it until I find out it doesn't actually work
+
+Config.in has been changed from RaspberryPi OS so it only works with u-boot.
+syslinux probably works so it will stay in Config.in
