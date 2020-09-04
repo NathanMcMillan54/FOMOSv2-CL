@@ -8,15 +8,14 @@
 
 void restart() {
     printf("Restarting... \n");
-    system("sh ../../makePower.sh");
-    system("../../power/restart");
+    // this should run restart.c
+    system("../../commands/restart/restart");
     exit(0);
 }
 
 void shutdown() {
     printf("Shutting down... \n");
-    system("sh ../../makePower.sh");
-    system("../../power/shutdown");
+    system("../../commands/shutdown/shutdown");
     exit(0);
 }
 

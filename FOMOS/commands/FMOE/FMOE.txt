@@ -1,2 +1,0 @@
-Version: 1.0.1
-About: FMOE is a text editor made for FOMOSv1-Yellow v1.4+ and FOMOSv2-CL v2+.
