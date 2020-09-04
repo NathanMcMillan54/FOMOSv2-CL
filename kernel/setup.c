@@ -1066,8 +1066,9 @@ void __init hyp_mode_check(void)
 #endif
 }
 
-void __init setup_arch(char **cmdline_p)
-{
+// setup_arch function
+// this probably sets up arch linux
+void __init setup_arch(char **cmdline_p) {
     const struct machine_desc *mdesc;
 
     setup_processor();
@@ -1163,7 +1164,7 @@ void __init setup_arch(char **cmdline_p)
     if (mdesc->init_early)
         mdesc->init_early();
 }
-
+// end of setup_arch()
 
 static int __init topology_init(void)
 {
