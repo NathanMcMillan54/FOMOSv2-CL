@@ -1,0 +1,2 @@
+This entire directory is copied from RaspberryPi OS (noobs)
+Some files are edited to work with FOMOS.
