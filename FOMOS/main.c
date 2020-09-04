@@ -21,8 +21,7 @@ void CL() {
         // restart
         power = 0;
     } else if (!strcmp(command, "rndmstf")) {
-        system("gcc -Wall ../rndmstf/rndmstf.c -o ../rndmstf/rndmstf");
-        system("../rndmstf/rndmstf");
+        // wao;uegfw93333333333333oua;woeuyr320k
     } else if (!strcmp(command, "Fopen")) {
         // i forgot about this command
         // fopen
@@ -34,6 +33,7 @@ void CL() {
 }
 
 int main() {
+    // before v2 release uncomment this part
     // finish_setup();
     printf("\a");
     printf("FOMOSv2-CL \n");
