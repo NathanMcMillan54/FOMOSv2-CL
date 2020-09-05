@@ -8,6 +8,8 @@ The first version of FOMOS is just a GUI replacement for Linux but this will be 
 
 In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this version of FOMOS).
 
+FOMOSv2-CL is based of Linux, most of what is being copied from linux is from [linux/arch/arm/](https://github.com/torvalds/linux/tree/master/arch/arm).
+
 # Requirements
 
 The requirements are unknown right now but are likely:
@@ -15,7 +17,7 @@ The requirements are unknown right now but are likely:
 - 128MB storage
 - 16MB memory
 
-Defiantly ARM CPU
+Definitely ARM CPU
 
 # Setup
 

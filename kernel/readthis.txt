@@ -1,2 +1,2 @@
 Almost this entire directory is copied from https://github.com/torvalds/linux/tree/master/arch/arm/kernel
-After this is linux/arch/arm/kernel is fully understood it will be connected to FOMOS.
+After this is fully understood it will be connected to FOMOS.
