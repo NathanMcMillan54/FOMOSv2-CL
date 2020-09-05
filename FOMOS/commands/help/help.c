@@ -92,6 +92,7 @@ int main() {
             break;
         default:
             printf("NaN \n");
+            exit(0);
     }
 
     return 0;

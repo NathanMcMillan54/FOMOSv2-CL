@@ -7,11 +7,11 @@
 #include <stdlib.h>
 
 void help() {
-    system("../../commands/help/help");
+    system("./commands/help/help");
 }
 
 void Fopen() {
-    system("../../commands/Fopen/Fopen");
+    system("./commands/Fopen/Fopen");
 }
 
 #endif //FOMOSV2_CL_COMMANDS_H

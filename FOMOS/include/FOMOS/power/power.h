@@ -9,13 +9,13 @@
 void restart() {
     printf("Restarting... \n");
     // this should run restart.c
-    system("../../commands/restart/restart");
+    system("./commands/restart/restart");
     exit(0);
 }
 
 void shutdown() {
     printf("Shutting down... \n");
-    system("../../commands/shutdown/shutdown");
+    system("./commands/shutdown/shutdown");
     exit(0);
 }
 
