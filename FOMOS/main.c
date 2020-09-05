@@ -11,6 +11,8 @@ int power = 1;
 void CL() {
     char command[50];
 
+    printf("FOMOSv2-CL v2\n");
+
     printf("\n$ ");
     scanf("%s", command);
     if(!strcmp(command, "help")) {
