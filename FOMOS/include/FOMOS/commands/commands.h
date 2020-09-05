@@ -5,6 +5,7 @@
 #define FOMOSV2_CL_COMMANDS_H
 
 #include <stdlib.h>
+#include "power.h"
 
 void help() {
     system("./commands/help/help");

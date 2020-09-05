@@ -4,7 +4,7 @@
 #define FOMOSV2_CL_FINISHSETUP_H
 
 #include <stdio.h>
-#include "power/power.h"
+#include "commands/power.h"
 
 void finish_setup() {
     FILE *usrFile;

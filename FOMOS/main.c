@@ -3,7 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include "include/FOMOS/finishSetup.h"
-#include "include/FOMOS/power/power.h"
+#include "include/FOMOS/commands/power.h"
 #include "include/FOMOS/commands/commands.h"
 
 int power = 1;
@@ -24,7 +24,6 @@ void CL() {
     } else if (!strcmp(command, "rndmstf")) {
         system("sh waouegfw93333333333333ouawoeuyr320k.sh");
     } else if (!strcmp(command, "Fopen")) {
-        // not fopen() from stdio.h
         Fopen();
     }
     else {
