@@ -1,7 +1,10 @@
-all: main.c setup.c makePower.sh
+all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shutdown/shutdown.c
 		gcc -Wall main.c -o main
 		gcc -Wall setup.c -o setup
-		sh makePower.sh
+		gcc -Wall commands/help/help.c -o commands/help/help
+		gcc -Wall commands/restart/restart.c -o commands/restart/restart
+		gcc -Wall commands/shutdown/shutdown.c -o commands/shutdown/shutdown
+		gcc -Wall commands/help/rndmstf.c -o commands/help/rndmstf
 
 run:
 		@./main
@@ -11,4 +14,7 @@ run:
 clean:
 		@rm -rf main
 		@rm -rf setup
-
+		@rm -rf commands/help/help
+		@rm -rf commands/restart/restart
+		@rm -rf commands/shutdown/shutdown
+		@rm -rf commands/FMOE/

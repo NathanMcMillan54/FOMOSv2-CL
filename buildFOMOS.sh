@@ -17,12 +17,8 @@ function askYoN() {
         cd FOMOS/
         make all
         cd commands/
-        make all
-        cd ../
-        cd drivers/
-        cd power/
-        make all
-        cd../../../
+        echo "Installing FMOE the FOMOS text editor"
+        git clone https://github.com/NathanMcMillan54/FMOE
         echo "Done"
     elif [ "$input" = "n" ]; then
         echo "You will have to manually build FOMOS"
