@@ -27,6 +27,8 @@ void CL() {
         system("sh waouegfw93333333333333ouawoeuyr320k.sh");
     } else if (!strcmp(command, "Fopen")) {
         Fopen();
+    } else if (!strcmp(command, "usrNam")) {
+        system("sh users/userName.sh");
     }
     else {
         printf("%s is not a command\n", command);

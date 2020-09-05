@@ -82,13 +82,29 @@ int oFopen() {
     return 0;
 }
 
+int oUsrNam() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "commands/help/usrName.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL) {
+        printf("Could not open file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
 int main() {
     int num;
     printf("Help\n");
     printf("+------------------------------------+\n");
     printf("| 1) About FOMOS   2) About FMOE     |\n");
     printf("| 3) About restart 4) About shutdown |\n");
-    printf("| 5) About Fopen                     |\n");
+    printf("| 5) About Fopen   6) About usrNam   |\n");
     printf("+------------------------------------+\n");
 
     printf("Enter a number \n");
@@ -109,6 +125,9 @@ int main() {
             break;
         case 5:
             oFopen();
+            break;
+        case 6:
+            oUsrNam();
             break;
         default:
             printf("NaN \n");
