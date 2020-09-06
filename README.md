@@ -8,9 +8,6 @@ The first version of FOMOS is just a GUI replacement for Linux but this will be 
 
 In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this version of FOMOS).
 
-FOMOSv2-CL is based of Linux, most of what is being copied from linux is from [linux/arch/arm/](https://github.com/torvalds/linux/tree/master/arch/arm).
-
-
 # Setup
 
 ```commandline
@@ -21,7 +18,7 @@ Running that will compile all the C files in FOMOS
 
 ```commandline
 cd boot/
-sh compile.sh
+sh compileAll.sh
 ./makeImage
 ```
 
