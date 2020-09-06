@@ -1,2 +1,0 @@
-Almost this entire directory was copied from https://github.com/torvalds/linux/tree/master/arch/arm/boot
-Some files will be edited so boot will work for FOMOS
