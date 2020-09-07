@@ -3,3 +3,5 @@ cmake-build-debug
 FOMOS/drivers/keyboard
 FOMOS/drivers/mouse
 FOMOS/drivers/touch
+target/
+Cargo.lock

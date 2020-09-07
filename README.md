@@ -24,6 +24,14 @@ sh compileAll.sh
 
 That compiles all files in ``boot/`` then turns ``FOMOS/`` into a ``.img`` file.
 
+Also at top project directory type:
+
+```commandline
+cargo buil
+```
+
+That compiles everything in ``src/``.
+
 ## TODO
 
 FOMOS is supposed to be for mobile devices. Most mobile devices have an ARM CPU so the bootloader has to work on ARM CPU devices.
