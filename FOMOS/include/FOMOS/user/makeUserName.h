@@ -18,7 +18,7 @@ void make_user_name() {
     FILE *userNameFile;
 
     if ((userNameFile = fopen("users/userName.sh", "a")) == NULL)
-        printf("Cannot add User Name");
+        printf("Cannot make User Name");
     else {
         fputs(userName, userNameFile)
         fclose(userNameFile);
