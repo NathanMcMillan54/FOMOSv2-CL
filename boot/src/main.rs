@@ -86,5 +86,7 @@ unsafe fn kernel_init() -> ! {
     println!("[0] FOMOSv2-CL v2.0.0 \n");
     print!("[0] Starting FOMOS... \n");
 
+    start_fomos_cl();
+
     panic!("Stopping here.")
 }
