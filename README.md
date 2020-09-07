@@ -10,7 +10,7 @@ In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this 
 
 ## Setup requirements
 
-- Linux 2.6 +
+- Linux v2.6 +
 - C v18 +
 - gcc v9.3.0 +
 - Rust v1.38.0 +

@@ -3,9 +3,14 @@
 #define FOMOSV2_CL_USER_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void sudo() {
-    printf("Sudo")
+    system("sh users/sudo.sh");
+}
+
+void usrNam() {
+    system("sh users/userName.sh");
 }
 
 #endif //FOMOSV2_CL_USER_H

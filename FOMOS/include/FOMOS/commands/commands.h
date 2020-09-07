@@ -15,4 +15,7 @@ void Fopen() {
     system("./commands/Fopen/Fopen");
 }
 
+// TODO: add stuff for power
+// restart/shutdown
+
 #endif //FOMOSV2_CL_COMMANDS_H

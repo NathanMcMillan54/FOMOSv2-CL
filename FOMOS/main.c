@@ -5,6 +5,7 @@
 #include "include/FOMOS/finishSetup.h"
 #include "include/FOMOS/commands/power.h"
 #include "include/FOMOS/commands/commands.h"
+#include "include/FOMOS/commands/user.h"
 
 int power = 1;
 
@@ -18,9 +19,11 @@ void CL() {
     if(!strcmp(command, "help")) {
         help();
     } else if (!strcmp(command, "shutdown")) {
+        sudo();
         shutdown();
         power = 0;
     } else if (!strcmp(command, "restart")) {
+        sudo();
         restart();
         power = 0;
     } else if (!strcmp(command, "rndmstf")) {
@@ -28,7 +31,7 @@ void CL() {
     } else if (!strcmp(command, "Fopen")) {
         Fopen();
     } else if (!strcmp(command, "usrNam")) {
-        system("sh users/userName.sh");
+        usrNam();
     }
     else {
         printf("%s is not a command\n", command);

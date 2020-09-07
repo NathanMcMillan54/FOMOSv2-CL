@@ -4,8 +4,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "../commands/user.h"
 
-void sudo_password() {
+void make_sudo_password() {
     char userSudoPassword[6];
     printf("Enter your password ");
     scanf("%s", userSudoPassword);
