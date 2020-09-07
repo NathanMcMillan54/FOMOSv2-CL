@@ -10,7 +10,7 @@ fn main() {
         .arg("bs=512")
         .arg("count=1")
         .output()
-        .expect("failed to execute process");
+        .expect("Cannot make FOMOS.img, you have to make FOMOS/setup.c into FOMOS.img yourself");
 
     println!("status: {}", output.status);
     println!("stdout: {}", String::from_utf8_lossy(&output.stdout));
