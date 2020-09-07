@@ -8,6 +8,14 @@ The first version of FOMOS is just a GUI replacement for Linux but this will be 
 
 In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this version of FOMOS).
 
+## Setup requirements
+
+- Linux 2.6 +
+- C v18 +
+- gcc v9.3.0 +
+- Rust v1.38.0 +
+- Cargo v1.46.0 +
+
 # Setup
 ## Use Linux for setup
 
