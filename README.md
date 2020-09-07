@@ -2,7 +2,7 @@
 
 FOMOS stands for: Free, Open source, Mobile, Operating, System.
 
-FOMOS should only works on ARM CPU's
+Most mobile devices have ARM CPU's, because FOMOS is meant to run on mobile devices it should have good support for them.
 
 The first version of FOMOS is just a GUI replacement for Linux but this will be a real OS.
 
@@ -23,14 +23,6 @@ sh compileAll.sh
 ```
 
 That compiles all files in ``boot/`` then turns ``FOMOS/`` into a ``.img`` file.
-
-Also at top project directory type:
-
-```commandline
-cargo buil
-```
-
-That compiles everything in ``src/``.
 
 ## TODO
 
