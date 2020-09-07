@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Login"
-
-echo
+echo "+-------+"
+echo "| Login |"
+echo "+-------+"
 
 read -p "Enter your password " Ipassword
 
