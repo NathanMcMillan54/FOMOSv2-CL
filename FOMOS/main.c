@@ -32,6 +32,9 @@ void CL() {
         Fopen();
     } else if (!strcmp(command, "usrNam")) {
         usrNam();
+    } /* this is if FMOE was installed */ else if (!strcmp(command, "FMOE")) {
+        sudo();
+        FMOE();
     }
     else {
         printf("%s is not a command\n", command);
@@ -47,6 +50,17 @@ int main() {
     system("sh users/user.sh");
     for (;;) {
         CL();
+        if (power == 0) {
+            exit(0)
+        } else if (power > 1) {
+            printf("There was a problem \n");
+            printf("Shutting down to solve problem... \n");
+            shutdown();
+        } else if (power < 0) {
+            printf("power < 0 \n");
+            printf("Shutting down immediately \n");
+            shutdown();
+        }
     }
 
 }

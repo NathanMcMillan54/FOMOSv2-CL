@@ -13,9 +13,6 @@ function askYoN() {
     read -p "Do you want to continue? (y/n) " input
     if [ "$input" = "y" ]; then
         echo "Making files"
-        cd boot/
-        make all
-        cd ../
         cd FOMOS/
         make all
         cd commands/
@@ -23,7 +20,7 @@ function askYoN() {
         git clone https://github.com/NathanMcMillan54/FMOE
         echo "Done"
     elif [ "$input" = "n" ]; then
-        echo "You will have to manually build FOMOS"
+        echo "You will have to manually build FOMOS and install FMOE"
     else
         echo "Enter y or n"
         askYoN

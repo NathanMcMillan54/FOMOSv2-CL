@@ -15,6 +15,10 @@ void Fopen() {
     system("./commands/Fopen/Fopen");
 }
 
+void FMOE() {
+    system("./commands/FMOE/FMOE");
+}
+
 // TODO: add stuff for power
 // restart/shutdown
 

@@ -1,3 +1,5 @@
+/* This is literally FOMOS's documentation */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "../../include/FOMOS/openFile.h"
@@ -98,6 +100,22 @@ int oUsrNam() {
     return 0;
 }
 
+int oSudo() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "commands/help/sudo.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL) {
+        printf("Could not open file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
 int main() {
     int num;
     printf("Help\n");
@@ -105,6 +123,7 @@ int main() {
     printf("| 1) About FOMOS   2) About FMOE     |\n");
     printf("| 3) About restart 4) About shutdown |\n");
     printf("| 5) About Fopen   6) About usrNam   |\n");
+    printf("| 7) About sudo                      |\n");
     printf("+------------------------------------+\n");
 
     printf("Enter a number \n");
@@ -128,6 +147,9 @@ int main() {
             break;
         case 6:
             oUsrNam();
+            break;
+        case 7:
+            oSudo();
             break;
         default:
             printf("NaN \n");
