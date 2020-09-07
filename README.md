@@ -9,6 +9,7 @@ The first version of FOMOS is just a GUI replacement for Linux but this will be 
 In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this version of FOMOS).
 
 # Setup
+## Use Linux for setup
 
 ```commandline
 sh buildFOMOS.sh
@@ -17,12 +18,19 @@ sh buildFOMOS.sh
 Running that will compile all the C files in FOMOS
 
 ```commandline
-cd boot/
+cd FOMOSimg/
 sh compileAll.sh
 ./makeImage
 ```
 
-That compiles all files in ``boot/`` then turns ``FOMOS/`` into a ``.img`` file.
+That compiles all files in ``FOMOSimg/`` then turns ``FOMOS/`` into a ``.img`` file.
+
+```commandline
+cd boot
+cargo build
+```
+
+That compiles all the startup files in ``boot/``. Make sure ``cargo`` commands work on your device.
 
 ## TODO
 
