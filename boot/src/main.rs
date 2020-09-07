@@ -56,6 +56,7 @@
 #![no_main]
 #![no_std]
 
+
 // `mod cpu` provides the `_start()` function, the first function to run. `_start()` then calls
 // `runtime_init()`, which jumps to `kernel_init()`.
 
@@ -72,11 +73,18 @@ mod runtime_init;
 /// # Safety
 ///
 /// - Only a single core must be active and running this function.
+
+extern crate cc;
+
+fn start_fomos_cl() {
+    cc::Build::new()
+        .file("../../FOMOS/setup.c")
+        .compile("setup");
+}
+
 unsafe fn kernel_init() -> ! {
     println!("[0] FOMOSv2-CL v2.0.0 \n");
     print!("[0] Starting FOMOS... \n");
-
-    // TODO: add stuff so FOMOS/setup.c or main.c starts running
 
     panic!("Stopping here.")
 }
