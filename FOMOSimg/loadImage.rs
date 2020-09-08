@@ -2,10 +2,10 @@ use std::process::Command;
 
 fn main() {
     print!("Loading FOMOS image...");
-    let output = Command::new("./FOMOS.img")
+    let output = Command::new("../FOMOS.img")
         .arg(" ")
         .output()
-        .expect("Cannot load FOMOS.img, do it yourself");
+        .expect("Cannot start OS");
 
     println!("status: {}", output.status);
     println!("stdout: {}", String::from_utf8_lossy(&output.stdout));

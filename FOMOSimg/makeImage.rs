@@ -5,7 +5,7 @@ fn main() {
     // use std::process::Command;
 
     let output = Command::new("dd")
-        .arg("if=../FOMOS/setup.c")
+        .arg("if=../FOMOS.c")
         .arg("of=../FOMOS.img")
         .arg("bs=512")
         .arg("count=1")

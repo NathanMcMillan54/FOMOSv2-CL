@@ -47,9 +47,5 @@ The most powerful ARM device that runs any software I can think of is the Raspbe
 
 - [ ] Get boot working (for ARM CPU)
 - [x] Make support for RPi 3
-
-
-Boot probably works, FOMOS probably uses to much memory so that might not work.
-But at least it boots.
 - [ ] Edit all the ``.txt`` files in ``FOMOS/commands/help`` because that's pretty much the documentation for FOMOS
 - [x] Get everything from [FOMOSv2-CL v2.1.1-beta](https://github.com/NathanMcMillan54/FOMOSv2-CLtest) into this FOMSOv2-CL (all commands)

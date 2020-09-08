@@ -74,12 +74,19 @@ mod runtime_init;
 ///
 /// - Only a single core must be active and running this function.
 
-extern crate cc;
+use std::process::Command;
 
 fn start_fomos_cl() {
-    cc::Build::new()
-        .file("../../FOMOS/setup.c")
-        .compile("setup");
+    let output = Command::new("../../FOMOSimg/loadImage")
+        .arg(" ")
+        .output()
+        .expect("Cannot start OS");
+
+    println!("status: {}", output.status);
+    println!("stdout: {}", String::from_utf8_lossy(&output.stdout));
+    println!("stderr: {}", String::from_utf8_lossy(&output.stderr));
+
+    assert!(output.status.success());
 }
 
 unsafe fn kernel_init() -> ! {
