@@ -5,8 +5,7 @@
 int main(void) {
     printf("Starting FOMOS.img... \n");
     strtCPU();
-    // don't actually start setup.c
-    // just do this for now unitl the os can be figured out
+    printf("If startup has gotten this far everything should be working");
     printf("Starting setup... \n");
-    system("./FOMOS/setup.c");
+    system("./FOMOS/setup");
 }

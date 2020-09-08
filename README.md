@@ -23,15 +23,7 @@ In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this 
 sh buildFOMOS.sh
 ```
 
-Running that will compile all the C files in FOMOS
-
-```commandline
-cd FOMOSimg/
-sh compileAll.sh
-./makeImage
-```
-
-That compiles all files in ``FOMOSimg/`` then turns ``FOMOS/`` into a ``.img`` file.
+Running that will compile all the C and Rust files in FOMOS, it will also make a Image file that FOMOS is supposed to run on.
 
 ```commandline
 cd boot

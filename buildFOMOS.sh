@@ -13,6 +13,9 @@ function askYoN() {
     read -p "Do you want to continue? (y/n) " input
     if [ "$input" = "y" ]; then
         echo "Making files"
+        cd FOMOSimg/
+        sh compileAll.sh
+        cd ../
         cd FOMOS/
         make all
         cd commands/
