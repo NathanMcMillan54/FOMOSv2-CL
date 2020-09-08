@@ -3,7 +3,7 @@ BSP ?= rpi3
 # BSP-specific arguments
 ifeq ($(BSP),rpi3)
     TARGET            = aarch64-unknown-none-softfloat
-    KERNEL_BIN        = kernel8.img
+    KERNEL_BIN        = ../FOMOS.img
     QEMU_BINARY       = qemu-system-aarch64
     QEMU_MACHINE_TYPE = raspi3
     QEMU_RELEASE_ARGS = -serial stdio -display none
@@ -11,7 +11,7 @@ ifeq ($(BSP),rpi3)
     RUSTC_MISC_ARGS   = -C target-cpu=cortex-a53
 else ifeq ($(BSP),rpi4)
     TARGET            = aarch64-unknown-none-softfloat
-    KERNEL_BIN        = kernel8.img
+    KERNEL_BIN        = ../FOMOS.img
     QEMU_BINARY       = qemu-system-aarch64
     QEMU_MACHINE_TYPE =
     QEMU_RELEASE_ARGS = -serial stdio -display none
