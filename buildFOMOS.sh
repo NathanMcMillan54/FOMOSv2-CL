@@ -15,6 +15,7 @@ function askYoN() {
         echo "Making files"
         cd FOMOSimg/
         sh compileAll.sh
+        ./makeImage
         cd ../
         cd FOMOS/
         make all
