@@ -1,14 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "headerFiles/openFile.h"
+#include <string.h>
+#include "openFile.h"
 
 int main() {
     FILE *fp;
     char str[MAXCHAR];
     char fileName[50];
 
-    printf("\nFile name: \n");
+    printf("\nFile name: ");
     scanf("%s", fileName);
+
+    if (!strcmp(fileName, "2020")) {
+        printf("You are a terrible person \n");
+        exit(0);
+    } else {
+        // nothing
+    }
 
     fp = fopen(fileName, "r");
     if (fp == NULL){

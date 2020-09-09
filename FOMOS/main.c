@@ -51,7 +51,7 @@ int main() {
     for (;;) {
         CL();
         if (power == 0) {
-            exit(0)
+            exit(0);
         } else if (power > 1) {
             printf("There was a problem \n");
             printf("Shutting down to solve problem... \n");
