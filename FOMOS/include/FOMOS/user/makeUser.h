@@ -19,7 +19,6 @@ void makeUser() {
     FILE *usrFile;
     // this is adding stuff to user/sh
     char l8p33[100] = "if [ $password = ";
-    char l8p66[100] = userPassword;
     char l8p66[100] = " ]; then \n";
     char l9p33[100] = "    ./main\n";
     char l10p33[100] = "else \n";
