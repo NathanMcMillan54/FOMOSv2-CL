@@ -1,30 +1,45 @@
-# FOMOSv2-CLtest
+# About
 
-This is just a test for FOMOS trying to make it a real OS
+FOMOS stands for: Free, Open source, Mobile, Operating, System.
 
-If this doesn't go well it will probably end up like FOMOSv1 except it's a terminal.
+Most mobile devices have ARM CPU's, because FOMOS is meant to run on mobile devices it should have good support for them.
 
-This is just a terminal replacement for Linux.
+The first version of FOMOS is just a GUI replacement for Linux but this will be a real OS.
+
+In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this version of FOMOS).
+
+## Setup requirements
+
+- Linux v2.6 +
+- C v18 +
+- gcc v9.3.0 +
+- Rust v1.38.0 +
+- Cargo v1.46.0 +
 
 # Setup
-```shell script
-sh setup.sh
+## Use Linux for setup
+
+```commandline
+sh buildFOMOS.sh
 ```
 
-Running this will setup FOMOS and teach you the basics of FOMOS.
+Running that will compile all the C and Rust files in FOMOS, it will also make a Image file that FOMOS is supposed to run on.
 
-#
-# For developers
-
-After you're done working on FOMOSv2 run:
-
-```shell script
-sh deleteCompiledFiles.sh
+```commandline
+cd boot
+cargo build
 ```
 
+That compiles all the startup files in ``boot/``. Make sure ``cargo`` commands work on your device.
 
-If you are a developer and want to do stuff with ```Fopen``` then you should run this:
-```shell script
-cd FOMOSCL/CL/usrFiles/
-touch test.txt
-```
+## TODO
+
+FOMOS is supposed to be for mobile devices. Most mobile devices have an ARM CPU so the bootloader has to work on ARM CPU devices.
+The most powerful ARM device that runs any software I can think of is the RaspberryPi. So that will probably be the first device to support FOMOS.  
+
+- [ ] Get boot working (for ARM CPU)
+- [x] Make support for RPi 3
+- [ ] Get user files working
+- [ ] Make commands for opening directories
+- [ ] Edit all the ``.txt`` files in ``FOMOS/commands/help`` because that's pretty much the documentation for FOMOS
+- [x] Get everything from [FOMOSv2-CL v2.1.1-beta](https://github.com/NathanMcMillan54/FOMOSv2-CLtest) into this FOMSOv2-CL (all commands)
