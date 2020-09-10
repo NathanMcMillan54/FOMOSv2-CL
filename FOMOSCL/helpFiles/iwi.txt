@@ -1,0 +1,18 @@
+iwi (I Wanna Install)
+
+This command is used for installing and updating public git repositories like FMOE the FOMOS text editor.
+
+When you type iwi it will give you the option for I or U
+
+
+I option
+If you type: I
+iwi will let you install something.
+If you type: INSTALL <url to git repo>
+iwi will install that repository and put it in usrFiles/
+
+U option
+If you type: U
+iwi will let you update something.
+If you type: UPDATE <repo/app name>
+iwi will install any changes made to that app/repo.

@@ -1,3 +1,0 @@
-A lot of this directory was copied from: https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials/tree/master/
-Rust is new so not many people have done OS development with it. Go to this github repository ^ and add to it or learn from it.
-                                                                                              |

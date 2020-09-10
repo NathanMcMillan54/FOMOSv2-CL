@@ -1,0 +1,7 @@
+This is FOMOSv2-CLtest
+
+This is a project to turn FOMOS into an actual operating system.
+
+The help command will bring you to a list of options of files that will show you how to use FOMOSv2-CL.
+
+To update FOMOS run the iwi command, pick option U, then type FOMOS.

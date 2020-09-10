@@ -1,0 +1,3 @@
+The powerOff command will shutdown FOMOS and your device.
+
+When you enter the command powerOff you will have to enter your password so FOMOS can shutdown your device.

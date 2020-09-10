@@ -1,0 +1,5 @@
+Fopen is used for opening files and reading them.
+Example:
+
+Input  >>> Fopen myTextFiles/myTextFile.txt
+Output >>> This is from myTextFiles/myTextFile.txt

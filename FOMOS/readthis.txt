@@ -1,4 +1,0 @@
-This is FOMOSv2-CL v2.1.1-beta that works on FOMOSv2-CL v2.
-
-usrNam, netConnect, and iwi commands aren't going to be in this version of FOMOS, those commands need Linux to work.
-Since FOMOS is it's own OS they won't work.

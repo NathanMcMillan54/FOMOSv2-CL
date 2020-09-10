@@ -1,0 +1,6 @@
+If you are having a problem try restarting your device by running.
+
+restart
+
+Usually restarting your device will help with the problem. If that doesn't work make an issue at https://github.com/NathanMcMillan54/FOMOSv2-CLtest/issues
+there someone who may have had the same problem might have a solution.

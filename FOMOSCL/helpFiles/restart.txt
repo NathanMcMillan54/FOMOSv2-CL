@@ -1,0 +1,4 @@
+The restart command will restart FOMOS and your device.
+
+When you enter the command restart you will have to enter your password so FOMOS can restart your device.
+If you are having problems with FOMOS then you should probably run this command.

@@ -1,8 +1,0 @@
-commands/
-include/
-userDirectory/
-users/
-main.c
-Makefile
-readthis.txt
-setup.c

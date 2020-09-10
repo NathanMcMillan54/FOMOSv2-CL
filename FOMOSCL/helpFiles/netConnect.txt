@@ -1,0 +1,3 @@
+The netConnect command is for showing a list of local wifi networks and connecting to them.
+
+If you want to update FOMOS or install/update apps you need to be connected to wifi by running this command.
