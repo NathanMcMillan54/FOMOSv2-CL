@@ -13,8 +13,7 @@ void make_sudo_password() {
 
     FILE *sudoFile;
     // this is adding stuff to user/sudo.sh
-    char l8p33[100] = "if [ $password = ";
-    char l8p66[100] = userSudoPassword;
+    char l6p33[100] = "if [ $password = ";
     char l8p66[100] = " ]; then \n";
     char l9p33[100] = "    ./main\n";
     char l10p33[100] = "else \n";
@@ -23,13 +22,12 @@ void make_sudo_password() {
     if ((sudoFile = fopen("users/sudo.sh", "a")) == NULL)
         printf("Cannot  add user");
     else {
-        fputs(l8p33, sudoFile);
-        fputs(userPassword, sudoFile);
+        fputs(l6p33, sudoFile);
+        fputs(userSudoPassword, sudoFile);
         fputs(l8p66, sudoFile);
         fputs(l9p33, sudoFile);
         fputs(l10p33, sudoFile);
         fputs(l11p33, sudoFile);
-        fputs(l12p33, sudoFile);
         fclose(sudoFile);
     }
 

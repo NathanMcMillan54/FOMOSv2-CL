@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
 #include "include/FOMOS/finishSetup.h"
 #include "include/FOMOS/commands/power.h"
 #include "include/FOMOS/commands/commands.h"
@@ -11,8 +10,6 @@ int power = 1;
 
 void CL() {
     char command[50];
-
-    printf("FOMOSv2-CL v2\n");
 
     printf("\n$ ");
     scanf("%s", command);

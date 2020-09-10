@@ -20,7 +20,7 @@ void make_user_name() {
     if ((userNameFile = fopen("users/userName.sh", "a")) == NULL)
         printf("Cannot make User Name");
     else {
-        fputs(userName, userNameFile)
+        fputs(userName, userNameFile);
         fclose(userNameFile);
     }
 
