@@ -132,6 +132,38 @@ int oPwd() {
     return 0;
 }
 
+int oLs() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "commands/help/ls.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL) {
+        printf("Could not open file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
+int oMkdir() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "commands/help/mkdir.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL) {
+        printf("Could not open file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
 int main() {
     int num;
     printf("Help\n");
@@ -140,6 +172,7 @@ int main() {
     printf("| 3) About restart 4) About shutdown |\n");
     printf("| 5) About Fopen   6) About usrNam   |\n");
     printf("| 7) About sudo    8) About pwd      |\n");
+    printf("| 9) About ls      10) About mkdir   |\n");
     printf("+------------------------------------+\n");
 
     printf("Enter a number \n");
@@ -169,6 +202,12 @@ int main() {
             break;
         case 8:
             oPwd();
+            break;
+        case 9:
+            oLs();
+            break;
+        case 10:
+            oMkdir();
             break;
         default:
             printf("NaN \n");

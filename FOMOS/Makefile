@@ -8,7 +8,7 @@ all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shu
 		gcc -Wall commands/help/rndmstf.c -o commands/help/rndmstf
 		gcc -Wall commands/pwd/pwd.c -o commands/pwd/pwd
 		gcc -Wall commands/ls/ls.c commands/ls/ls
-		gcc -Wall commands/mkdir/mkdir.c -o commands/mkdir/mkdir
+		rustc commands/mkdir/mkdir.c
 
 run:
 		@./main
@@ -25,4 +25,5 @@ clean:
 		@rm -rf commands/Fopen/Fopen
 		@rm -rf commands/pwd/pwd
 		@rm -rf commands/ls/ls
+		@rm -rf commands/mkdir/mkdir
 		@rm -rf commands/mkdir/mkdir
