@@ -5,6 +5,7 @@
 #include "include/FOMOS/commands/power.h"
 #include "include/FOMOS/commands/commands.h"
 #include "include/FOMOS/commands/user.h"
+#include "include/FOMOS/commands/filesCommand.h"
 
 int power = 1;
 
@@ -36,6 +37,8 @@ void CL() {
         pwd();
     } else if (!strcmp(command, "ls")) {
         ls();
+    } else if (!strcmp(command, "mkdir")) {
+        mkdir();
     }
     else {
         printf("%s is not a command\n", command);

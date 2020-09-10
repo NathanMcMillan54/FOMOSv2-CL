@@ -11,10 +11,6 @@ void help() {
     system("./commands/help/help");
 }
 
-void Fopen() {
-    system("./commands/Fopen/Fopen");
-}
-
 void FMOE() {
     system("./commands/FMOE/FMOE");
 }
