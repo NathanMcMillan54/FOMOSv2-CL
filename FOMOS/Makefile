@@ -6,6 +6,9 @@ all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shu
 		gcc -Wall commands/shutdown/shutdown.c -o commands/shutdown/shutdown
 		gcc -Wall commands/Fopen/Fopen.c -o commands/Fopen/Fopen
 		gcc -Wall commands/help/rndmstf.c -o commands/help/rndmstf
+		gcc -Wall commands/pwd/pwd.c -o commands/pwd/pwd
+		gcc -Wall commands/ls/ls.c commands/ls/ls
+		gcc -Wall commands/mkdir/mkdir.c -o commands/mkdir/mkdir
 
 run:
 		@./main
@@ -20,3 +23,6 @@ clean:
 		@rm -rf commands/shutdown/shutdown
 		@rm -rf commands/FMOE/
 		@rm -rf commands/Fopen/Fopen
+		@rm -rf commands/pwd/pwd
+		@rm -rf commands/ls/ls
+		@rm -rf commands/mkdir/mkdir
