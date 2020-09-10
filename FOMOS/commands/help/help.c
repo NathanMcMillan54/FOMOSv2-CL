@@ -116,6 +116,22 @@ int oSudo() {
     return 0;
 }
 
+int oPwd() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "commands/help/pwd.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL) {
+        printf("Could not open file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
 int main() {
     int num;
     printf("Help\n");
@@ -123,7 +139,7 @@ int main() {
     printf("| 1) About FOMOS   2) About FMOE     |\n");
     printf("| 3) About restart 4) About shutdown |\n");
     printf("| 5) About Fopen   6) About usrNam   |\n");
-    printf("| 7) About sudo                      |\n");
+    printf("| 7) About sudo    8) About pwd      |\n");
     printf("+------------------------------------+\n");
 
     printf("Enter a number \n");
@@ -150,6 +166,9 @@ int main() {
             break;
         case 7:
             oSudo();
+            break;
+        case 8:
+            oPwd();
             break;
         default:
             printf("NaN \n");

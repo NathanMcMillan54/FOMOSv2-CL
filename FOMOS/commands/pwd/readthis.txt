@@ -1,0 +1,1 @@
+idk how else this would have been done but for now this will just open a txt file that has the name of the directory in it
