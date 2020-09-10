@@ -32,6 +32,8 @@ void CL() {
     } /* this is if FMOE was installed */ else if (!strcmp(command, "FMOE")) {
         sudo();
         FMOE();
+    } else if (!strcmp(command, "pwd")) {
+        pwd();
     }
     else {
         printf("%s is not a command\n", command);

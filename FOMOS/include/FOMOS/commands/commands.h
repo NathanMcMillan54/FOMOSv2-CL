@@ -19,6 +19,11 @@ void FMOE() {
     system("./commands/FMOE/FMOE");
 }
 
+void pwd() {
+    system("./commands/pwd/pwd");
+    // this might need to be changed soon
+}
+
 // TODO: add stuff for power
 // restart/shutdown
 
