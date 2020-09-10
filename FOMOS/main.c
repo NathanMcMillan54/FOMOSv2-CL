@@ -34,6 +34,8 @@ void CL() {
         FMOE();
     } else if (!strcmp(command, "pwd")) {
         pwd();
+    } else if (!strcmp(command, "ls")) {
+        ls();
     }
     else {
         printf("%s is not a command\n", command);

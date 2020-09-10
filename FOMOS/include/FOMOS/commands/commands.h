@@ -24,6 +24,10 @@ void pwd() {
     // this might need to be changed soon
 }
 
+void ls() {
+    system("./commands/ls/ls");
+}
+
 // TODO: add stuff for power
 // restart/shutdown
 
