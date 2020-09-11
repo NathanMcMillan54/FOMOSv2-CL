@@ -10,6 +10,7 @@ all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shu
 		rustc commands/ls/ls.rs
 		rustc commands/mkdir/mkdir.rs
 		rustc commands/sudo/sudo.rs
+		sh compileSudoShutdown.sh
 
 run:
 		@./main

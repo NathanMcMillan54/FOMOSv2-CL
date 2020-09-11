@@ -1,7 +1,7 @@
 use std::process::Command;
 
 fn shutdown() {
-    print!("Shutting down... \n");
+    // something to run main
 }
 
 fn main() {
