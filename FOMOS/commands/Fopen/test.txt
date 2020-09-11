@@ -1,6 +1,1 @@
-;sxrjnh
-s/eg;5jksj.l
-;sorjhn
-
-
-s/rlktn
+Fopen test file
