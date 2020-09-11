@@ -4,7 +4,7 @@ all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shu
 		gcc -Wall commands/help/help.c -o commands/help/help
 		gcc -Wall commands/restart/restart.c -o commands/restart/restart
 		gcc -Wall commands/shutdown/shutdown.c -o commands/shutdown/shutdown
-		gcc -Wall commands/Fopen/Fopen.c -o commands/Fopen/Fopen
+		rustc commands/Fopen/Fopen.rs
 		gcc -Wall commands/help/rndmstf.c -o commands/help/rndmstf
 		gcc -Wall commands/pwd/pwd.c -o commands/pwd/pwd
 		rustc commands/ls/ls.rs
