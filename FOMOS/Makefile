@@ -1,4 +1,4 @@
-all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shutdown/shutdown.c commands/Fopen/Fopen.c
+all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shutdown/shutdown.c commands/Fopen/Fopen.c commands/help/rndmstf.c commands/pwd/pwd.c commands/ls/ls.rs commands/mkdir/mkdir.rs commands/sudo/sudo.rs compileSudoShutdown.sh
 		gcc -Wall main.c -o main
 		gcc -Wall setup.c -o setup
 		gcc -Wall commands/help/help.c -o commands/help/help
@@ -14,7 +14,6 @@ all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shu
 
 run:
 		@./main
-
 # for now it'll just run main
 
 clean:
