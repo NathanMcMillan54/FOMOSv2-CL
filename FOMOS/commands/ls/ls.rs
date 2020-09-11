@@ -2,14 +2,14 @@ use std::fs;
 use std::io;
 
 fn main() {
-    let mut input = String::new();
-    match io::stdin().read_line(&mut input) {
+    let mut dir_name = String::new();
+    match io::stdin().read_line(&mut dir_name) {
         Ok(n) => {
-            println!("You entered: {} \n", input);
+            println!("You entered: {} \n", dir_name);
         }
         Err(error) => println!("error: {}", error),
     }
-    let paths = fs::read_dir(input).unwrap();
+    let paths = fs::read_dir(dir_name).unwrap();
 
     for path in paths {
         println!("{}", path.unwrap().path().display())
