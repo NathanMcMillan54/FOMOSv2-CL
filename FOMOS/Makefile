@@ -6,7 +6,7 @@ all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shu
 		gcc -Wall commands/shutdown/shutdown.c -o commands/shutdown/shutdown
 		rustc commands/Fopen/Fopen.rs
 		gcc -Wall commands/help/rndmstf.c -o commands/help/rndmstf
-		gcc -Wall commands/pwd/pwd.c -o commands/pwd/pwd
+		rustc commands/pwd/pwd.rs
 		rustc commands/ls/ls.rs
 		rustc commands/mkdir/mkdir.rs
 		rustc commands/sudo/sudo.rs
@@ -29,3 +29,4 @@ clean:
 		@rm -rf commands/mkdir/mkdir
 		@rm -rf commands/mkdir/mkdir
 		@rm -rf commands/sudo/sudo
+		@rm -rf commands/pwd/pwd
