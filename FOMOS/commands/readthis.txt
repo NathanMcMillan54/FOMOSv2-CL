@@ -1,0 +1,4 @@
+This file is for talking about commands/ directory for developers
+
+TODO list:
+Get ls and Fopen input work
