@@ -7,8 +7,8 @@ all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shu
 		gcc -Wall commands/Fopen/Fopen.c -o commands/Fopen/Fopen
 		gcc -Wall commands/help/rndmstf.c -o commands/help/rndmstf
 		gcc -Wall commands/pwd/pwd.c -o commands/pwd/pwd
-		gcc -Wall commands/ls/ls.c commands/ls/ls
-		rustc commands/mkdir/mkdir.c
+		rustc commands/ls/ls.rs
+		rustc commands/mkdir/mkdir.rs
 
 run:
 		@./main
