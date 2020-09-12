@@ -4,7 +4,7 @@ FOMOS stands for: Free, Open source, Mobile, Operating, System.
 
 Most mobile devices have ARM CPU's, because FOMOS is meant to run on mobile devices it should have good support for them.
 
-The first version of FOMOS is just a GUI replacement for Linux but this will be a real OS.
+The first version of FOMOS is just a gui replacement for Linux but this will be a real OS.
 
 In version 3 of FOMOS it should be a mix of FOMOSv1-Yellow and FOMOSv2-CL (this version of FOMOS).
 
