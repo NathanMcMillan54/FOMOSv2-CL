@@ -1,7 +1,16 @@
 use std::process::Command;
 
 fn shutdown() {
-    // something to run main
+    let output = Command::new("cargo")
+        .arg("run")
+        .output()
+        .expect("Cannot emergency sudo shutdown \n");
+
+    println!("status: {}", output.status);
+    println!("stdout: {}", String::from_utf8_lossy(&output.stdout));
+    println!("stderr: {}", String::from_utf8_lossy(&output.stderr));
+
+    assert!(output.status.success());
 }
 
 fn main() {
