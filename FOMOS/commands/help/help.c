@@ -164,6 +164,22 @@ int oMkdir() {
     return 0;
 }
 
+int oEf() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "commands/help/ef.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL) {
+        printf("Could not open file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
 int main() {
     int num;
     printf("Help\n");
@@ -173,6 +189,7 @@ int main() {
     printf("| 5) About Fopen   6) About usrNam   |\n");
     printf("| 7) About sudo    8) About pwd      |\n");
     printf("| 9) About ls      10) About mkdir   |\n");
+    printf("| 11) About ef                       |\n");
     printf("+------------------------------------+\n");
 
     printf("Enter a number \n");
@@ -209,6 +226,8 @@ int main() {
         case 10:
             oMkdir();
             break;
+        case 11:
+            oEf();
         default:
             printf("NaN \n");
     }

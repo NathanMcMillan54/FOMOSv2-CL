@@ -1,4 +1,4 @@
-all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shutdown/shutdown.c commands/Fopen/Fopen.c commands/help/rndmstf.c commands/pwd/pwd.c commands/ls/ls.rs commands/mkdir/mkdir.rs commands/sudo/sudo.rs compileSudoShutdown.sh
+all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shutdown/shutdown.c commands/Fopen/Fopen.c commands/help/rndmstf.c commands/pwd/pwd.c commands/ls/ls.rs commands/mkdir/mkdir.rs commands/sudo/sudo.rs commands/ef/ef.rs compileSudoShutdown.sh
 		gcc -Wall main.c -o main
 		gcc -Wall setup.c -o setup
 		gcc -Wall commands/help/help.c -o commands/help/help
@@ -10,6 +10,7 @@ all: main.c setup.c commands/help/help.c commands/restart/restart.c commands/shu
 		rustc commands/ls/ls.rs
 		rustc commands/mkdir/mkdir.rs
 		rustc commands/sudo/sudo.rs
+		rustc commands/ef/ef.rs
 		sh compileSudoShutdown.sh
 
 run:
@@ -30,3 +31,4 @@ clean:
 		@rm -rf commands/mkdir/mkdir
 		@rm -rf commands/sudo/sudo
 		@rm -rf commands/pwd/pwd
+		@rm -rf commands/ef/ef
