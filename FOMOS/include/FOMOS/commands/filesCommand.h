@@ -12,4 +12,8 @@ void Fopen() {
     system("./commands/Fopen/Fopen");
 }
 
+void ef() {
+    system("./commands/ef/ef");
+}
+
 #endif //FOMOSV2_CL_FILESCOMMAND_H

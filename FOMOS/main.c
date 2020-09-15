@@ -39,6 +39,8 @@ void CL() {
         ls();
     } else if (!strcmp(command, "mkdir")) {
         mkdir();
+    } else if (!strcmp(command, "ef")) {
+        ef();
     }
     else {
         printf("%s is not a command\n", command);
