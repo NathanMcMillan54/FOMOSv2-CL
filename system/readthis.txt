@@ -1,0 +1,3 @@
+This is for all the really important os stuff
+
+For any ARM developers going through this, please make sure all this assembly code is right
