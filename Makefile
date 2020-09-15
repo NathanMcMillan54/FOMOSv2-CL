@@ -3,7 +3,9 @@ all: CPU.cpp
 		gcc -static FOMOS.c -o FOMOS
 
 run:
-		@./CPU
+		@./FOMSO
 
 clean:
 		@rm -rf CPU
+
+# don't add FOMOS, it'll delete the directory

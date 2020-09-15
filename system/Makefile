@@ -6,4 +6,3 @@ clean:
 		@rm -rf sleep
 		@rm -rf drivers/keyboard/keyboard
 
-# TODO figure out how to compile arm assembly
