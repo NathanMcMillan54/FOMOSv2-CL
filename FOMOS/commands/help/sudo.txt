@@ -1,1 +1,0 @@
-this file is about the sudo command in FOMOS

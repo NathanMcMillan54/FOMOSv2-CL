@@ -1,1 +1,0 @@
-this file is for the usrNam command from FOMOSv2-CLtest v2.1.1-beta
