@@ -16,4 +16,8 @@ void ef() {
     system("./commands/ef/ef");
 }
 
+void mf() {
+    system("./commands/mf/mf");
+}
+
 #endif //FOMOSV2_CL_FILESCOMMAND_H
