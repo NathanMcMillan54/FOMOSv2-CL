@@ -18,7 +18,7 @@ int startSetup() {
 
 void main(void) {
     startSetup();
-    printf("Starting FOMOS 2/2 Finished \n");
+    printf("Starting FOMOS 2/4 Finished \n");
     printf("Restarting to apply changes... \n");
     restart();
     return 0;
