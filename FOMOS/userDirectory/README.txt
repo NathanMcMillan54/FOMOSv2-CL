@@ -1,1 +1,0 @@
-In this directory you (the user) should put all your files in here (this directory)

@@ -1,8 +1,0 @@
-[package]
-name = "sudoShutdown"
-version = "1.0.0"
-authors = ["Nathan McMillan"]
-edition = "2018"
-
-[dependencies]
-sysrem_shutdown = "3.0.0"

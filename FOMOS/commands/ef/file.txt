@@ -1,2 +1,0 @@
-TODO: Make input work for ef command
-

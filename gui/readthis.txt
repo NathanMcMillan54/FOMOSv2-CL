@@ -1,2 +1,0 @@
-This is just a test for the starting of FOMOS v3.
-It won't be used in this version of FOMOS

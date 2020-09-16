@@ -1,0 +1,7 @@
+[package]
+name = "FOMOS"
+version = "v2-CL"
+authors = ["Nathan McMillan"]
+edition = "2018"
+
+[dependencies]
