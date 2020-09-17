@@ -1,2 +1,0 @@
-This directory was copied from https://os.phil-opp.com/hardware-interrupts/
-I think the kernel is made for intel cpus but the keyboard will probably work
