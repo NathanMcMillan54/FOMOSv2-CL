@@ -10,13 +10,4 @@ FOMOSv2-CL is the second version of FOMOS.
 This will be an actual operating system. The CL the FOMOSv2-CL stands for: Command Line, this won't have a GUI but for now it will be like a Linux server.
 
 # Setup
-Compile and run on Linux.
-```commandline
-sh install.sh
-```
-Installs all requirements then builds FOMOS.
-
-```commandline
-sh run.sh
-```
-Runs FOMOS.
+In ``Documentation/Setup/`` it'll explain how to setup FOMOS.

@@ -1,0 +1,5 @@
+After you've installed all the requirements you need to build FOMOS.
+Run:
+        sh build.sh
+
+That will build FOMOS, it'll take a while since you're loading an entire OS.
