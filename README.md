@@ -11,3 +11,8 @@ This will be an actual operating system. The CL the FOMOSv2-CL stands for: Comma
 
 # Setup
 In ``Documentation/Setup/`` it'll explain how to setup FOMOS.
+
+
+## TODO
+- [ ] Write proper documentation
+- [ ] Get keyboard input working
