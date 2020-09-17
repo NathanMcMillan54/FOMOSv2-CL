@@ -15,4 +15,5 @@ In ``Documentation/Setup/`` it'll explain how to setup FOMOS.
 
 ## TODO
 - [ ] Write proper documentation
-- [ ] Get keyboard input working
+- [ ] Get boot and setup properly working
+- [ ] Get drivers working (keyboard, screen)
