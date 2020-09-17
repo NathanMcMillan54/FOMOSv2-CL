@@ -1,3 +1,6 @@
+mod command;
+use command::command;
+
 fn main() {
-    // something to run command.rs
+    command();
 }
