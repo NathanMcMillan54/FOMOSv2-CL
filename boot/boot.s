@@ -1,3 +1,5 @@
+// start setup file
+
 .globl _start
 .extern LD_STACK_PTR
 

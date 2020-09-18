@@ -17,3 +17,4 @@ In ``Documentation/Setup/`` it'll explain how to setup FOMOS.
 - [ ] Write proper documentation
 - [ ] Get boot and setup properly working
 - [ ] Get drivers working (keyboard, screen)
+- [ ] Make kernel image

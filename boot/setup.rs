@@ -4,7 +4,7 @@ fn shutdown() {
     // something to stop FOMOS
     // this will only be called if there is a problem (incorrect login)
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"Emergency shutdown! \n";
+    let out_str = b"Emergency shutdown \n";
     for byte in out_str {
         unsafe {
             ptr::write_volatile(UART0, *byte);
@@ -22,7 +22,7 @@ fn next() {
     }
 }
 
-fn strt_cl() {
+fn strt_fomos() {
     // run fomos.s
 }
 
@@ -46,7 +46,7 @@ fn login() {
 
 fn strt_setup() {
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"Loading next setup task... \n";
+    let out_str = b"Starting setup... \n";
     for byte in out_str {
         unsafe {
             ptr::write_volatile(UART0, *byte);
@@ -54,5 +54,5 @@ fn strt_setup() {
     }
     load_drivers();
     login();
-    strt_cl();
+    strt_fomos();
 }

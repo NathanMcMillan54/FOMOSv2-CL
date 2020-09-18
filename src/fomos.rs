@@ -10,4 +10,5 @@ pub(crate) fn fomos() {
             ptr::write_volatile(UART0, *byte);
         }
     }
+    // add stuff to run command line
 }
