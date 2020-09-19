@@ -1,5 +1,0 @@
-https://github.com/TyberiusPrime/KeyToKey/tree/master might be helpful for making keyboard drivers
-It probably only works on linux
-
-
-This directory is copied from: https://github.com/TyberiusPrime/KeyToKey/tree/master
