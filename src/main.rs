@@ -8,13 +8,13 @@ mod panic;
 
 global_asm!(include_str!("start.s"));
 
-/*
+
 mod setup;
 use crate::setup::setup::strt_setup;
 
 mod command_line;
 use crate::command_line::run_cl::run_cl;
-*/
+
 
 #[no_mangle]
 pub extern "C" fn not_main() {
@@ -25,6 +25,6 @@ pub extern "C" fn not_main() {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    // start setup
-    // start command line
+    strt_setup();
+    run_cl();
 }
