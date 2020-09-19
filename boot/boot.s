@@ -1,18 +1,12 @@
-// start setup file
-/*
-.globl _start
-.extern LD_STACK_PTR
+// start all assembly files (setup.s, start.s)
+    .syntax unified
+.global main
+main:
+    push    {ip, lr}
+    ldr     r0, =message
+    bl      printf
+    mov     r0, #0    @ Return 0.
+    pop     {ip, pc}
 
-.section ".text.boot"
-
-_start:
-    ldr     x30, =LD_STACK_PTR
-    mov     sp, x30
-    bl      strt_setup
-
-.equ PSCI_SYSTEM_OFF, 0x84000008
-.globl system_off
-system_off:
-    ldr     x0, =PSCI_SYSTEM_OFF
-    hvc     #0
-*/
+message:
+    .asciz "Starting setup...\n"

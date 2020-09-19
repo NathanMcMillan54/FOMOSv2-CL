@@ -1,5 +1,7 @@
 use core::ptr;
 
+global_asm!(include_str!("setup.s"));
+
 fn shutdown() {
     // something to stop FOMOS
     // this will only be called if there is a problem (incorrect login)
