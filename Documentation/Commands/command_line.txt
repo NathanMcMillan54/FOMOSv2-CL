@@ -1,0 +1,2 @@
+FOMOS has no way of making input work since there aren't any drivers.
+For now the command line is just a loop that will run until your computer/board crashes.

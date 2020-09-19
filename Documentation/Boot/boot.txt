@@ -1,2 +1,4 @@
 In src/ there is a file called start.s. In there it tells main.rs to run not_main() function.
 not_main() runs FOMOS and everything that has to be done.
+
+The directory boot/ doesn't do anything.

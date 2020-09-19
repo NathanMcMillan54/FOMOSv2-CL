@@ -1,1 +1,2 @@
-In the directory input there will be drivers for keyboards and stuff like USB devices.
+In directory drivers/input/keyboard/ you'll find the drivers for USB keyboards.
+For now it will only support US QWERTY keyboards.
