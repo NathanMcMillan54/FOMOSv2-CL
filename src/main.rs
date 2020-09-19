@@ -15,6 +15,8 @@ use crate::setup::setup::strt_setup;
 mod strt_command_line;
 use crate::strt_command_line::run_cl::run_cl;
 
+mod command_line;
+use crate::command_line::cl::cl;
 
 #[no_mangle]
 pub extern "C" fn not_main() {
@@ -27,4 +29,5 @@ pub extern "C" fn not_main() {
     }
     strt_setup();
     run_cl();
+    cl();
 }

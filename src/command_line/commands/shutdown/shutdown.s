@@ -1,5 +1,5 @@
-// put ARM to sleep mode
-// this puts all the cores to sleep (should)
+// put ARM to sleep mode (shutdown)
+// this should put all the cores to sleep
 .syntax unified
 .global main
 

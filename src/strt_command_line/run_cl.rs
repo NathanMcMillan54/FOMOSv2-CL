@@ -1,5 +1,8 @@
 // this will run the command line
 
+// it doesn't really run the command line
+// it's just a file that says you've made it this far so nothing has gone wrong
+
 use core::ptr;
 
 pub fn run_cl() {
