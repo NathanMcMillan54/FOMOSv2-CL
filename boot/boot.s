@@ -9,4 +9,4 @@ main:
     pop     {ip, pc}
 
 message:
-    .asciz "Starting setup...\n"
+    .asciz "Starting... \n"

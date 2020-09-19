@@ -6,10 +6,6 @@ use core::ptr;
 
 mod panic;
 
-// FOMOS
-mod fomos;
-use fomos::fomos;
-
 global_asm!(include_str!("start.s"));
 
 #[no_mangle]
@@ -21,5 +17,6 @@ pub extern "C" fn not_main() {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    fomos();
+    // start setup
+    // load command line
 }
