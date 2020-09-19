@@ -6,7 +6,10 @@ use core::ptr;
 
 mod panic;
 mod setup;
+use crate::setup::setup::strt_setup;
+
 mod command_line;
+use crate::command_line::run_cl::run_cl;
 
 global_asm!(include_str!("start.s"));
 
@@ -19,6 +22,6 @@ pub extern "C" fn not_main() {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    // start setup
-    // load command line
+    strt_setup();
+    run_cl();
 }
