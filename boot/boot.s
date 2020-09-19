@@ -1,5 +1,5 @@
 // start setup file
-
+/*
 .globl _start
 .extern LD_STACK_PTR
 
@@ -15,3 +15,4 @@ _start:
 system_off:
     ldr     x0, =PSCI_SYSTEM_OFF
     hvc     #0
+*/

@@ -23,7 +23,7 @@ fn next() {
 }
 
 fn strt_fomos() {
-    // run fomos.s
+    // run start.s
 }
 
 fn load_drivers() {
