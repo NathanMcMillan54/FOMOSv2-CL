@@ -12,8 +12,8 @@ global_asm!(include_str!("start.s"));
 mod setup;
 use crate::setup::setup::strt_setup;
 
-mod command_line;
-use crate::command_line::run_cl::run_cl;
+mod strt_command_line;
+use crate::strt_command_line::run_cl::run_cl;
 
 
 #[no_mangle]
