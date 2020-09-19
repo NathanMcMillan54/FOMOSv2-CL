@@ -5,6 +5,8 @@
 use core::ptr;
 
 mod panic;
+mod setup;
+mod command_line;
 
 global_asm!(include_str!("start.s"));
 
