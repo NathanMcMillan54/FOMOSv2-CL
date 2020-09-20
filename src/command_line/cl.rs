@@ -1,7 +1,18 @@
 use core::ptr;
 
+fn keyboard_drivers() {
+    // make sure keyboard drivers are still working
+}
+
+fn screen_drivers() {
+    // make sure screen drivers are still working
+}
+
 pub(crate) fn cl() {
-    // command line
+    // run drivers
+    keyboard_drivers();
+    screen_drivers();
+
     // TODO: get input working
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
     let out_str = b"Loading CL done \n\n";
