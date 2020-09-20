@@ -54,4 +54,18 @@ pub fn key_map() {
     let key_3x12 = key_lSquareBracket;
     let key_3x13 = key_rSquareBracket;
     let key_3x14 = key_fSlash;
+
+    // fourth row
+    let key_4x1 = key_capsLock;
+    let key_4x2 = key_a;
+    let key_4x3 = key_s;
+    let key_4x4 = key_d;
+    let key_4x5 = key_f;
+    let key_4x6 = key_g;
+    let key_4x7 = key_h;
+    let key_4x8 = key_j;
+    let key_4x9 = key_k;
+    let key_4x10 = key_l;
+    let key_4x11 = key_semicolon;
+
 }

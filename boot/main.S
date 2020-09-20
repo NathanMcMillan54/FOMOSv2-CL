@@ -1,4 +1,4 @@
-// start all assembly files (setup.s, start.s)
+// call FOMOS.c
     .syntax unified
 .global main
 main:
