@@ -22,4 +22,6 @@ In ``Documentation/Setup/`` it'll explain how to setup FOMOS.
 The command line loads
 
 - [ ] Get boot working
-- [ ] Make kernel image
+- [x] Make kernel image
+
+``boot/main.S`` can be compiled to ``.img``.
