@@ -1,2 +1,2 @@
-In boot/ it starts FOMOS.
-Read boot_process.txt to see how FOMOS boots.
+In boot/ it starts fomos.
+Read boot_process.txt to see how fomos boots.

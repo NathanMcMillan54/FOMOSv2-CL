@@ -2,6 +2,6 @@ To install build requirements run:
 
         sh install.sh
 
-That will install the requirements for building FOMOS.
+That will install the requirements for building fomos.
 
-After you've installed build requirements read build.txt to see how to build FOMOS.
+After you've installed build requirements read build.txt to see how to build fomos.

@@ -1,1 +1,1 @@
-FOMOS stands for: Free, Open source, Mobile, Operating, System
+fomos stands for: Free, Open source, Mobile, Operating, System

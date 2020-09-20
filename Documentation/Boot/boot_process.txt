@@ -1,13 +1,13 @@
-If you compiled all of FOMOS by running build.sh there will be a file added to boot/ called kernel.img which is a compiled file that came from kernel.s.
+If you compiled all of fomos by running build.sh there will be a file added to boot/ called kernel.img which is a compiled file that came from kernel.s.
 
 kernel.img:
     kernel.img is an image file that the bootloader will look for, when it finds kernel.img it will do everything it says
     to do (everything in kernel.s).
 
 kernel.s:
-    kernel.s runs boot/FOMOS.c. Assembly is nothing but characters and numbers everywhere, so kernel.s runs FOMOS.c because
-    C uses proper words and is easier to understand.
+    kernel.s runs boot/FOMOS.rs. Assembly is nothing but characters and numbers everywhere, so kernel.s runs FOMOS.rs because
+    Rust uses proper words and is easier to understand.
 
-FOMSO.c:
-    FOMOS.c runs on startup after kernel.s has called it. If you want FOMOS to do something on startup put it in this file.
-    FOMOS.c will start src/main.rs which is actually FOMOS.
+FOMOS.rs:
+    FOMOS.rs runs on startup after kernel.s has called it. If you want FOMOS to do something on startup put it in this file.
+    FOMOS.rs will start src/main.rs which is actually FOMOS.

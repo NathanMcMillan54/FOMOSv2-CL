@@ -1,2 +1,2 @@
-FOMOS is a mobile OS and most mobile devices have an ARM CPU, so FOMOS only works on ARM devices.
-If you are a developer read FOMOS/developer.txt, it'll talk about how to edit FOMOS and simulate it on other CPUs.
+fomos is a mobile OS and most mobile devices have an ARM CPU, so fomos only works on ARM devices.
+If you are a developer read fomos/developer.txt, it'll talk about how to edit fomos and simulate it on other CPUs.

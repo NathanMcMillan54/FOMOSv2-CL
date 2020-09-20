@@ -1,18 +1,21 @@
-// put arm assembly here to run FOMOS.c
+// put arm assembly here to run fomos.rs
 // compile this to img
 
-.text
-.global main
-main:
-        push {r7, lr}
+.globl _main
+.extern LD_STACK_PTR
 
-        mov r0, #1
-        ldr r1, =string
-        mov r2, #12
-        mov r7, #4
-        svc #0
+.section ".text.boot"
 
-        pop {r7, pc}
+_main:
+    ldr     x30, =LD_STACK_PTR
+    mov     sp, x30
+    bl      fomos
 
-.data
-string: .asciz "kernel.img \nkernel.s \n"
+// fomos is a function in FOMSO.rs
+
+.equ PSCI_SYSTEM_OFF, 0x84000008
+.globl system_off
+system_off:
+    ldr     x0, =PSCI_SYSTEM_OFF
+    hvc     #0
+
