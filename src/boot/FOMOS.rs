@@ -12,5 +12,6 @@ fn fomos() {
             ptr::write_volatile(UART0, *byte);
         }
     }
+    src_main();
     // start src/start.s
 }

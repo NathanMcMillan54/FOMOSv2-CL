@@ -1,5 +1,4 @@
-// put arm assembly here to run fomos.rs
-// compile this to img
+// compile this to o then img
 
 .globl _main
 .extern LD_STACK_PTR
