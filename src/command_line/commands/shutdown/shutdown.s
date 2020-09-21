@@ -1,11 +1,11 @@
 // put ARM to sleep mode (shutdown)
 // this should put all the cores to sleep
-.syntax unified
-.global main
+    .syntax unified
+.global sleep
 
-main:
+sleep:
       push    {ip, lr}             ; print shutdown
-      ldr     r0, =printShutdown
+      ldr     r0, =shMsg
       bl      printf
       mov     r0, #0    @ Return 0.
       pop     {ip, pc}
@@ -17,5 +17,5 @@ main:
       BNE   loop
 
 
-printShutdown:
+shMsg:
     .asciz "Shutting down... \n"

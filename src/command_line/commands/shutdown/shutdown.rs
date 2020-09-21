@@ -1,6 +1,7 @@
-fn shutdown() {
-    extern {
-        // call _start_sleep form shutdown.s
-        fn _start_sleep();
-    }
+extern "C" {
+    fn sleep() -> u64;
+}
+
+unsafe fn shutdown() {
+    sleep();
 }
