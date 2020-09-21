@@ -1,2 +1,2 @@
-In boot/ it starts fomos.
-Read boot_process.txt to see how fomos boots.
+After compiling FOMOS boot/ makes kernel.img, kernel.img starts all of FOMOS.
+Read boot_process.txt to see how FOMOS boots.

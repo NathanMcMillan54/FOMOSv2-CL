@@ -2,7 +2,8 @@
 #![no_main]
 #![feature(global_asm)]
 
-global_asm!(include_str!("boot/kernel.s"));
+// global_asm!(include_str!("../kernel.img"));
+global_asm!(include_str!("boot/kernel.img"));
 
 mod panic;
 
@@ -22,7 +23,7 @@ use crate::command_line::cl::cl;
 #[no_mangle]
 pub extern "C" fn not_main() {
     boot();
-    // if it gets this far everything is probably eorking
+    // if it gets this far everything is probably working
     strt_setup();
     run_cl();
     cl();

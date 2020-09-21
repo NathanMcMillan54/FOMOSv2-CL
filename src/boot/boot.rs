@@ -8,4 +8,5 @@ pub(crate) fn boot() {
             ptr::write_volatile(UART0, *byte);
         }
     }
+    // anything you want to run on startup put in here
 }
