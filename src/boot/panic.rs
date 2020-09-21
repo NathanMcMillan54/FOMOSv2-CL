@@ -1,17 +1,15 @@
-#![feature(global_asm)]
-
+use core::panic::PanicInfo;
 use core::ptr;
 
-global_asm!(include_str!("kernel.s"));
 
-fn fomos() {
+#[panic_handler]
+fn on_panic(_info: &PanicInfo) -> ! {
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"kernel.img \nkernel.s \nFOMOS.rs \n";
+    let out_str = b"There was a problem \n";
     for byte in out_str {
         unsafe {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    src_main();
-    // start src/start.s
+    loop {}
 }

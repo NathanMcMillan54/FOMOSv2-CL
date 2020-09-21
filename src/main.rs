@@ -2,12 +2,12 @@
 #![no_main]
 #![feature(global_asm)]
 
-use core::ptr;
+global_asm!(include_str!("boot/kernel.s"));
 
 mod panic;
 
-global_asm!(include_str!("start.s"));
-
+mod boot;
+use crate::boot::boot::boot;
 
 mod setup;
 use crate::setup::setup::strt_setup;
@@ -18,16 +18,13 @@ use crate::strt_command_line::run_cl::run_cl;
 mod command_line;
 use crate::command_line::cl::cl;
 
+
 #[no_mangle]
 pub extern "C" fn not_main() {
-    const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"Loading FOMOSv2-CL... \n";
-    for byte in out_str {
-        unsafe {
-            ptr::write_volatile(UART0, *byte);
-        }
-    }
+    boot();
+    // if it gets this far everything is probably eorking
     strt_setup();
     run_cl();
     cl();
+
 }
