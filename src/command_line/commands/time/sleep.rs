@@ -1,6 +1,6 @@
 use std::process;
 
-pub fn sleep_s() {
+pub(crate) fn sleep_s() {
     // sleep in seconds
     // 1 second = 30000 increase of a number in loop
     let argument;
@@ -18,7 +18,7 @@ pub fn sleep_s() {
     }
 }
 
-pub fn sleep_m() {
+pub(crate) fn sleep_m() {
     // sleep in minutes
     // 1 minute = 1800000 increase of a number in loop
     let argument;
@@ -36,7 +36,7 @@ pub fn sleep_m() {
     }
 }
 
-pub fn sleep_h() {
+pub(crate) fn sleep_h() {
     // sleep in hours
     // 1 hour = 108000000 increase of a number in a loop
     let argument;
