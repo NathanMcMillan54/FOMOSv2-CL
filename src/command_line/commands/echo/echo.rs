@@ -1,4 +1,4 @@
-fn echo() {
+pub(crate) fn echo() {
     let argument = "";
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
     let out_str = argument;
