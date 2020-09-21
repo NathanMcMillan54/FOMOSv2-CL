@@ -1,3 +1,12 @@
+#[path="../setup/mod.rs"]
+mod setup;
+use crate::strt_setup;
+
+#[path="../../drivers/mod.rs"]
+mod drivers;
+// use crate::start_loading_drivers;
+use crate::boot::boot::drivers::start_loading_drivers;
+
 use core::ptr;
 
 pub(crate) fn boot() {
@@ -9,4 +18,9 @@ pub(crate) fn boot() {
         }
     }
     // anything you want to run on startup put in here
+    let mut a = 1;
+    let mut b = 2;
+    a + b;
+    strt_setup();
+    start_loading_drivers();
 }
