@@ -1,1 +1,1 @@
-Turn kernel.s into kernel.o, then turn kernel.o into kernel.img
+Turn kernel.s into kernel.o, then turn kernel.o into ../../kernel.img

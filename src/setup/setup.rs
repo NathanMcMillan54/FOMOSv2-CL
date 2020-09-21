@@ -1,3 +1,5 @@
+#[path="../../drivers/mod.rs"]
+
 use core::ptr;
 
 pub(crate) fn strt_setup() {
