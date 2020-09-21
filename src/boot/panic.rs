@@ -1,11 +1,15 @@
+use core::panic::PanicInfo;
 use core::ptr;
 
-pub(crate) fn boot() {
+
+#[panic_handler]
+fn on_panic(_info: &PanicInfo) -> ! {
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"Booting... \n";
+    let out_str = b"There was a problem \n";
     for byte in out_str {
         unsafe {
             ptr::write_volatile(UART0, *byte);
         }
     }
+    loop {}
 }

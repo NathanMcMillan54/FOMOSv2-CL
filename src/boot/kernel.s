@@ -1,16 +1,16 @@
 // compile this to o then img
 
-.globl _main
+// start src/main.rs
+
+.globl _start
 .extern LD_STACK_PTR
 
 .section ".text.boot"
 
-_main:
+_start:
     ldr     x30, =LD_STACK_PTR
     mov     sp, x30
-    bl      fomos
-
-// fomos is a function in FOMSO.rs
+    bl      not_main
 
 .equ PSCI_SYSTEM_OFF, 0x84000008
 .globl system_off
