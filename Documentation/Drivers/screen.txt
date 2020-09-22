@@ -1,2 +1,2 @@
-In directory drivers/display/ you'll find the drivers for screens.
+In directory src/drivers/display/ you'll find the drivers for screens.
 Screen drivers right now are probably more important then keyboard drivers.

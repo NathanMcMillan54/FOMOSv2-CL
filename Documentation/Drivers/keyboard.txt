@@ -1,2 +1,2 @@
-In directory drivers/input/keyboard/ you'll find the drivers for USB keyboards.
+In directory src/drivers/input/keyboard/ you'll find the drivers for USB keyboards.
 For now it will only support US QWERTY keyboards until touch screen works for mobile devices.
