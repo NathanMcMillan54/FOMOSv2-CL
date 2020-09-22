@@ -1,6 +1,5 @@
-#[path="../setup/mod.rs"]
 use core::ptr;
-use crate::setup::setup::strt_setup;
+use crate::setup::setup;
 
 pub(crate) fn boot() {
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
@@ -10,5 +9,5 @@ pub(crate) fn boot() {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    strt_setup()
+    setup();
 }
