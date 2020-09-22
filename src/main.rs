@@ -16,6 +16,8 @@ use crate::command_line::cl::cl;
 mod drivers;
 
 mod setup;
+mod user;
+
 use crate::setup::setup;
 
 #[no_mangle]

@@ -1,3 +1,3 @@
-fn login() {
+pub(crate) fn login() {
     // get login working
 }
