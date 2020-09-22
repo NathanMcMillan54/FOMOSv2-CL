@@ -1,6 +1,6 @@
 pub mod drivers;
-use drivers::drivers;
+use drivers::load_drivers;
 
-fn load_drivers() {
-    drivers();
+fn command_line() {
+    load_drivers();
 }

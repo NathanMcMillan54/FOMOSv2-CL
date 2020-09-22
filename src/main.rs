@@ -10,9 +10,6 @@ mod panic;
 mod boot;
 use crate::boot::boot::boot;
 
-mod strt_command_line;
-use crate::strt_command_line::run_cl::run_cl;
-
 mod command_line;
 use crate::command_line::cl::cl;
 
@@ -24,9 +21,6 @@ use crate::setup::setup;
 #[no_mangle]
 pub extern "C" fn not_main() {
     boot();
-    // if it gets this far everything is probably working
-    // strt_setup();
-    run_cl();
-    cl();
 
+    cl();
 }
