@@ -5,7 +5,7 @@ use crate::drivers::keyboard::keyboard::arm_keyboard;
 use crate::user::login::login;
 use crate::drivers::display::screen::refresh_screen;
 
-fn setup_user() {
+/* fn setup_user() {
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
     let out_str = b"Login \n\n";
     for byte in out_str {
@@ -14,7 +14,7 @@ fn setup_user() {
         }
     }
     login();
-}
+} */
 
 fn setup_drivers() {
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
@@ -37,5 +37,5 @@ pub(crate) fn setup() {
         }
     }
     setup_drivers();
-    setup_user();
+    // setup_user();
 }
