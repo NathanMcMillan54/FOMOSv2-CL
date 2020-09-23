@@ -1,7 +1,7 @@
 use core::ptr;
 
 fn keyboard() {
-    // keyboard stuff
+    // connect this to keyboard.rs
 }
 
 fn display() {

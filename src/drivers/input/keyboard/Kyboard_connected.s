@@ -1,2 +1,1 @@
-// is keyboard connected?
-// if not put up error message
+// if the keyboard isn't connected show an error measge
