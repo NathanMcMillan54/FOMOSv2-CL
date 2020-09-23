@@ -1,5 +1,5 @@
-    .text
-    .global main
+.text
+.global keyboard
 
 keyboard:
     sub sp, sp, #4
