@@ -69,3 +69,11 @@ pub fn key_map() {
     let key_4x11 = key_semicolon;
 
 }
+
+// main function
+fn keyboard() {
+    loop {
+        // run keyboard_connected.s
+        // run keyboard.s
+    }
+}
