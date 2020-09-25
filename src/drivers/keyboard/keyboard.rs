@@ -1,5 +1,4 @@
 use core::ptr;
-// use cc;
 // make support for US QWERTY keyboard first
 
 pub(crate) fn arm_keyboard() {
@@ -11,18 +10,43 @@ pub(crate) fn arm_keyboard() {
         }
     }
     // run keyboard_connected.s
-    // run keyboard.s
-    /* cc::Build::new()
-        .file("keyboard.s")
-        .compile("keyboard");
 
-    extern {
-        fn keyboard();
-    }
+    // this is keyboard.s
+/*     unsafe {
+        asm!(".text
+.global keyboard
 
-    pub fn keyboard_input() {
-        unsafe {
-            keyboard();
-        }
+keyboard:
+    sub sp, sp, #4
+    str lr, [sp, #0]
+
+    # get ready for input
+    ldr r0, =prompt
+    bl  printf
+
+    # read the input
+    ldr r0, =format
+    sub sp, sp, #4
+    mov r1, sp
+    bl  scanf
+    ldr r2, [sp, #0]
+    add sp, sp, #4
+
+    # print the input
+    mov r1, r2
+    bl  printf
+
+    ldr lr, [sp, #0]
+    add sp, sp, #4
+    mov pc, lr
+
+    .data
+
+format:
+    .asciz '%d \n'
+
+prompt:
+    .asciz '$user'
+");
     } */
 }
