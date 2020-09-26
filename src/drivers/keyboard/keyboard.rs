@@ -13,7 +13,8 @@ pub(crate) fn arm_keyboard() {
 
     // this is keyboard.s
 /*     unsafe {
-        asm!(".text
+        asm!(
+.text
 .global keyboard
 
 keyboard:
@@ -43,10 +44,10 @@ keyboard:
     .data
 
 format:
-    .asciz '%d \n'
+    inputformat: .asciz "%d \n"
 
 prompt:
-    .asciz '$user'
-");
+    .asciz "$user"
+);
     } */
 }
