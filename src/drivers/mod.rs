@@ -1,6 +1,3 @@
-pub mod drivers;
-use drivers::load_drivers;
-
 pub mod keyboard;
 use keyboard::keyboard::arm_keyboard;
 

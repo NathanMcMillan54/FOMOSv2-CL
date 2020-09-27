@@ -2,7 +2,7 @@
 # It is not intended for manual editing.
 [[package]]
 name = "FOMOSv2-CL"
-version = "2.0.3"
+version = "2.0.4"
 dependencies = [
  "cc",
 ]
