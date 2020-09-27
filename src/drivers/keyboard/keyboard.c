@@ -1,4 +1,7 @@
-//
-// Created by Nathan McMillan on 2020-09-26.
-//
+#include <stdio.h>
 
+void keybaord() {
+    char keyboard[50];
+    scanf("%s", keyboard);
+    printf("%s", keyboard);
+}
