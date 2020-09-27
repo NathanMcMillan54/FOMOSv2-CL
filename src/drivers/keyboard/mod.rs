@@ -1,5 +1,2 @@
 pub mod keyboard;
-
-fn load_keyboard() {
-    keyboard::arm_keyboard();
-}
+use keyboard::arm_keyboard;
