@@ -10,44 +10,41 @@ pub(crate) fn arm_keyboard() {
         }
     }
     // run keyboard_connected.s
-
     // this is keyboard.s
-/*     unsafe {
-        asm!(
-.text
-.global keyboard
+    /* unsafe {
+        asm!(".text
+              .global keyboard
 
-keyboard:
-    sub sp, sp, #4
-    str lr, [sp, #0]
+              keyboard:
+                  sub sp, sp, #4
+                  str lr, [sp, #0]
 
-    # get ready for input
-    ldr r0, =prompt
-    bl  printf
+                  # get ready for input
+                  ldr r0, =prompt
+                  bl  printf
 
-    # read the input
-    ldr r0, =format
-    sub sp, sp, #4
-    mov r1, sp
-    bl  scanf
-    ldr r2, [sp, #0]
-    add sp, sp, #4
+                  # read the input
+                  ldr r0, =format
+                  sub sp, sp, #4
+                  mov r1, sp
+                  bl  scanf
+                  ldr r2, [sp, #0]
+                  add sp, sp, #4
 
-    # print the input
-    mov r1, r2
-    bl  printf
+                  # print the input
+                  mov r1, r2
+                  bl  printf
 
-    ldr lr, [sp, #0]
-    add sp, sp, #4
-    mov pc, lr
+                  ldr lr, [sp, #0]
+                  add sp, sp, #4
+                  mov pc, lr
 
-    .data
+                  .data
 
-format:
-    inputformat: .asciz "%d \n"
+                  format:
+                      .asciz "%d"
 
-prompt:
-    .asciz "$user"
-);
+                  prompt:
+                      .asciz " "");
     } */
 }

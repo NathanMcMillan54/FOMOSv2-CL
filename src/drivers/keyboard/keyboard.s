@@ -28,7 +28,7 @@ keyboard:
     .data
 
 format:
-    .asciz "%d \n"
+    inputformat: .asciz "%d"
 
 prompt:
-    .asciz "$user"
+    .asciz " "
