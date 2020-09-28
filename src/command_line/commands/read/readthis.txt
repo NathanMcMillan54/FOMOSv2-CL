@@ -1,0 +1,2 @@
+This directory will probably become the keyboard drivers.
+read will be a command to get input in the command line.
