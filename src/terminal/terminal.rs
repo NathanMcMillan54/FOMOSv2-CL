@@ -1,13 +1,15 @@
 use core::ptr;
 
-pub(crate) fn login() {
+
+pub(crate)fn terminal() {
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"Login \n";
+    let out_str = b"\nCL \n";
     for byte in out_str {
         unsafe {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    // this could be the test to see if input works
-    // run keyboard
+    loop {
+
+    }
 }

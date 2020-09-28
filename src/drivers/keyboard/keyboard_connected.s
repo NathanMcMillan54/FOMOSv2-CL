@@ -1,1 +1,0 @@
-// if the keyboard isn't connected show an error measge

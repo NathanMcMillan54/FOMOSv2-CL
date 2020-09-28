@@ -11,15 +11,15 @@ mod panic;
 mod boot;
 use crate::boot::boot::boot;
 
-mod command_line;
-use crate::command_line::cl::cl;
+mod terminal;
+use crate::terminal::terminal::terminal;
 
 mod drivers;
 mod setup;
-mod user;
+
 
 #[no_mangle]
 pub extern "C" fn not_main() {
     boot();
-    cl();
+    terminal();
 }
