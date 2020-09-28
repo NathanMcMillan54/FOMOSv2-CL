@@ -23,3 +23,4 @@ The command line loads
 
 - [ ] Get boot working
 - [ ] Make kernel image
+- [ ] Make support for RPi
