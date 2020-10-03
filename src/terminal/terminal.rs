@@ -6,10 +6,10 @@ pub(crate)fn terminal() {
     let out_str = b"\nCL \n";
     for byte in out_str {
         unsafe {
-            ptr::write_volatile(UART0, *byte);
+            ptr::write_volatile(UART0, **&byte);
         }
     }
-    echo();
+    echo("FOMOSv2-CL loading done");
     loop {
 
     }

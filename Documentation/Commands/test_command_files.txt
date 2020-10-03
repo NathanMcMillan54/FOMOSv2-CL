@@ -1,0 +1,2 @@
+Any file that is in the directory src/commands/ that is named 'test*command name*' can be compiled with rustc and run on
+any OS.
