@@ -1,5 +1,5 @@
 use core::ptr;
-
+use crate::commands::echo::echo::echo;
 
 pub(crate)fn terminal() {
     const UART0: *mut u8 = 0x0900_0000 as *mut u8;
@@ -9,6 +9,7 @@ pub(crate)fn terminal() {
             ptr::write_volatile(UART0, *byte);
         }
     }
+    echo();
     loop {
 
     }

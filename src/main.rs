@@ -16,6 +16,7 @@ use crate::terminal::terminal::terminal;
 
 mod drivers;
 mod setup;
+mod commands;
 
 
 #[no_mangle]
