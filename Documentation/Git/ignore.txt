@@ -1,0 +1,2 @@
+In any directory that compiles a file it will have a .gitignore file so the compiled files don't get added to git.
+If you make a file that has to be compiled add the compiled file name to a .gitignore file.
