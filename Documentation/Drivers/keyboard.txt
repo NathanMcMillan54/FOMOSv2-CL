@@ -3,3 +3,13 @@ For now it will only support US QWERTY keyboards until touch screen works for mo
 
 
 The first device to support FOMOS will be an RPi, so the keyboard drivers for now will work for the RPi.
+
+
+Linux testing
+Run:
+    make all
+    ./keyboard_drivers
+    echo $?
+
+Output:
+    1
