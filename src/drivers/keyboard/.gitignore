@@ -1,3 +1,3 @@
 keyboard_drivers
-keymap_rust.o
-keymap_c.o
+*.o
+*.lock

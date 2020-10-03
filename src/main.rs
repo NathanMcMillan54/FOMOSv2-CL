@@ -3,10 +3,12 @@
 #![feature(global_asm)]
 #![feature(asm)]
 
-// global_asm!(include_str!("../kernel.img"));
 global_asm!(include_str!("boot/kernel.s"));
 
 mod panic;
+mod drivers;
+mod setup;
+mod commands;
 
 mod boot;
 use crate::boot::boot::boot;
@@ -14,9 +16,6 @@ use crate::boot::boot::boot;
 mod terminal;
 use crate::terminal::terminal::terminal;
 
-mod drivers;
-mod setup;
-mod commands;
 
 
 #[no_mangle]
