@@ -1,1 +1,9 @@
 The keyboard drivers might be copied from https://github.com/houqp/qmk_firmware/tree/dfe20d75ad93cd7c025c2038d0e7a5838a04c69f/rust
+
+Run:
+    make all
+    ./keyboard_drivers
+    echo $?
+
+Output:
+    1
