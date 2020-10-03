@@ -11,5 +11,7 @@ fn on_panic(_info: &PanicInfo) -> ! {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    loop {}
+    loop {
+
+    }
 }

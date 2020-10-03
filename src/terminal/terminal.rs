@@ -2,9 +2,10 @@ use core::ptr;
 use crate::commands::echo::echo::echo;
 
 
-
 fn keyboard() {
-    // run keyboard stuff
+    loop {
+        // input
+    }
 }
 
 pub(crate)fn terminal() {
@@ -15,15 +16,9 @@ pub(crate)fn terminal() {
             ptr::write_volatile(UART0, **&byte);
         }
     }
-    echo("FOMOSv2-CL loading done");
+    echo(b"FOMOSv2-CL loading done \n");
     loop {
-        const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-        let out_str = b"$>> ";
-        for byte in out_str {
-            unsafe {
-                ptr::write_volatile(UART0, **&byte);
-            }
-        }
+        echo(b"$>> ");
         keyboard();
     }
 }
