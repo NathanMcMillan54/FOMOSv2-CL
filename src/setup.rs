@@ -1,28 +1,18 @@
 use core::ptr;
 
+use crate::commands::echo::echo::echo;
+
 use crate::drivers::display::screen::refresh_screen;
 use crate::drivers::keyboard::keyboard::arm_keyboard;
 
 
 fn setup_drivers() {
-    const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"Setting up drivers... \n";
-    for byte in out_str {
-        unsafe {
-            ptr::write_volatile(UART0, *byte);
-        }
-    }
+    echo(b"Setting up drivers... \n");
     arm_keyboard();
     refresh_screen();
 }
 
 pub(crate) fn setup() {
-    const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"Setting up FOMOS... \n";
-    for byte in out_str {
-        unsafe {
-            ptr::write_volatile(UART0, *byte);
-        }
-    }
+    echo(b"Setting up FOMOS... \n");
     setup_drivers();
 }

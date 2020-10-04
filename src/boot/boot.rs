@@ -1,13 +1,7 @@
-use core::ptr;
+use crate::commands::echo::echo::echo;
 use crate::setup::setup;
 
 pub(crate) fn boot() {
-    const UART0: *mut u8 = 0x0900_0000 as *mut u8;
-    let out_str = b"Booting... Loading FOMOS... \n";
-    for byte in out_str {
-        unsafe {
-            ptr::write_volatile(UART0, *byte);
-        }
-    }
+    echo(b"Booting... Loading FOMOS... \n");
     setup();
 }
