@@ -1,8 +1,6 @@
 // this might only work on x86_64
 // copied and edited from https://os.phil-opp.com/vga-text-mode/
 
-
-
 // colors
 #[allow(dead_code)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -103,7 +101,7 @@ pub fn test_vga() {
         column_position: 0,
         color_code: ColorCode::new(Color::Yellow, Color::Black),
         //
-        buffer: unsafe { &mut *(0xb8000 as *mut Buffer) },
+        buffer: unsafe { &mut *(0x0900_0000 as *mut Buffer) },
     };
 
     writer.write_byte(b'V');

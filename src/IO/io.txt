@@ -1,1 +1,0 @@
-This is going to be based off http://www.randomhacks.net/2015/11/09/bare-metal-rust-cpu-port-io/

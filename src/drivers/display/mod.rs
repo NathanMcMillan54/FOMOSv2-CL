@@ -1,2 +1,2 @@
 pub mod screen;
-mod vga_buffer;
+pub mod vga_buffer;

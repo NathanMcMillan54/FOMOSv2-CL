@@ -18,10 +18,8 @@ mod terminal;
 use crate::terminal::terminal::terminal;
 
 
-
 #[no_mangle]
-pub extern "C" fn not_main() -> ! {
+pub extern "C" fn not_main() {
     boot();
     terminal();
-    loop {}
 }
