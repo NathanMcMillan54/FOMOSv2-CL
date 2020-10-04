@@ -1,6 +1,6 @@
 use core::ptr;
 use crate::commands::echo::echo::echo;
-use crate::commands::shutdown::shutdown::shutdown;
+use crate::shutdown::shutdown::shutdown;
 
 
 pub(crate)fn terminal() {

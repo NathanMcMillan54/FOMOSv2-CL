@@ -9,6 +9,7 @@ mod panic;
 mod drivers;
 mod setup;
 mod commands;
+mod shutdown;
 
 mod boot;
 use crate::boot::boot::boot;
@@ -19,7 +20,8 @@ use crate::terminal::terminal::terminal;
 
 
 #[no_mangle]
-pub extern "C" fn not_main() {
+pub extern "C" fn not_main() -> ! {
     boot();
     terminal();
+    loop {}
 }

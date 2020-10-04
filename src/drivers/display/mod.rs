@@ -1,2 +1,4 @@
-pub(crate) mod screen;
+pub mod screen;
+mod vga_buffer;
+
 use screen::refresh_screen;
