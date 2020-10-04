@@ -3,7 +3,7 @@
 #![feature(global_asm)]
 #![feature(asm)]
 
-global_asm!(include_str!("boot/kernel.s"));
+global_asm!(include_str!("boot/arm-boot.s"));
 
 mod panic;
 mod drivers;
