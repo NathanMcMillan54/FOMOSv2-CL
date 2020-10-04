@@ -1,5 +1,3 @@
-use core::ptr;
-
 use crate::commands::echo::echo::echo;
 
 use crate::drivers::display::screen::refresh_screen;

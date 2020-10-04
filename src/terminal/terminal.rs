@@ -1,4 +1,3 @@
-use core::ptr;
 use crate::commands::echo::echo::echo;
 use crate::shutdown::shutdown::shutdown;
 
