@@ -17,7 +17,9 @@ In ``Documentation/Setup/`` it'll explain how to setup fomos.
 - [x] Write proper documentation
 - [x] Get setup working
 - [x] Get screen drivers working
+
 VGA works on x86_64
+
 - [ ] Get keyboard drivers working
 - [x] Get command line working
 
