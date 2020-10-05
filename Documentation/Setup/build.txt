@@ -1,5 +1,5 @@
-After you've installed all the requirements you need to build fomos.
-Run:
-        sh build.sh
+To setup FOMOS run:
+    ./FOMOS
 
-That will build fomos, it'll take a while since you're building an entire OS.
+There will be two options that will come up, (ARM and x86) you'll have to type which CPU you want FOMOS to run on. When
+you type your CPU name FOMOS will install the build requirements and then build FOMOS.

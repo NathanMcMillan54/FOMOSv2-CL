@@ -1,13 +1,9 @@
-If you compiled all of FOMOS by running build.sh there will be a file added to the top directory called kernel.img which is a compiled file that came from src/boot/kernel.s.
+This will explain the booting process of FOMOS on diffrent CPUs.
 
-kernel.img:
-    kernel.img is an image file that the bootloader will look for, when it finds kernel.img it will do everything it says
-    to do (everything in src/boot/kernel.s).
+ARM:
+The ARM boot directory can be found in src/. In arch/arm/ there should be a image file that will be made after building
+FOMOS, that will run ARM FOMOS on startup. That image file should run src/boot/arm-booot.s which runs src/main.rs which
+runs FOMOS.
 
-kernel.s:
-    kernel.s runs src/main.rs. Assembly is nothing but characters and numbers everywhere, so kernel.s runs main.rs because
-    Rust uses proper words and is easier to understand.
-
-main.rs:
-    main.rs runs on startup after kernel.s has called it. If you want FOMOS to do something on startup put it in
-    boot/boot.rs.
+x86:
+There is no boot for x86 yet.
