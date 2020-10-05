@@ -14,7 +14,7 @@ In ``Documentation/Setup/`` it'll explain how to setup fomos.
 
 
 ## TODO
-- [x] Write proper documentation
+- [ ] Write proper documentation
 - [x] Get setup working
 - [x] Get screen drivers working
 
