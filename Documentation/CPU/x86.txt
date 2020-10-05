@@ -1,0 +1,1 @@
+FOMOSv2-CL is intended for ARM CPUs. In the directory x86/ it has all the things needed for FOMOS to run on x86 CPUs.

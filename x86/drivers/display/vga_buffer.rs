@@ -1,6 +1,3 @@
-// this might only work on x86_64
-// copied and edited from https://os.phil-opp.com/vga-text-mode/
-
 // colors
 #[allow(dead_code)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
