@@ -1,5 +1,3 @@
-// compile this to o then img
-
 // start src/main.rs
 
 .globl _start

@@ -99,11 +99,10 @@ impl Writer {
 pub fn test_vga() {
     let mut writer = Writer {
         column_position: 0,
-        color_code: ColorCode::new(Color::Yellow, Color::Black),
+        color_code: ColorCode::new(Color::White, Color::Black),
         //
-        buffer: unsafe { &mut *(0x0900_0000 as *mut Buffer) },
+        buffer: unsafe { &mut *(0xb8000 as *mut Buffer) },
     };
 
-    writer.write_byte(b'V');
-    writer.write_string("GA test");
+    writer.write_string("VGA test");
 }

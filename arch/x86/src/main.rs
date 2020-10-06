@@ -1,3 +1,10 @@
+#![no_std]
+#![no_main]
+#![feature(global_asm)]
+#![feature(asm)]
+
+// global_asm!(include_str!("boot/x86-boot.s"));
+
 static FOMOS: &[u8] = b"FOMOSv2-CL \n";
 
 #[no_mangle]
