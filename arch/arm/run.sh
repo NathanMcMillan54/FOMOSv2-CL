@@ -5,5 +5,5 @@ qemu-system-aarch64 -machine virt \
   -cpu cortex-a53 \
   -nographic \
   -k en \
-  -kernel target/aarch64-unknown-none/debug/FOMOSv2-CL
+  -kernel target/arm-FOMOSv2/debug/FOMOSv2-CL
 

@@ -6,4 +6,4 @@ sh compile_drivers.sh
 cd ../../
 echo "Compiling FOMOS..."
 rm -rf target/
-cargo xbuild --target=aarch64-unknown-none.json
+cargo xbuild --target=arm-FOMOSv2.json
