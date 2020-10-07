@@ -3,19 +3,22 @@
 # shellcheck disable=SC2034
 for i in 1 2 3 4 5
 do
-  read -p "ARM or x86
+  read -p "ARM or x86_64
 " CPU_type
   if [ "$CPU_type" = "ARM" ]; then
       cd arch/arm/
       sh install.sh
       sh build.sh
+      sh img.sh
       exit
-  elif [ "$CPU_type" = "x86" ]; then
+  elif [ "$CPU_type" = "x86_64" ]; then
       cd arch/x86
+      sh install.sh
       sh build.sh
+      sh img.sh
       exit
   else
-    echo "Enter ARM or x86"
+    echo "Enter ARM or x86_64"
     echo " "
   fi
 done
