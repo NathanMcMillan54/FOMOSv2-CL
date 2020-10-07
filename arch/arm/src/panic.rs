@@ -1,5 +1,4 @@
 use core::panic::PanicInfo;
-use core::ptr;
 
 
 #[panic_handler]
