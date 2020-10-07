@@ -6,4 +6,3 @@ qemu-system-aarch64 -machine virt \
   -nographic \
   -k en \
   -kernel target/arm-FOMOSv2/debug/FOMOSv2-CL
-

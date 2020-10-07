@@ -1,0 +1,7 @@
+In arch/x86_64-C-FOMOS/ there is nothing actually connected to FOMOS. It is FOMOS running on x86_64 CPU but instead of
+using Rust it uses C. Some parts of FOMOS will be translated into C so some OS developers who are new to Rust can
+understand how FOMOS works.
+
+Run:
+    sh build.sh
+    sh run.sh
