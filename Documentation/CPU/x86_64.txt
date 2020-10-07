@@ -1,2 +1,3 @@
 FOMOSv2-CL is intended for ARM CPUs. In the directory x86/ it has all the things needed for FOMOS to run on x86 CPUs.
-Most of the x86 support for FOMOS is from https://os.phil-opp.com/
+Most of the x86_64 support for FOMOS is from https://os.phil-opp.com/ and
+https://github.com/cirosantilli/x86-bare-metal-examples
