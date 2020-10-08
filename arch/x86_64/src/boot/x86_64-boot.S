@@ -1,7 +1,7 @@
 .code16
 .text
-.global mystart
-mystart:
+.global _start
+_start:
     ljmp $0, $.setcs
 .setcs:
     xor %ax, %ax
