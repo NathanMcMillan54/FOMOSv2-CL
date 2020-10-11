@@ -19,14 +19,14 @@ like OS.
 
 ### FOMOS
 - [ ] Write proper documentation
-- [ ] Make all commands work on all CPUs
+- [ ] Make all commands work on most CPUs
 
 ### ARM
 - [x] Get setup working
 - [ ] Get drivers working
 - [x] Get command line working
-- [ ] Get boot working
-- [ ] Make kernel image
+- [x] Get boot working
+- [ ] Make OS image
 - [ ] Make support for RPi
 
 
@@ -34,6 +34,6 @@ like OS.
 - [ ] Get setup working
 - [ ] Get drivers working
 - [ ] Get command line working
-- [ ] Get boot working
-- [x] Make kernel image
+- [ ] Get boot working (from assembly)
+- [x] Make OS image
 
