@@ -1,13 +1,10 @@
-.code16
-.text
-.global _start
+.globl _start
+.extern LD_STACK_PTR
+
+.section ".text.boot"
+
 _start:
-    ljmp $0, $.setcs
-.setcs:
-    xor %ax, %ax
-    mov %ax, %ds
-    mov %ax, %es
-    mov %ax, %ss
-    mov $__stack_top, %esp
-    cld
-    call not_main
+    ldr     x30, =LD_STACK_PTR
+    mov     sp, x30
+    bl      not_main
+

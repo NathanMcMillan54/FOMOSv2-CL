@@ -1,7 +1,7 @@
 ENTRY(_start)
 SECTIONS
 {
-    . = 0x40080000;
+    . = 0x000060160;
     .text.boot : { *(.text.boot) }
     .text : { *(.text) }
     .data : { *(.data) }
@@ -9,6 +9,6 @@ SECTIONS
     .bss : { *(.bss) }
 
     . = ALIGN(8);
-    . = . + 0x4000;
+    . = . + 0x60160;
     LD_STACK_PTR = .;
 }

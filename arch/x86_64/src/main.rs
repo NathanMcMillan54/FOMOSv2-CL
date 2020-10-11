@@ -7,7 +7,7 @@ mod commands;
 static FOMOS: &[u8] = b"FOMOSv2-CL v2.2.5";
 
 #[no_mangle]
-pub extern "C" fn _start() -> ! {
+pub extern fn _start() -> ! {
     let vga_buffer = 0xb8000 as *mut u8;
 
     for (i, &byte) in FOMOS.iter().enumerate() {
