@@ -1,2 +1,0 @@
-FOMOS stands for: Free, Open source, Mobile, Operating, System
-FOMOS is an OS made for ARM CPUs and will one day run on mobile devices or cheap boards like the RPI.

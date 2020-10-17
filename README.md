@@ -1,39 +1,32 @@
-# FOMOSv2-CL
-FOMOS stands for: Free, Open source, Moblie, Operating, System
+## FOMOSv2-CL v2.3.5 running on Linux kernel v5.9
 
-Website: [sbfomos.org](https://sbfomos.org/fomos)
-
-#
-
-FOMOSv2-CL is the second version of FOMOS.
-[FOMOSv1-Yellow](https://github.com/NathanMcMillan54/FOMOSv1-Yellow) was a GUI replacement for Ubuntu and it could be 
-used on mobile devices. This will be an actual operating system. The CL in FOMOSv2-CL stands for: Command Line. FOMOSv2 
-won't have a GUI it'll just be a terminal.
-
-# Setup
-In ``Documentation/Setup/`` it'll explain how to setup FOMOSv2-CL. It's recomended that you compile on Linux or a Linux
-like OS.
-
-
-## TODO
 
 ### FOMOS
-- [ ] Write proper documentation
-- [ ] Make all commands work on most CPUs
+FOMOS stands for: Free, Opensource, Mobile, Operating, System. FOMOS is an OS based off Linux that is meant to run on
+mobile devices.
 
-### ARM
-- [x] Get setup working
-- [ ] Get drivers working
-- [x] Get command line working
-- [x] Get boot working
-- [ ] Make OS image
-- [ ] Make support for RPi
+Most mobile devices have ARM CPUs so most development will be done in ``arch/arm/`` or ``arch/arm64``. FOMOS will 
+probably be supported on a simple device like the RPi first.
 
+The Linux kernel is mainly written in C which is almost 50 years old, FOMOS will be written in Rust which just came out 
+so it will hopefully be supported longer. Eventually parts of the Linux kernel will have to be replaced with Rust so 
+they can work together easier.
 
-### x86
-- [ ] Get setup working
-- [ ] Get drivers working
-- [ ] Get command line working
-- [ ] Get boot working (from assembly)
-- [x] Make OS image
+### Linux
+There are several guides for kernel developers and users. These guides can be rendered in a number of formats, like HTML
+and PDF. Please read ``Documentation/admin-guide/README.rst`` first.
 
+In order to build the documentation, use ``make htmldocs`` or ``make pdfdocs``. The formatted documentation can also be 
+read online at:
+
+[https://www.kernel.org/doc/html/latest/](https://www.kernel.org/doc/html/latest/)
+
+There are various text files in the Documentation/ subdirectory, several of them using the Restructured Text markup 
+notation.
+
+Please read the ``Documentation/process/changes.rst`` file, as it contains the requirements for building and running the
+kernel, and information about the problems which may result by upgrading your kernel.
+
+#### TODO
+- [ ] Get Linux to run a simple Rust file (important)
+- [ ] Write Documentation for FOMOS (not very important now)

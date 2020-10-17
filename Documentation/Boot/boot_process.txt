@@ -1,9 +1,0 @@
-This will explain the booting process of FOMOS on diffrent CPUs.
-
-ARM:
-The ARM boot directory can be found in src/. In arch/arm/ there should be a image file that will be made after building
-FOMOS, that will run ARM FOMOS on startup. That image file should run src/boot/arm-booot.s which runs src/main.rs which
-runs FOMOS.
-
-x86:
-There is no boot for x86 yet.

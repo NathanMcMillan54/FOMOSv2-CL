@@ -1,2 +1,0 @@
-In the top directory there is a directory called commands/, it has all the commands that works on both ARM and x86_64.
-It also has any commands that can detect CPU brand then make support for that CPU.

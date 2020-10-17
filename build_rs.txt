@@ -1,9 +1,0 @@
-build.rs
-
-extern crate cc;
-
-fn main() {
-    cc::Build::new()
-        .file("cpu.cpp")
-        .compile("cpu");
-}
