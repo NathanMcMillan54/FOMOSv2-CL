@@ -1,5 +1,6 @@
 .idea
 target/
+tools/
 *.o
 *.bin
 *.img
