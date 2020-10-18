@@ -1,0 +1,9 @@
+[package]
+name = "FOMOS"
+version = "2.3.5"
+edition = "2018"
+
+[dependencies]
+
+[build-dependencies]
+cc = "1.0.61"

@@ -1,0 +1,5 @@
+use cc;
+
+fn main() {
+
+}
