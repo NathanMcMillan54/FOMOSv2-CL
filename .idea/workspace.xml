@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/init/FOMOS/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/arch/arm/kernel/FOMOS/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d617ad89-0a4a-4bab-8e7b-e1e47bf20515" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="d34l4gox" />
+  </component>
+  <component name="ProjectId" id="1io9LxG9pAYiInZmtFmXs7Y7GXD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.hideNoCargoProjectNotifications/home/nathan/Desktop/FOMOSv2-CL/FOMOS/src/main.rs" value="true" />
+    <property name="org.rust.hideNoCargoProjectNotifications/home/nathan/Desktop/FOMOSv2-CL/FOMOS/src/panic.rs" value="true" />
+    <property name="org.rust.hideNoCargoProjectNotifications/home/nathan/Desktop/FOMOSv2-CL/arch/arm/FOMOS/Cargo.toml" value="true" />
+    <property name="org.rust.hideNoCargoProjectNotifications/home/nathan/Desktop/FOMOSv2-CL/arch/arm/FOMOS/src/main.rs" value="true" />
+    <property name="org.rust.hideNoCargoProjectNotifications/home/nathan/Desktop/FOMOSv2-CL/arch/arm/src/main.rs" value="true" />
+    <property name="org.rust.hideNoCargoProjectNotifications/home/nathan/Desktop/FOMOSv2-CL/arch/arm/src/panic.rs" value="true" />
+    <property name="org.rust.hideNoCargoProjectNotifications/home/nathan/Desktop/FOMOSv2-CL/init/FOMOS.rs" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/arch/arm/kernel" />
+      <recent name="$PROJECT_DIR$/init" />
+    </key>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d617ad89-0a4a-4bab-8e7b-e1e47bf20515" name="Default Changelist" comment="" />
+      <created>1602563028039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602563028039</updated>
+      <workItem from="1602563029567" duration="929000" />
+      <workItem from="1602618000527" duration="9000" />
+      <workItem from="1602618227076" duration="723000" />
+      <workItem from="1602949916365" duration="322000" />
+      <workItem from="1602950362884" duration="7226000" />
+      <workItem from="1603022446484" duration="9584000" />
+      <workItem from="1603056264819" duration="757000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602990718875">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602990718875" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1602991950354">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1602991950354" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1602972053695">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1602972053695" />
+  </component>
+</project>
