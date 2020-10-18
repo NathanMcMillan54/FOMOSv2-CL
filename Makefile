@@ -380,18 +380,6 @@ ifeq ($(ARCH),x86_64)
         SRCARCH := x86
 endif
 
-# Additional ARCH settings for sparc
-ifeq ($(ARCH),sparc32)
-       SRCARCH := sparc
-endif
-ifeq ($(ARCH),sparc64)
-       SRCARCH := sparc
-endif
-
-# Additional ARCH settings for sh
-ifeq ($(ARCH),sh64)
-       SRCARCH := sh
-endif
 
 KCONFIG_CONFIG	?= .config
 export KCONFIG_CONFIG
