@@ -1,3 +1,0 @@
-The boot directory can be found in arch/CPU-brand/boot/
-No matter what CPU you are using there will be a directory named boot/ that you can find. Read boot_process.txt to know
-how FOMOS boots from different CPU's.

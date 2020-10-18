@@ -1,3 +1,0 @@
-FOMOS is an open source mobile operating system made with Rust.
-
-Read future_fomos.txt so you can understand what FOMOS is supposed to be

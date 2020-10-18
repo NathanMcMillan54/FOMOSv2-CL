@@ -1,9 +1,0 @@
-When you compile a Rust file with Cargo a directory called target/ will be made with all the compiled Rust files in it.
-
-fomos is made almost entirely with Rust so compiled files will go into target/. If you run build.sh it compiles fomos and
-makes target/ with all compiled files. When you run run.sh to simulate fomos it says to go into
-target/aarch64-unknown-none/debug/ and then runs file FOMSOv2-CL. FOMOSv2-CL file runs src/start.s then start.s runs src/main.rs
-etc...
-
-So don't delete anything in target/ then put fomos on a device. If you're going to change something in there then delete
-the entire directory.

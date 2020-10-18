@@ -1,1 +1,0 @@
-Go into the CPU directory that you are working in (arch/CPU). Run sh build.sh
