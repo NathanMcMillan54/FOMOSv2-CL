@@ -1,3 +1,0 @@
-fn start_kernel() {
-
-}

@@ -99,8 +99,6 @@
 #include <linux/kcsan.h>
 #include <linux/init_syscalls.h>
 
-#include "../include/FOMOS/strt_FOMOS-kenrel.h"
-
 #include <asm/io.h>
 #include <asm/bugs.h>
 #include <asm/setup.h>
@@ -1051,8 +1049,6 @@ asmlinkage __visible void __init __no_sanitize_address start_kernel(void)
 	arch_call_rest_init();
 
 	prevent_tail_call_optimization();
-
-	strt_FOMOS_kernel();
 }
 
 /* Call all constructor functions linked into the kernel. */
