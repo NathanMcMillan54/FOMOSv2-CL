@@ -3,7 +3,7 @@
 #![feature(global_asm)]
 #![feature(asm)]
 
-global_asm!(include_str!("../strt_FOMOS.s"));
+global_asm!(include_str!("../strt_FOMOS.S"));
 
 mod panic;
 
