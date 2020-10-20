@@ -8,7 +8,5 @@ pub(crate) fn x86() {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    // detect segmentation fault
-    // if there is a segmentation fault then the cpu isn't supported
-    // if the cpu isn't supported loop until the cpu crashes
+
 }

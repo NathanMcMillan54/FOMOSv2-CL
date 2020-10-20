@@ -8,8 +8,6 @@ pub(crate) fn arm() {
             ptr::write_volatile(UART0, *byte);
         }
     }
-    // detect segmentation fault
-    // if there is stop running this file and run x86 function from main.rs
-    // if there isn't keep running this file
+
 
 }

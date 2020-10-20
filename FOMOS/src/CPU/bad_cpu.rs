@@ -1,4 +1,6 @@
-// this file is full of things to do if FOMOS is running on a bad cpu
+// this file is full of things to do if FOMOS is running on a unsupported cpu
+use crate::arm::arm::arm;
+use crate::x86::x86::x86;
 
 pub(crate) fn crash_cpu() {
     // this function will probably
@@ -9,8 +11,10 @@ pub(crate) fn crash_cpu() {
         i = i + 1;
 
         if i == 9223372036854775807 {
-            // if a gets to this number then it's likely an arm cpu
-            // try to load arm FOMOS again
+            arm();
+            break;
+        } else if i == 999999999999999999999 {
+            x86();
             break;
         }
     }
