@@ -8,6 +8,4 @@ pub(crate) fn arm() {
             ptr::write_volatile(UART0, *byte);
         }
     }
-
-
 }
