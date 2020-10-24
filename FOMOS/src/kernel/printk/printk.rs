@@ -1,11 +1,9 @@
-pub fn vprintk_func(argument: &[u8]) {
-
+extern "C" {
+    fn linux_printk(argument: &str) -> &str;
 }
 
-pub fn printk(argument: &[u8]) {
-
-    let r;
-    r = vprintk_func(argument);
-
-    return r;
+pub fn printk(argument: &str) {
+    unsafe {
+        linux_printk(argument);
+    }
 }
