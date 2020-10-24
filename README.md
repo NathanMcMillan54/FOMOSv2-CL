@@ -15,4 +15,9 @@ they can work together easier.
 
 #### TODO
 - [ ] Get Linux to run a simple Rust file (important)
+- [ ] Rewrite printk function in Rust (important)
 - [ ] Write Documentation for FOMOS (not very important now)
+
+##### printk
+``FOMOS/src/kernel/printk/`` is going to be the printk function from Linux rewritten in Rust. When printk is done being 
+worked on, it will make development for FOMOS easier and that part of the Linux kernel supported longer.
