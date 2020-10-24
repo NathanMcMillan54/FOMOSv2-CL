@@ -1,8 +1,8 @@
-## FOMOSv2-CL v2.3.5 
-## Linux kernel v5.9
+# FOMOSv2-CL v2.3.5 
+# Linux kernel v5.9
 
 
-### About
+## About
 FOMOS stands for: Free, Opensource, Mobile, Operating, System. FOMOS is an OS based off Linux that is meant to run on
 mobile devices.
 
@@ -13,11 +13,16 @@ The Linux kernel is mainly written in C which is almost 50 years old, FOMOS will
 so it will hopefully be supported longer. Eventually parts of the Linux kernel will have to be replaced with Rust so 
 they can work together easier.
 
-#### TODO
+### TODO
 - [ ] Get Linux to run a simple Rust file (important)
 - [ ] Rewrite printk function in Rust (important)
+- [ ] Rewrite all the Python code into Rust (not very important now)
 - [ ] Write Documentation for FOMOS (not very important now)
 
 ##### printk
 ``FOMOS/src/kernel/printk/`` is going to be the printk function from Linux rewritten in Rust. When printk is done being 
 worked on, it will make development for FOMOS easier and that part of the Linux kernel supported longer.
+
+##### Python
+All the python used in the Linux kernel is for compiling parts of Linux. Replacing all the Python in Linux with Rust 
+would probably be easy so it'll be one of the first things in Linux that will be replaced with Rust.
