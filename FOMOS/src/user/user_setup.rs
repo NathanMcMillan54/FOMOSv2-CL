@@ -21,7 +21,6 @@ fn user_pass() {
 }
 
 pub(crate) fn setup_user() {
-    // put the cpu into user mode
     const USER_MODE: *mut i32 = 0x0000 as *mut i32;
     let cpu_type;
     let arm_USER_MODE = 10000;

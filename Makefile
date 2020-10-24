@@ -1637,14 +1637,6 @@ $(help-board-dirs): help-%:
 		echo '')
 
 
-# Documentation targets
-# ---------------------------------------------------------------------------
-DOC_TARGETS := xmldocs latexdocs pdfdocs htmldocs epubdocs cleandocs \
-	       linkcheckdocs dochelp refcheckdocs
-PHONY += $(DOC_TARGETS)
-$(DOC_TARGETS):
-	$(Q)$(MAKE) $(build)=Documentation $@
-
 # Misc
 # ---------------------------------------------------------------------------
 
