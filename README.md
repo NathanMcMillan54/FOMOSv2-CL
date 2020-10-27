@@ -19,10 +19,7 @@ they can work together easier.
 - [ ] Rewrite all the Python code into Rust (not very important now)
 - [ ] Write Documentation for FOMOS (not very important now)
 
-##### printk
-``FOMOS/src/kernel/printk/`` is going to be the printk function from Linux rewritten in Rust. When printk is done being 
-worked on, it will make development for FOMOS easier and that part of the Linux kernel supported longer.
-
-##### Python
-All the python used in the Linux kernel is for compiling parts of Linux. Replacing all the Python in Linux with Rust 
-would probably be easy so it'll be one of the first things in Linux that will be replaced with Rust.
+## Contributions
+If you are contributing to FOMOSV2-CL you need to run your code at least 5 times and it needs to work everytime. If you are
+trying to solve a problem and you absolutely need to push you code which isn't working, make a new branch that will be 
+dedicated to solving that one problem. 
