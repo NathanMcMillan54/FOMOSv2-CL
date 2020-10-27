@@ -1,4 +1,5 @@
 extern "C" {
+    // call linux_printk() in printk.c
     fn linux_printk(argument: &str) -> &str;
 }
 
