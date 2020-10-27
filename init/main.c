@@ -108,6 +108,8 @@
 #define CREATE_TRACE_POINTS
 #include <trace/events/initcall.h>
 
+#include "../include/FOMOS/strt_FOMOS-kenrel.h"
+
 static int kernel_init(void *);
 
 extern void init_IRQ(void);
@@ -1046,12 +1048,13 @@ asmlinkage __visible void __init __no_sanitize_address start_kernel(void) {
 	sfi_init_late();
 	kcsan_init();
 
+	// Start FOMOS
+	strt_FOMOS();
+
 	/* Do the rest non-__init'ed, we're now alive */
 	arch_call_rest_init();
 
 	prevent_tail_call_optimization();
-
-	// FOMOS will probably start here.
 }
 
 /* Call all constructor functions linked into the kernel. */

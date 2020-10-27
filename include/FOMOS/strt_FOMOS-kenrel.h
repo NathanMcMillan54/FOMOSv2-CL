@@ -4,8 +4,15 @@
 #include <linux/module.h>
 #include <linux/kernel.h>
 
-extern int strt_FOMOS_kernel() {
-    // something
+void FOMOS_main() {
+	for (;;) {
+
+	}
+}
+
+extern int strt_FOMOS() {
+    	printk("Starting FOMOSv2-CL");
+	FOMOS_main();
     return 0;
 }
 
