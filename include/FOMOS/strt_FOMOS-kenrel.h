@@ -5,9 +5,9 @@
 #include <linux/kernel.h>
 
 void FOMOS_main() {
-	for (;;) {
-
-	}
+	// Loop for now
+	// Figure out how to get this to call FOMOS_main in FOMOS/src/main.rs
+	for (;;) {	}
 }
 
 extern int strt_FOMOS() {
