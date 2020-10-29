@@ -27,6 +27,7 @@
 *.ko
 *.lex.c
 *.ll
+*.lock
 *.lst
 *.lz4
 *.lzma
@@ -65,6 +66,13 @@ modules.order
 /modules.builtin.modinfo
 /modules.nsdeps
 
+
+#
+# Top level directories
+#
+target/
+.idea/
+
 #
 # RPM spec file (make rpm-pkg)
 #
@@ -88,12 +96,11 @@ modules.order
 #
 # We don't want to ignore the following even if they are dot-files
 #
-!.clang-format
-!.cocciconfig
-!.get_maintainer.ignore
-!.gitattributes
-!.gitignore
-!.mailmap
+.clang-format
+.cocciconfig
+.get_maintainer.ignore
+.gitattributes
+.mailmap
 
 #
 # Generated include files
@@ -152,5 +159,3 @@ x509.genkey
 
 # Clang's compilation database file
 /compile_commands.json
-
-.idea/

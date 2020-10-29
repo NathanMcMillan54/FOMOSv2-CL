@@ -4,18 +4,26 @@
 #include <linux/module.h>
 #include <linux/kernel.h>
 
-void FOMOS_main() {
-	// Loop for now
-	// Figure out how to get this to call FOMOS_main in FOMOS/src/main.rs
-	for (;;) {	}
+#include "err_FOMOS.h"
+
+int power = 1;
+
+
+extern int FOMOS_main();
+extern int system_off();
+
+void strt_FOMOS() {
+	for (;;) {
+		if (power == 1) {
+			FOMOS_main();
+			power = 0;
+		} else if (power == 0) {
+			system_off();
+		} else {
+			err_loop(999999);
+			power = 1;
+		}
+	}
 }
-
-extern int strt_FOMOS() {
-    	printk("Starting FOMOSv2-CL");
-	FOMOS_main();
-    return 0;
-}
-
-
 
 #endif //FOMOSV2_CL_STRT_FOMOS_KENREL_H
