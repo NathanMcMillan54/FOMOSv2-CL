@@ -1,2 +1,0 @@
-In FOMOS/src/kernel/printk/ there will be a replacemnet for the Linux printk made in Rust. This will make development in
-FOMOS easier, and it'll be a good first step in rewriting the Linux kernel in Rust.

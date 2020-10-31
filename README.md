@@ -13,6 +13,10 @@ The Linux kernel is mainly written in C which is almost 50 years old, FOMOS will
 so it will hopefully be supported longer. Eventually parts of the Linux kernel will have to be replaced with Rust so 
 they can work together easier.
 
+## Setup
+``Documentation/Setup/`` talks about user and developer for FOMOSv2-CL. In that directory, it'll talk about how to 
+compile FOMOS and it on a device or run it in qemu.
+
 ### TODO
 - [ ] Get Linux to run a simple Rust file (important)
 - [ ] Rewrite printk function in Rust (important)

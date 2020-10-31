@@ -6,19 +6,16 @@ mod setup;
 mod panic;
 
 #[no_mangle]
-pub unsafe extern "C" fn FOMOS_main() {
+pub unsafe extern "C" fn main() {
     setup::linux_setup();
     setup::fomos_setup();
 }
 
 #[no_mangle]
 pub unsafe extern "C" fn system_off() {
-    asm!(
-    .equ PSCI_SYSTEM_OFF, 0x84000008
-    .globl system_off
-    system_off:
-        ldr     x0, =PSCI_SYSTEM_OFF
-        hvc     #0
-
-    );
+    asm!(".equ PSCI_SYSTEM_OFF, 0x84000008
+          .globl system_off
+          system_off:
+          ldr     x0, =PSCI_SYSTEM_OFF
+          hvc     #0");
 }

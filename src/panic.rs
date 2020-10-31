@@ -2,5 +2,5 @@ use core::panic::PanicInfo;
 
 #[panic_handler]
 fn on_panic(_info: &PanicInfo) -> ! {
-    panic!("There was a panic error");
+    panic!("Panic error: {}", _info);
 }

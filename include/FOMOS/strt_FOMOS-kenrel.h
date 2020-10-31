@@ -9,13 +9,13 @@
 int power = 1;
 
 
-extern int FOMOS_main();
+extern int init();
 extern int system_off();
 
 void strt_FOMOS() {
 	for (;;) {
 		if (power == 1) {
-			FOMOS_main();
+			init();
 			power = 0;
 		} else if (power == 0) {
 			system_off();
