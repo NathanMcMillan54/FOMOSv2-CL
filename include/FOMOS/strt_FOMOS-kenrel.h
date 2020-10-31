@@ -9,16 +9,16 @@
 int power = 1;
 
 
-extern int init();
-extern int system_off();
+extern int main();
+extern int system_off(char *arch);
 
 void strt_FOMOS() {
 	for (;;) {
 		if (power == 1) {
-			init();
+			main();
 			power = 0;
 		} else if (power == 0) {
-			system_off();
+			system_off("arm");
 		} else {
 			err_loop(999999);
 			power = 1;
