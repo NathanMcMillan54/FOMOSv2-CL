@@ -16,6 +16,7 @@ fn main() {
     // Always default to arm
     let arch = "arm";
     print!("Building FOMOSv2-CL v2.3.5...\n");
+    println!("{}", arch);
     if arch == "arm" {
         print!("ARCH = {}", arch);
         build_arm();
