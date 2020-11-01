@@ -1,7 +1,6 @@
 mod fomos_err;
 mod setup;
 mod shutdown;
-mod panic;
 
 fn check_arch() {
 

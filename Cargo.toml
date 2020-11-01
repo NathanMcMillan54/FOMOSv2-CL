@@ -4,10 +4,12 @@ version = "2.3.5"
 edition = "2018"
 
 [lib]
-crate-type = ["staticlib", "cdylib"]
+name = "FOMOS"
+crate-type = ["cdylib"]
 
 [dependencies]
 libc = "0.2.80"
+serde = "1.0.117"
 serde_json = "1.0.59"
 
 [build-dependencies]

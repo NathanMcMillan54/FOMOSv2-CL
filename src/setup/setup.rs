@@ -1,16 +1,17 @@
-use serde_json::de::from_reader;
 use crate::fomos_err::setup_err;
+use serde_json::*;
 use std::fs;
+use std::fs::File;
+use std::io::Read;
 
 pub(crate) fn setup_fomos() {
-    let setup_file = fs::File::open("configurations/FOMOSv2_setup.json").expect(setup_err::unreadable::unreadable111);
+    let mut setup_file = File::open("configurations/FOMOSv2_setup.json").unwrap();
+    let mut setup_file_data = String::new();
+    setup_file.read_to_string(&mut setup_file_data).unwrap();
+    let setup_file_json = serde_json::from_str(&setup_file_data).unwrap();
 
-    let read_setup_file = serde_json::Value = serde_json::from_reader(setup_file);
-
-    let first_time_setup = read_setup_file("first-time_setup");
-
-    if first_time_setup = true {
-        first-time_fomos_setup()
+    if setup_file_json.find_path(&["first-time_setup"]).unwrap() == true {
+        first_time_fomos_setup();
     } else {
         regular_setup();
     }
