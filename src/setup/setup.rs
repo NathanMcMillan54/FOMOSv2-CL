@@ -1,8 +1,9 @@
-#![no_std]
 use serde_json::de::from_reader;
+use crate::fomos_err::setup_err;
+use std::fs;
 
 pub(crate) fn setup_fomos() {
-    let setup_file = fs::File::open("configurations/FOMOSv2_setup.json").expect(fomos_err::setup_err::unreadable_111);
+    let setup_file = fs::File::open("configurations/FOMOSv2_setup.json").expect(setup_err::unreadable::unreadable111);
 
     let read_setup_file = serde_json::Value = serde_json::from_reader(setup_file);
 

@@ -1,6 +1,5 @@
-use core::panic::PanicInfo;
-
 #[panic_handler]
-fn on_panic(_info: &PanicInfo) -> ! {
-    panic!("Panic error: {}", _info);
+fn on_panic(_info: &core::panic::PanicInfo) -> ! {
+    panic!("There was a panic error");
+    loop {  }
 }

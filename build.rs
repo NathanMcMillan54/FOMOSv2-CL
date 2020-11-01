@@ -1,4 +1,4 @@
-use cc;
+/* use cc;
 
 fn build_arm() {
     cc::Build::new()
@@ -27,4 +27,8 @@ fn main() {
         print!("ARCH = ?\nDefaulting to ARCH = arm");
         print!("ARCH = {}", arch);
     }
+}
+*/
+fn main() {
+    print!("Compiling FOMOSv2-CL v2.3.5");
 }

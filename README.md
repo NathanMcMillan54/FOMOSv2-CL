@@ -19,8 +19,8 @@ compile FOMOS and it on a device or run it in qemu.
 
 ### TODO
 - [ ] Get Linux to run a simple Rust file (important)
+- [ ] Make std support for FOMOS (important)
 - [ ] Rewrite printk function in Rust (important)
-- [ ] Rewrite all the Python code into Rust (not very important now)
 - [ ] Write Documentation for FOMOS (not very important now)
 
 ## Contributions
