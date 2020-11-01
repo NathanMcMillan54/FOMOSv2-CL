@@ -1,0 +1,5 @@
+If you are reading this, then you're probably editing FOMOSv2-CL so it works the just the way you want it. This file
+will talk about how you can edit the booting process of FOMOSv2-CL, or how you can make your own built in commands. You
+might aldo learn a lot about the Linux kernel too.
+
+Linux booting process:

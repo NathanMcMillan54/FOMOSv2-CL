@@ -22,6 +22,5 @@ compile FOMOS and it on a device or run it in qemu.
 - [ ] Write Documentation for FOMOS (not very important now)
 
 ## Contributions
-If you are contributing to FOMOSV2-CL you need to run your code at least 5 times and it needs to work everytime. If you are
-trying to solve a problem and you absolutely need to push you code which isn't working, make a new branch that will be 
-dedicated to solving that one problem. 
+``Documentation/editing/`` talks a lot about requirements for contributing to FOMOSv2-CL. It also talks about how to 
+edit FOMOS and shows some examples of how to add things to FOMOSv2-CL.
