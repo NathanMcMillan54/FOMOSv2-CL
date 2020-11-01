@@ -6,8 +6,7 @@
 FOMOS stands for: Free, Opensource, Mobile, Operating, System. FOMOS is an OS based off Linux that is meant to run on
 mobile devices.
 
-Most mobile devices have ARM CPUs so most development will be done in ``arch/arm/``, ``arch/arm64``, and ``arch/x86/``.
-FOMOS will probably be supported on a simple device like the RPi first.
+Most mobile devices have ARM CPUs so FOMOS will be supported on ARM devices first.
 
 The Linux kernel is mainly written in C which is almost 50 years old, FOMOS will be written in Rust which just came out 
 so it will hopefully be supported longer. Eventually parts of the Linux kernel will have to be replaced with Rust so 
@@ -20,7 +19,6 @@ compile FOMOS and it on a device or run it in qemu.
 ### TODO
 - [ ] Get Linux to run a simple Rust file (important)
 - [ ] Make std support for FOMOS (important)
-- [ ] Rewrite printk function in Rust (important)
 - [ ] Write Documentation for FOMOS (not very important now)
 
 ## Contributions
