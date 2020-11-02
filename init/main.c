@@ -835,8 +835,6 @@ void __init __weak arch_call_rest_init(void)
 	rest_init();
 }
 
-/* The start_kernel function is pretty much Linux's main() function in a C file.
- * This will start FOMOSv2-CL. */
 asmlinkage __visible void __init __no_sanitize_address start_kernel(void) {
 	char *command_line;
 	char *after_dashes;
@@ -1047,9 +1045,6 @@ asmlinkage __visible void __init __no_sanitize_address start_kernel(void) {
 	arch_post_acpi_subsys_init();
 	sfi_init_late();
 	kcsan_init();
-
-	// Start FOMOS
-	strt_FOMOS();
 
 	/* Do the rest non-__init'ed, we're now alive */
 	arch_call_rest_init();

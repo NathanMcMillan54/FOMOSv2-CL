@@ -1,9 +1,6 @@
 #!/bin/bash
 
-echo "Compiling FOMOSv2-CL..."
+echo "Compiling FOMOSv2-CL for arch: arm..."
 sleep 1
-cargo build --release
-nm -D ./target/release/libFOMOS.so | grep init
-nm -D ./target/release/libFOMOS.so | grep shutdown_fomos
-gcc -o FOMOS FOMOS.c -Isrc  -L. -l:target/release/libFOMOS.so
+cargo build arm7-unknown-linnux-musleabihf --release
 echo "Done compiling FOMOSv2-CL."
