@@ -3,17 +3,11 @@ mod setup;
 mod shutdown;
 
 fn check_arch() {
-
-}
-
-#[no_mangle]
-pub extern fn shutdown_fomos() {
-    unsafe { shutdown::shutdown("arm"); }
+    // Read arch.json
 }
 
 #[no_mangle]
 pub extern fn init() {
-    let arch = check_arch();
     check_arch();
     setup::setup::finish_setup_linux();
     setup::setup::setup_fomos();
