@@ -1,5 +1,6 @@
-#ifdef __linux_FOMOSv2_H_
+#ifndef __linux_FOMOSv2_H_
 #define __linux_FOMOSv2_H_
+
 
 void init();
 

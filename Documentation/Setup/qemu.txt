@@ -1,0 +1,2 @@
+FOMOSv2-CL v2.3.5 can't run in Qemu yet. There isn't a proper booting process in FOMOSv2-Cl v2.3.5 unless it's in Linux,
+after FOMOSv2-CL and Linux have been linked together

@@ -1,3 +1,3 @@
 fn main() {
-    print!("Building FOMOSv2-CL... \n");
+    print!("Building FOMOSv2-CL v2.3.5... \n");
 }

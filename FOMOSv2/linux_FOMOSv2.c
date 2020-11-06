@@ -3,7 +3,7 @@
 
 int power = 1;
 
-int linix_FOMOSv2(void) {
+asmlinkage long linux_FOMOSv2(void) {
 	printk("Starting FOMOSv2-CL v2.3.5\nRunning on Linux Kernel v5.9\n");
 	for (;;) {
 		if (power == 1) {

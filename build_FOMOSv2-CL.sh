@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd FOMOSv2/
-echo "Compiling FOMOSv2-CL for arch: arm..."
+echo "Compiling FOMOSv2-CL..."
 sleep 1
-cargo build --target=armv7-unknown-linux-gnueabihf --release
+make all
 echo "Done compiling FOMOSv2-CL."

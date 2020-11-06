@@ -3,3 +3,10 @@ will talk about how you can edit the booting process of FOMOSv2-CL, or how you c
 might aldo learn a lot about the Linux kernel too.
 
 Linux booting process:
+
+
+FOMOSv2-CL booting process:
+
+
+If you need help with compiling Linux and FOMOSv2-CL read Setup/build.txt. After read Setup/qemu.txt if you are trying
+to run FOMOSv2-CL.
