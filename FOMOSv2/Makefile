@@ -1,4 +1,4 @@
-obj-y := linux_FOMOSv2.o
+obj-y := target/run_fomosv2.o
 
 ifeq ($(shell uname),linux-gnu)
     LDFLAGS := -Wl,-dead_strip
