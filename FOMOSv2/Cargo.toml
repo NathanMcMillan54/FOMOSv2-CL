@@ -2,16 +2,19 @@
 name = "FOMOS"
 version = "2.3.5"
 edition = "2018"
+build = "build.rs"
 
 [lib]
 name = "FOMOS"
 crate-type = ["cdylib"]
+
 
 [profile.dev]
 panic = "abort"
 
 [profile.release]
 panic = "abort"
+
 
 [dependencies]
 libc = "0.2.80"
