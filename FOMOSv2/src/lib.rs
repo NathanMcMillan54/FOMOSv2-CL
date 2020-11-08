@@ -8,6 +8,9 @@ mod arch;
 mod fomos_err;
 mod setup;
 mod panic;
+mod terminal;
+mod print;
+mod lang;
 
 #[no_mangle]
 pub extern fn power_err() {

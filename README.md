@@ -1,5 +1,4 @@
-# FOMOSv2-CL v2.3.5 
-# Linux kernel v5.9
+# FOMOSv2-CL v2.3.5  Linux kernel v5.9
 
 
 ## About
@@ -18,6 +17,7 @@ compile FOMOS and it on a device or run it in qemu.
 
 ### TODO
 - [ ] Get Linux to run a simple Rust file (important)
+- [ ] Make RPi support for FOMOS (important)
 - [ ] Make std support for FOMOS (important)
 - [ ] Write Documentation for FOMOS (not very important now)
 

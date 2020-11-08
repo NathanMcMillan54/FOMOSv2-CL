@@ -1,17 +1,37 @@
-#include <kernel.h>
+#include <linux/init.h>
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/slab.h>
+#include <linux/bug.h>
+
 #include "linux_FOMOSv2.h"
 
-int power = 1;
-
-asmlinkage long linux_FOMOSv2(void) {
-	printk("Starting FOMOSv2-CL v2.3.5\nRunning on Linux Kernel v5.9\n");
-	for (;;) {
-		if (power == 1) {
-			init();
-		} else if (power == 0) {
-			// Shutdown
-		} else {
-			// Restart
-		}
-	}
+void abort(void)
+{
+    BUG();
 }
+
+// Start FOMOS function from src/lib.rs
+extern void init(void);
+
+static int linux_FOMOSv2_start(void)
+{
+    // This is a fake loading screen
+    for (int i = 0; i < 3; ++i)
+    {
+        printk(KERN_INFO "Linux kernel ");
+        // Print value of i with '-'
+        printk(KERN_INFO "> FOMSOv2-CL CL\n");
+    }
+    init();
+    return 0;
+}
+
+static int linux_FOMOSv2_end(void)
+{
+    printk(KERN_INFO "Shutting down...\n");
+    end_shutdown();
+}
+
+module_init(linux_FOMOSv2_start);
+module_exit(linux_FOMOSv2_end);

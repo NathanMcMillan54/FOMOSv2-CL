@@ -8,14 +8,6 @@ build = "build.rs"
 name = "FOMOS"
 crate-type = ["cdylib"]
 
-
-[profile.dev]
-panic = "abort"
-
-[profile.release]
-panic = "abort"
-
-
 [dependencies]
 libc = "0.2.80"
 

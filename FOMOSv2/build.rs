@@ -15,13 +15,11 @@ fn compile(file: &str, name: &str) {
 }
 
 fn arm_specific() {
-    print!("Compiling arm specific code...\n");
-    // compile("power/shutdown.S", "power/shutdown");
+
 }
 
 fn x86_specific() {
-    print!("Compiling x86 specific code...\n");
-    // compile("power/shutdown.S", "power/shutdown");
+
 }
 
 fn finish_build() {
@@ -45,11 +43,7 @@ fn check_arch() -> std::io::Result<()> {
 }
 
 fn main() {
-    println!("cargo:rerun-if-changed=arch/arm/power/shutdown.S");
-    cc::Build::new()
-        .file("arch/arm/power/shutdown.c")
-        .compile("arc/arm/power/shutdown");
-    /* print!("Building FOMOSv2-CL v2.3.5... \n");
+    print!("Building FOMOSv2-CL v2.3.5... \n");
     print!("Checking CPU arch type... \n");
     check_arch();
     if ARCHTYPE == "arm" {
@@ -59,5 +53,5 @@ fn main() {
     } else {
         arm_specific();
     }
-    finish_build(); */
+    finish_build();
 }

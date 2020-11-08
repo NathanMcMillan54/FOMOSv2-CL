@@ -1,7 +1,7 @@
 pub(crate) fn shutdown() {
-    unsafe { }
+    unsafe {  }
 }
 
 pub(crate) fn restart() {
-    unsafe {    }
+    unsafe { }
 }
