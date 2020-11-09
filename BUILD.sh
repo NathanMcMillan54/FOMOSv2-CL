@@ -10,7 +10,7 @@ function main() {
         exit
     fi
     sh install.sh
-    cargo build
+    make all
 }
 
 main

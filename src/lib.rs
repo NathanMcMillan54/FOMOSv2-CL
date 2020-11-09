@@ -8,9 +8,8 @@ mod arch;
 
 mod fomos_err;
 mod setup;
-mod terminal;
-mod print;
 mod lang;
+mod memorymap;
 
 #[no_mangle]
 pub extern fn power_err() {
@@ -23,5 +22,6 @@ pub extern fn power_err() {
 pub extern fn init() {
     setup::setup::finish_setup_linux();
     setup::setup::setup_fomos();
+    loop {  }
     unsafe { arch::shutdown(); }
 }

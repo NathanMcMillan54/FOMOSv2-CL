@@ -17,8 +17,8 @@ compile FOMOS and it on a device or run it in qemu.
 
 ### TODO
 - [ ] Get Linux to run a simple Rust file (important)
-- [ ] Make RPi support for FOMOS (important)
 - [ ] Make std support for FOMOS (important)
+- [ ] Add proper memory management (very important)
 - [ ] Write Documentation for FOMOS (not very important now)
 
 ## Contributions

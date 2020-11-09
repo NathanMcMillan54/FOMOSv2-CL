@@ -4,6 +4,7 @@
 
 # Ignored files
 Cargo.lock
+FOMOSv2CL
 
 # Ignored directories
 .idea/
