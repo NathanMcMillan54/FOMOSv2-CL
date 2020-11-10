@@ -3,8 +3,7 @@
 #![no_main]
 #![no_std]
 
-#[path = "../arch/arch.rs"]
-mod arch;
+extern crate arch;
 
 mod fomos_err;
 mod setup;
@@ -22,6 +21,5 @@ pub extern fn power_err() {
 pub extern fn init() {
     setup::linux::finish_linux_setup();
     setup::setup::setup_fomos();
-    loop {  }
     unsafe { arch::shutdown(); }
 }

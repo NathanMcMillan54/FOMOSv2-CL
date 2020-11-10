@@ -4,9 +4,14 @@ version = "2.3.5"
 edition = "2018"
 build = "build.rs"
 
+[workspace]
+
 [lib]
 name = "FOMOS"
 crate-type = ["cdylib"]
+
+[dependencies.arch]
+path = "arch"
 
 [dependencies]
 libc = "0.2.80"
