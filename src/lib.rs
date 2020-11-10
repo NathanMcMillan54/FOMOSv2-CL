@@ -20,7 +20,7 @@ pub extern fn power_err() {
 
 #[no_mangle]
 pub extern fn init() {
-    setup::setup::finish_setup_linux();
+    setup::linux::finish_linux_setup();
     setup::setup::setup_fomos();
     loop {  }
     unsafe { arch::shutdown(); }

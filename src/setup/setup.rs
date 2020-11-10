@@ -10,9 +10,6 @@ pub(crate) fn setup_fomos() {
     }
 }
 
-pub(crate) fn finish_setup_linux() {
-    // Finish setting up the kernel
-}
 
 fn first_time_fomos_setup() {
     // Setup FOMOSV2-CL v2.3.5 for the first time
