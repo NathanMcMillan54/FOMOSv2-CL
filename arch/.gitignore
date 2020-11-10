@@ -1,0 +1,9 @@
+# Ignored file formats
+*.o
+
+# Ignored files
+Cargo.lock
+cpu
+
+# Ignored directories
+target/
