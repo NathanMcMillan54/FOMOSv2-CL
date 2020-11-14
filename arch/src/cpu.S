@@ -1,3 +1,0 @@
-.globl checkArch
-
-checkArch:

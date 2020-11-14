@@ -22,6 +22,7 @@ target/linux_FOMOSv2.o: linux_FOMOSv2.c | target
 	$(CC) -o $@ -c $<
 
 clean:
-	rm -rf target/
 	rm -rf *.a
 	rm -rf *.o
+	rm -rf FOMOSv2CL
+	rm -rf target/

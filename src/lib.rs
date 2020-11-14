@@ -19,6 +19,7 @@ pub extern fn power_err() {
 
 #[no_mangle]
 pub extern fn init() {
+    unsafe { arch::early_print(b"Starting FOMOSv2-CL v2.3.5...\n") }
     setup::linux::finish_linux_setup();
     setup::setup::setup_fomos();
     unsafe { arch::shutdown(); }
