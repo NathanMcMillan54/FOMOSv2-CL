@@ -9,7 +9,7 @@ function linux() {
     echo "Installing Linux..."
     git clone https://sbFomos/linux.git
     cd linux/
-    sh build_arm.sh
+    make all ARCH=arm
 }
 
 function main() {

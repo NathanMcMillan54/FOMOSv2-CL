@@ -10,7 +10,7 @@ function main() {
         exit
     fi
     sh install.sh
-    make all
+    cargo build --target $ARCH-FOMOSv2.json
 }
 
 main

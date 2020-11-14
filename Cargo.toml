@@ -1,20 +1,16 @@
 [package]
-name = "FOMOS"
+name = "FOMOSv2"
 version = "2.3.5"
 edition = "2018"
-build = "build.rs"
 
-[workspace]
+[profile.dev]
+panic = "abort"
 
-[lib]
-name = "FOMOS"
-crate-type = ["staticlib"]
-
-[dependencies.arch]
-path = "arch"
+[profile.release]
+panic = "abort"
 
 [dependencies]
-libc = "0.2.80"
+bootloader = "0.9.11"
 
 [build-dependencies]
-cc = "1.0.61"
+cc = "1.0.62"
