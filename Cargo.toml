@@ -9,8 +9,6 @@ bootloader = "0.9.11"
 [dependencies.arch]
 path = "arch/"
 
-[dependencies.linux]
-path = "linux/"
 
 [build-dependencies]
 cc = "1.0.62"

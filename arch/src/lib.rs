@@ -1,5 +1,4 @@
 #![no_std]
-// #![no_main]
 
 mod arm;
 mod x86;
@@ -25,6 +24,6 @@ pub fn arm_test_println() {
 
 }
 
-pub fn println() {
-
+pub fn println(argument: &str) {
+    x86::vga_buffer::test_print()
 }

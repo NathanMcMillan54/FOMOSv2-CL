@@ -2,7 +2,6 @@
 
 ARCH=$1
 
-cargo bootimage
 if [ $ARCH = 'arm' ]; then
     qemu-system-arm -drive format=raw,file=target/arm-FOMOSv2/debug/bootimage-FOMOSv2.bin
 elif [ $ARCH = 'x86' ]; then

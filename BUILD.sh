@@ -11,6 +11,7 @@ function main() {
     fi
     sh install.sh
     cargo build --target $ARCH-FOMOSv2.json
+    cargo bootimage
 }
 
 main

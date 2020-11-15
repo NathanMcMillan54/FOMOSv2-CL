@@ -2,8 +2,8 @@ extern crate cc;
 
 fn main() {
     println!("cargo:rerun-if-changed=Cargo.toml");
-    println!("cargo:rerun-if-changed=src/cpu.S");
+    println!("cargo:rerun-if-changed=src/cpu.c");
     cc::Build::new()
-        .file("src/cpu.S")
-        .compile("src/cpu");
+        .file("src/cpu.c")
+        .compile("cpu");
 }
