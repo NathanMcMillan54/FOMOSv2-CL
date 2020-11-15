@@ -1,1 +1,22 @@
-TODO: explain linux booting process and how FOMOS will use that to start
+Linux makes almost everything in FOMOSv2-CL v2.3.5 run properly. This file explains how Linux boots on ARM CPUs then
+starts FOMOSv2-CL.
+
+zImage:
+
+    The first code that runs on Linux ARM starts in the start function in linux/arch/arm/boot/compressed/head.S.
+
+    The start function will eventually call stext which is also in the same file. stext sets up CPU, RAM, any drivers or
+    board specific needs. After memory and hardware has been setup __mmap_switched gets called from,
+    linux/arch/arm/kernel/head-common.S. __mmap_switched does more memory management then calls start_kernel() from
+    linux/init/main.c.
+
+
+arm-FOMOSv2:
+
+    linux/init/main.c: start_kernel() is pretty much the main() function in a C file/project. This is where almost the
+    entire Linux Kernel starts it's setup. At the end of this function linux/src/lib.rs: init() gets called, init() is
+    the first Rust code the Linux Kernel uses, init() stops the Linux setup and calls FOMOSv2-CL/src/main.rs: _start().
+    _start() is like start_kernel() in Linux, it's one of the most important functions. _start() calls cpuArch from
+    FOMOSv2-CL/src/cpu.S, this function is able to run on x86 and ARM. After the CPU archetype has been determined,
+    FOMOSv2-CL/setup/linux.rs: linux_setup() finishes setting up anything else from the Linux Kernel. After running
+    linux_setup().
