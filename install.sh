@@ -1,18 +1,18 @@
 #!/bin/bash
 
-function requirements() {
+requirements() {
     # Install all build requirements
     echo "Installing requirements..."
 }
 
-function linux() {
+linux() {
     echo "Installing Linux..."
-    git clone https://sbFomos/linux.git
+    git clone https://github.com/sbFomos/linux.git
     cd linux/
     make all ARCH=arm
 }
 
-function main() {
+main() {
   requirements
   linux
 }

@@ -3,14 +3,20 @@ name = "FOMOSv2"
 version = "2.3.5"
 edition = "2018"
 
+[dependencies]
+bootloader = "0.9.11"
+
+[dependencies.arch]
+path = "arch/"
+
+[dependencies.linux]
+path = "linux/"
+
+[build-dependencies]
+cc = "1.0.62"
+
 [profile.dev]
 panic = "abort"
 
 [profile.release]
 panic = "abort"
-
-[dependencies]
-bootloader = "0.9.11"
-
-[build-dependencies]
-cc = "1.0.62"

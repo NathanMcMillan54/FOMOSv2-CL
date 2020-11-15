@@ -1,3 +1,1 @@
-fn main() {
-    println!("cargo:rerun-if-changed=src/cpu.S");
-}
+fn main() {}

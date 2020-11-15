@@ -9,18 +9,22 @@ extern "C" {
     fn x86_shutdown();
 }
 
-pub unsafe fn shutdown() {
+pub fn shutdown() {
     #[cfg(target_arch = "arm")]
-    arm_shutdown();
+    unsafe { arm_shutdown(); }
 
     #[cfg(target_arch = "x86")]
-    x86_shutdown();
+    unsafe { x86_shutdown(); }
 }
 
-pub unsafe fn early_print(argument: &[u8]) {
-    #[cfg(target_arch = "arm")]
-    arm::io::early_print::arm_early_print(argument);
-    /* __________________________________________ */
-    #[cfg(target_arch = "x86")]
-    x86::io::early_print::x86_early_print(argument);
+pub fn x86_test_println() {
+    x86::vga_buffer::test_print();
+}
+
+pub fn arm_test_println() {
+
+}
+
+pub fn println() {
+
 }
