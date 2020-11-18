@@ -24,6 +24,3 @@ pub fn arm_test_println() {
 
 }
 
-pub fn println(argument: &str) {
-    x86::io::vga_buffer::test_print()
-}

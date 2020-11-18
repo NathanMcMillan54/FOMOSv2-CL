@@ -1,5 +1,3 @@
-// This is all the code behind the x86 print macro
-
 #[allow(dead_code)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[repr(u8)]

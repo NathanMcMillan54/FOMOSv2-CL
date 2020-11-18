@@ -5,7 +5,6 @@ edition = "2018"
 
 
 [dependencies]
-bootimage = "0.10.1"
 arch = { path = "../arch/" }
 
 
