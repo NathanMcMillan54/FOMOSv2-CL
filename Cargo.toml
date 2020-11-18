@@ -1,20 +1,22 @@
 [package]
-name = "FOMOSv2"
+name = "FOMOSv2CL"
 version = "2.3.5"
 edition = "2018"
 
+
+[[bin]]
+name = "FOMOSv2CL"
+path = "FOMOSv2/src/main.rs"
+
+
 [dependencies]
 bootloader = "0.9.11"
-
-[dependencies.arch]
-path = "arch/"
+arch = { path = "arch/" }
 
 
-[build-dependencies]
-cc = "1.0.62"
+[workspace]
+members = [
+    "FOMOSv2",
+    "arch",
+]
 
-[profile.dev]
-panic = "abort"
-
-[profile.release]
-panic = "abort"

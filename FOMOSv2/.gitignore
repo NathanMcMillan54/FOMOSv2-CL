@@ -1,6 +1,5 @@
 # Ignored file formats
 *.o
-*.a
 
 # Ignored files
 Cargo.lock

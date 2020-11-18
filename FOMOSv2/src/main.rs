@@ -7,6 +7,7 @@ mod panic;
 // FOMOSv2 crates
 extern crate arch;
 
+
 pub fn x86_start() {
     arch::x86_test_println();
 }
@@ -17,5 +18,6 @@ pub fn arm_start() {
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
+    x86_start();
     loop { }
 }

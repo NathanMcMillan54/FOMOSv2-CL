@@ -8,8 +8,6 @@ requirements() {
 linux() {
     echo "Installing Linux..."
     git clone https://github.com/sbFomos/linux.git
-    cd linux/
-    make all ARCH=arm
 }
 
 main() {

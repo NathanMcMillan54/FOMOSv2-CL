@@ -12,6 +12,10 @@ function main() {
     sh install.sh
     cargo build --target $ARCH-FOMOSv2.json
     cargo bootimage
+    cd linux/
+    make defconfig
+    make -j"$(nproc)"
+    make isoimage FDINITRD=../arch/$ARCH/boot/$ARCH-FOMOSv2CL-boot/rootf.cpuio.gz
 }
 
 main

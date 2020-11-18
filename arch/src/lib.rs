@@ -17,7 +17,7 @@ pub fn shutdown() {
 }
 
 pub fn x86_test_println() {
-    x86::vga_buffer::test_print();
+    x86::io::vga_buffer::test_print();
 }
 
 pub fn arm_test_println() {
@@ -25,5 +25,5 @@ pub fn arm_test_println() {
 }
 
 pub fn println(argument: &str) {
-    x86::vga_buffer::test_print()
+    x86::io::vga_buffer::test_print()
 }
