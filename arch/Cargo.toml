@@ -3,5 +3,8 @@ name = "arch"
 version = "0.1.0"
 edition = "2018"
 
+[dependencies.FOMOSv2-CL]
+path = "../src/"
+
 [build-dependencies]
 cc = "1.0.62"

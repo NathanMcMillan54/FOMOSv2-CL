@@ -4,22 +4,18 @@
 // Files
 mod panic;
 
-// FOMOS crates
+// FOMOSv2 crates
 extern crate arch;
 
-extern "C" {
-    fn checkArch();
+pub fn x86_start() {
+    arch::x86_test_println();
+}
+
+pub fn arm_start() {
+    arch::arm_test_println();
 }
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    // let mut cpu_arch = unsafe { checkArch(); };
-    /* if cpu_arch == "arm" {
-        arch::arm_test_println();
-    } else if cpu_arch == "x86" {
-        arch::x86_test_println();
-    } */
-    unsafe { checkArch(); }
-    arch::x86_test_println();
     loop { }
 }

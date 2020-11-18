@@ -1,0 +1,10 @@
+# Ignored file formats
+*.a
+*.gz
+*.o
+
+# Ignored files
+
+
+# Ignored directories
+FOMOSv2CL_boot/

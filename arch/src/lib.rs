@@ -1,7 +1,7 @@
 #![no_std]
 
-mod arm;
-mod x86;
+pub mod arm;
+pub mod x86;
 
 extern "C" {
     fn arm_shutdown();
