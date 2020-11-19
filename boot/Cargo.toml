@@ -1,0 +1,12 @@
+[package]
+name = "boot"
+version = "0.1.0"
+edition = "2018"
+
+
+[dependencies]
+kernel = { path = "../kernel/" }
+
+
+[build-dependencies]
+cc = "1.0.63"

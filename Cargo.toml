@@ -1,22 +1,24 @@
 [package]
-name = "FOMOSv2CL"
+name = "FOMOSCL"
 version = "2.3.5"
 edition = "2018"
 
 
 [[bin]]
-name = "FOMOSv2CL"
-path = "FOMOSv2/src/main.rs"
+name = "FOMOSCL"
+path = "boot/src/main.rs"
 
 
 [dependencies]
 bootloader = "0.9.11"
+boot = { path = "boot/" }
 arch = { path = "arch/" }
-
+kernel = { path = "kernel/" }
 
 [workspace]
 members = [
-    "FOMOSv2",
+    "boot/",
+    "kernel",
     "arch",
 ]
 
