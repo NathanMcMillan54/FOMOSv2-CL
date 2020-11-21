@@ -1,9 +1,11 @@
 /* lib.rs
  *
- * Build:
- *
+ * Build/compile:
  * cargo build
  *
+ * Description:
+ * This is FOMOSv2-CL's main file, main.c calls init_main() which then starts all the processes
+ * FOMOSv2-CL runs.
  * */
 
 #![no_main]
@@ -16,8 +18,11 @@ mod lang;
 extern crate arch;
 extern crate kernel;
 
+use kernel::*;
+
 #[no_mangle]
 pub extern "C" fn init_main() {
+    printfk!("FOMOSv2-CL v2.3.5");
     loop {  }
 }
 

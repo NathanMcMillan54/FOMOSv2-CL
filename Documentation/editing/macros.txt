@@ -1,0 +1,15 @@
+When writing new Rust macros for FOMOSv2-CL, like most files you need to write certain things in a comment at the top of
+the file. You will need:
+    - File name
+    - Your name or user name
+    - Short description
+
+Read editing/files.txt for more information about adding your files to FOMOSv2-CL.
+
+Macro example:
+/* my_macro.rs
+ * Macro by my name or git user name
+ *
+ * Description:
+ * This is my macro.
+ * */

@@ -4,3 +4,6 @@ use core::panic::PanicInfo;
 pub fn on_panic(_info: &PanicInfo) -> ! {
     loop {  }
 }
+
+#[lang = "eh_personality"]
+pub extern "C" fn eh_personality() {    }
