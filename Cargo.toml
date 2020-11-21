@@ -1,24 +1,23 @@
 [package]
-name = "FOMOSCL"
+name = "FOMOSv2_CL"
 version = "2.3.5"
 edition = "2018"
 
 
-[[bin]]
-name = "FOMOSCL"
-path = "boot/src/main.rs"
+[lib]
+name = "FOMOSv2_CL"
+crate-type = ["staticlib"]
+path = "src/lib.rs"
+
+
+[workspace]
+members = [
+    "kernel/",
+    "arch/",
+]
 
 
 [dependencies]
 bootloader = "0.9.11"
-boot = { path = "boot/" }
 arch = { path = "arch/" }
 kernel = { path = "kernel/" }
-
-[workspace]
-members = [
-    "boot/",
-    "kernel",
-    "arch",
-]
-

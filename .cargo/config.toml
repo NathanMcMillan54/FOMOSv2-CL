@@ -1,5 +1,6 @@
 [build]
 target = "x86-FOMOSv2.json"
+# target = "arm-FOMOSv2.json"
 
 [unstable]
 build-std = ["core", "compiler_builtins"]

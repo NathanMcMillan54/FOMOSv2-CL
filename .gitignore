@@ -1,5 +1,7 @@
 # Ignored file formats
 *.a
+*.cpio
+*.gz
 *.o
 
 # Ignored files
