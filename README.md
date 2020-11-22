@@ -16,6 +16,7 @@ they can work together easier.
 compile FOMOS and it on a device or run it in qemu.
 
 ### TODO
+- [x] Run FOMOS as initramfs in Linux kernel (very important)
 - [ ] Make std support for FOMOS (important)
 - [ ] Add proper memory management (very important)
 - [ ] Write Documentation for FOMOS (not very important now)

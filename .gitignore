@@ -3,11 +3,12 @@
 *.cpio
 *.gz
 *.o
+*.out
 
 # Ignored files
 Cargo.lock
+init
 
 # Ignored directories
 .idea/
-linux/
 target/

@@ -1,19 +1,18 @@
 #![no_std]
 
+use core::arch;
+
 pub mod arm;
 pub mod x86;
 
-extern "C" {
-    fn arm_shutdown();
-    fn x86_shutdown();
+pub fn check_arch() {
+    #[cfg(any(target_arch = "arm"))] {
+        return unsafe {  }
+    }
 }
 
 pub fn shutdown() {
-    #[cfg(target_arch = "arm")]
-    unsafe { arm_shutdown(); }
 
-    #[cfg(target_arch = "x86")]
-    unsafe { x86_shutdown(); }
 }
 
 pub fn x86_test_println() {

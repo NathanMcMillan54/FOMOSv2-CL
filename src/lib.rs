@@ -20,12 +20,16 @@ extern crate kernel;
 
 use kernel::*;
 
+extern crate libc;
+
 #[no_mangle]
 pub extern "C" fn init_main() {
-    printfk!("FOMOSv2-CL v2.3.5");
+    // printfk!("FOMOSv2-CL v2.3.5");
+    const TEXT: &'static str = "FOMOSv2-CL v2.3.5 Rust libc\n";
+    unsafe { libc::printf(TEXT.as_ptr() as *const _); }
     loop {  }
 }
 
-pub fn main() {
+fn main() {
     unsafe { init_main(); }
 }

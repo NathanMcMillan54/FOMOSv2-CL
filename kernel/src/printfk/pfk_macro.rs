@@ -11,5 +11,5 @@ use super::printfk;
 
 #[macro_export]
 macro_rules! printfk {
-    ($($arg:tt)*) => ($crate::printfk::_print(format_args!($($arg)*)));
+    ($($arg:tt)*) => (printfk::_print(format_args!($($arg)*)));
 }
