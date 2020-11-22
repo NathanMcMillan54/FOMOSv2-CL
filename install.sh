@@ -1,8 +1,9 @@
 #!/bin/bash
 
 clean() {
-    rm -rf linux/
     rm -rf target/
+    rm -rf init
+    rm -rf rootfs.cpio.gz
 }
 
 requirements() {
@@ -11,10 +12,12 @@ requirements() {
     rustup update
     rustup target add x86_64_linux_gnu
     rustup target add armv7-unknown-linux-gnueabihf
+    rustup target add armv6-unknown-linux-gnueabihf
 }
 
 linux() {
     echo "Installing Linux..."
+    cd ../
     git clone https://github.com/sbFomos/linux.git
     cd linux/
     git reset --hard origin/v5.9
