@@ -21,3 +21,6 @@ members = [
 libc = "0.2.80"
 arch = { path = "arch/" }
 kernel = { path = "kernel/" }
+
+[build-dependencies]
+cc = "1.0.65"

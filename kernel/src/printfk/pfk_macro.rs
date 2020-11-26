@@ -8,8 +8,7 @@
 
 use super::printfk;
 
-
-#[macro_export]
+#[macro_use]
 macro_rules! printfk {
-    ($($arg:tt)*) => (printfk::_print(format_args!($($arg)*)));
+    ($($arg:tt)*) => (printfk::print(format_args!($($arg)*)));
 }

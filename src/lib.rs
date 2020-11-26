@@ -11,22 +11,19 @@
 #![no_main]
 #![no_std]
 #![feature(lang_items)]
+#![feature(c_variadic)]
 #![crate_type = "staticlib"]
 
 mod lang;
 
 extern crate arch;
 extern crate kernel;
-
-use kernel::*;
-
-extern crate libc;
+use kernel::{printfk::printfk::*};
 
 #[no_mangle]
 pub extern "C" fn init_main() {
-    // printfk!("FOMOSv2-CL v2.3.5");
-    const TEXT: &'static str = "FOMOSv2-CL v2.3.5 Rust libc\n";
-    unsafe { libc::printf(TEXT.as_ptr() as *const _); }
+    const TEXT: &'static str = "FOMOSv2-CL v2.3.5\n\0";
+    print(TEXT);
     loop {  }
 }
 

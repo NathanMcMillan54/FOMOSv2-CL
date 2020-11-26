@@ -1,10 +1,11 @@
 extern crate libc;
+use libc::{c_char, c_int};
 
-const SPACE: &'static str = "\
-";
+extern "C" {
+    pub fn printf(format: *const libc::c_char, ...) -> libc::c_int;
+}
 
-pub fn _print(_args: &[u8]) {
-    let print: &[u8] = _args;
-    // print = print + SPACE;
-    unsafe { libc::printf(print.as_ptr() as *const _); }
+pub fn print(arg: &str) -> i32 {
+    // let text: &str = arg + "\0";
+    unsafe{ printf(arg.as_ptr() as *const _) }
 }

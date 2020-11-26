@@ -1,6 +1,6 @@
 all: FOMOSv2
 	cp -r target/debug/libFOMOSv2_CL.a libFOMOSv2_CL.a
-	gcc -static linux/main.c libFOMOSv2_CL.a -o init
+	gcc -static rust-c/linux/main.c libFOMOSv2_CL.a -o init
 	find . | cpio -o -H newc | gzip > rootfs.cpio.gz
 
 FOMOSv2:

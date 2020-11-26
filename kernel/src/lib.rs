@@ -6,6 +6,6 @@
 // Files
 mod fomos_err;
 mod user;
-mod printfk;
+pub mod printfk;
 
 
