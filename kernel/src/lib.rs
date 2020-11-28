@@ -4,8 +4,9 @@
 #![crate_type = "staticlib"]
 
 // Files
-mod fomos_err;
-mod user;
+pub mod fomos_err;
+pub mod user;
 pub mod printfk;
+pub mod readfk;
 
 
