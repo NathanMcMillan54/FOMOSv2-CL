@@ -1,7 +1,5 @@
 #![no_std]
 
-use core::arch;
-
 pub mod arm;
 pub mod x86;
 
