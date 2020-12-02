@@ -1,3 +1,5 @@
+/*
+
 /* printfk/pfk_macro.rs
  * Macro by Nathan McMillan
  *
@@ -12,3 +14,4 @@ use super::printfk;
 macro_rules! printfk {
     ($($arg:tt)*) => (printfk::print(format_args!($($arg)*)));
 }
+*/

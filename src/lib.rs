@@ -11,19 +11,22 @@
 #![no_main]
 #![no_std]
 #![feature(lang_items)]
-#![feature(c_variadic)]
+#![feature(alloc_error_handler)]
 #![crate_type = "staticlib"]
 
 mod lang;
+mod memory;
 
 extern crate arch;
 extern crate kernel;
-use kernel::{printfk::printfk::*};
+extern crate fk_std;
+
+use fk_std::{printf};
 
 #[no_mangle]
 pub extern "C" fn init_main() {
-    const TEXT: &'static str = "FOMOSv2-CL v2.3.5\n\0";
-    print(TEXT);
+    const TEXT: &'static str = "FOMOSv2-CL v2.3.5";
+    unsafe { printf(TEXT.as_ptr() as *const _); }
     loop {  }
 }
 

@@ -1,4 +1,4 @@
-extern crate libc;
+/* extern crate libc;
 use libc::{c_char, c_int};
 
 use super::super::printfk::printfk::{print};
@@ -12,3 +12,4 @@ pub fn read(arg: i32) {
     unsafe { scanf(INPUT.as_ptr() as *const _); }
     print(INPUT);
 }
+*/

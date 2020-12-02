@@ -18,7 +18,7 @@ members = [
 
 
 [dependencies]
-libc = "0.2.80"
+fk_std = "0.1.1"
 arch = { path = "arch/" }
 kernel = { path = "kernel/" }
 

@@ -1,4 +1,4 @@
-extern crate libc;
+/* extern crate libc;
 use libc::{c_char, c_int, strcat};
 
 pub const SPACE: &'static str = "\n\0";
@@ -15,3 +15,4 @@ pub fn print(arg: &str) -> i32 {
     const TEXT: &'static str = arg;
     unsafe { printf(TEXT.as_ptr() + SPACE.as_ptr() as *const _ ) }
 }
+*/
