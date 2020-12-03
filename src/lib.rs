@@ -19,14 +19,11 @@ mod memory;
 
 extern crate arch;
 extern crate kernel;
-extern crate fk_std;
-
-use fk_std::{printf};
+use kernel::{printfk::printf, printfk::print, printfk};
 
 #[no_mangle]
 pub extern "C" fn init_main() {
-    const TEXT: &'static str = "FOMOSv2-CL v2.3.5";
-    unsafe { printf(TEXT.as_ptr() as *const _); }
+    printfk!("FOMOSv2-CL v2.3.5\n\0");
     loop {  }
 }
 
