@@ -15,7 +15,6 @@
 #![crate_type = "staticlib"]
 
 mod lang;
-mod memory;
 
 extern crate arch;
 extern crate kernel;

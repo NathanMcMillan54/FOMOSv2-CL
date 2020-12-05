@@ -5,7 +5,5 @@
 
 // Files
 pub mod fomos_err;
-pub mod user;
 pub mod printfk;
-
 
