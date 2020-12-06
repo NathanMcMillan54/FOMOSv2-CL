@@ -4,6 +4,8 @@
 #![crate_type = "staticlib"]
 
 // Files
-pub mod fomos_err;
 pub mod printfk;
 
+pub fn main_loop() {
+    loop {  }
+}
