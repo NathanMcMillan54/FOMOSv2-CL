@@ -1,0 +1,6 @@
+If you compiled FOMOSv2-CL for the same CPU your device has, you can run the compiled file (init) as a normal executable
+file. If you want to run init on an unsupported CPU you could try to run it in the Linux kernel with Qemu,
+Documentation/kernel/linux.txt talks about compiling the Linux kernel and linking FOMOSv2-CL to it. To run FOMOSv2-CL if
+you compiled it for your device's CPU just run:
+
+    ./init

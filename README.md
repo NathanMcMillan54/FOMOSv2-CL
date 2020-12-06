@@ -12,8 +12,7 @@ so it will hopefully be supported longer. Eventually parts of the Linux kernel w
 they can work together easier.
 
 ## Setup
-``Documentation/Setup/`` talks about user and developer for FOMOSv2-CL. In that directory, it'll talk about how to 
-compile FOMOS and it on a device or run it in qemu.
+``Documentation/Setup/`` talks about how to compile and run FOMOSv2-CL.
 
 ### TODO
 - [x] Run FOMOS as initramfs in Linux kernel (very important)
