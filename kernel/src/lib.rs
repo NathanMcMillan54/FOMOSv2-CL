@@ -5,7 +5,10 @@
 
 // Files
 pub mod printfk;
+mod cl;
 
 pub fn main_loop() {
-    loop {  }
+    loop {
+        cl::cl::cl_main();
+    }
 }
