@@ -3,10 +3,9 @@
 
 extern void init_main();
 
-int main(void) {
-    sleep(2);
-
+int main() {
+    sleep(1);
     printf("Starting initramfs...\n");
+    sleep(1);
     init_main();
-    while (1) {    }
 }
