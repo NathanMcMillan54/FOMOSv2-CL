@@ -24,10 +24,6 @@ use fk_std::{printfk, print, fkstd_print};
 extern crate arch;
 extern crate kernel;
 
-extern "C" {
-    fn clearScreen();
-}
-
 #[no_mangle]
 pub extern "C" fn init_main() {
     printfk!("FOMOSv2-CL v2.3.5\n\0");

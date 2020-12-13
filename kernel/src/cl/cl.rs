@@ -1,6 +1,7 @@
-use crate::cl::run_command;
+use fk_std::{printfk, readfk, scanf, printf};
 
 pub fn cl_main() {
-    // Get user input
-    run_command::run_command("print");
+    let mut input = " ";
+    unsafe { scanf(input.as_ptr() as *const _); }
+    unsafe { printf(input.as_ptr() as *const _); }
 }

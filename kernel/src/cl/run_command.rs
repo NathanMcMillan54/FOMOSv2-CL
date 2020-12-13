@@ -1,9 +1,7 @@
-use fk_std::{printfk, add_str, printf};
+use fk_std::{printfk};
 
 fn command_exists(command: &str) -> bool {
-    printfk!("/lib/");
-    add_str(command, "\0");
-    unsafe { printf(command.as_ptr() as *const _); }
+    printfk!("/lib/\n\0");
     return true;
 }
 
