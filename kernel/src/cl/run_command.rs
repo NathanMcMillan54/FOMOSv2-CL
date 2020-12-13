@@ -1,17 +1,12 @@
-use crate::printfk;
-use core::intrinsics::abort;
+use fk_std::{printfk, add_str, printf};
 
 fn command_exists(command: &str) -> bool {
-
+    printfk!("/lib/");
+    add_str(command, "\0");
+    unsafe { printf(command.as_ptr() as *const _); }
     return true;
 }
 
 pub fn run_command(command: &str) {
-    let mut exists: bool = command_exists(command);
-    if exists = true {
-        printfk!("Command does exist\n\0");
-    } else {
-        printfk!("Command does not exist\n\0");
-        unsafe { abort(); }
-    }
+    command_exists(command);
 }

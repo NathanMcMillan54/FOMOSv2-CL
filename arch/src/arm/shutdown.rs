@@ -1,6 +1,5 @@
-use fk_std::{printf};
+use fk_std;
 
 pub fn shutdown() {
-    const SHUTDOWNMSG: &'static str = "Shutting down FOMOSv2-CL (arm)\n\0";
-    unsafe { printf(SHUTDOWNMSG.as_ptr() as *mut _); }
+    printfk!("Shutting down FOMOSv2-CL (arm)\n\0");
 }

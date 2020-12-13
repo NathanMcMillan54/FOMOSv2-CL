@@ -17,12 +17,12 @@
 mod lang;
 mod memory;
 
+#[macro_use]
 extern crate fk_std;
-// use fk_std::{printf, strings::add_str, printfk};
+use fk_std::{printfk, print, fkstd_print};
 
 extern crate arch;
 extern crate kernel;
-use kernel::printfk;
 
 extern "C" {
     fn clearScreen();
@@ -30,7 +30,6 @@ extern "C" {
 
 #[no_mangle]
 pub extern "C" fn init_main() {
-    unsafe { clearScreen(); }
     printfk!("FOMOSv2-CL v2.3.5\n\0");
 
     kernel::main_loop();

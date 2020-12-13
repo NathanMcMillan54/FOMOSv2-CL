@@ -4,7 +4,6 @@
 #![crate_type = "staticlib"]
 
 // Files
-pub mod printfk;
 mod cl;
 
 pub fn main_loop() {

@@ -10,6 +10,6 @@ pub extern "C" fn eh_personality() {    }
 
 
 #[alloc_error_handler]
-fn alloc_error_handler(layout: core::alloc::Layout) -> ! {
+fn alloc_error_handler(_layout: core::alloc::Layout) -> ! {
     loop {  }
 }
