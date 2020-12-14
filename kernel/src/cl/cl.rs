@@ -1,7 +1,10 @@
-use fk_std::{printfk, readfk, scanf, printf};
+use fk_std::{printfk, scanf};
+
+extern "C" {
+    fn input();
+}
 
 pub fn cl_main() {
-    let mut input = " ";
-    unsafe { scanf(input.as_ptr() as *const _); }
-    unsafe { printf(input.as_ptr() as *const _); }
+    printfk!(">>> \0");
+    unsafe { input(); }
 }
