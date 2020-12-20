@@ -1,10 +1,8 @@
 use fk_std::{printfk, scanf};
 
-extern "C" {
-    fn input();
-}
-
 pub fn cl_main() {
     printfk!(">>> \0");
-    unsafe { input(); }
+    const INPUT: &str = "b";
+    unsafe { scanf(INPUT.as_ptr() as *const _); }
+    printfk!(INPUT);
 }

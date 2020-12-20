@@ -11,5 +11,6 @@ init
 
 # Ignored directories
 .idea/
-FOMOS_dev_library/
+initramfs/
 target/
+trunk/

@@ -1,5 +1,6 @@
 use fk_std::{printfk};
 
-pub fn shutdown() {
+pub fn shutdown() -> ! {
     printfk!("\nShutting down FOMOSv2-CL (arm)\n\0");
+    loop {  }
 }

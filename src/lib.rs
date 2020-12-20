@@ -24,8 +24,13 @@ use fk_std::{printfk, print, fkstd_print};
 extern crate arch;
 extern crate kernel;
 
+extern "C" {
+    fn clearScreen();
+}
+
 #[no_mangle]
-pub extern "C" fn init_main() {
+pub extern "C" fn init_main() -> ! {
+    unsafe { clearScreen(); }
     printfk!("FOMOSv2-CL v2.3.5\n\0");
 
     kernel::main_loop();
@@ -34,7 +39,7 @@ pub extern "C" fn init_main() {
     arch::arm::shutdown::shutdown();
 
     #[cfg(target_arch = "x86_64")]
-    arch::x86::shutdown::shutdown();
+    arch::x86::shutdown::shutdown()
 }
 
 fn main() {
