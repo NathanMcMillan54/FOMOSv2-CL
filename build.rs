@@ -1,9 +1,9 @@
+#![feature(default_free_fn)]
 extern crate cc;
 
-extern crate serde_json;
-use serde_json::{de};
 extern crate std;
 use std::{fs, process, io::Write};
+use std::default::default;
 
 // OS image, kernel image, FOMOS image
 fn boot_dir() {
@@ -35,22 +35,27 @@ fn bin_dir() {
     let commandp = "initramfs/bin/commands/";
     let commandr = "https://github.com/sbFomos/builtin_commands/trunk/";
     let commandn: &str = "";
+    let commandi = "trunk/";
+    let initramfs = "initramfs/bin/";
 
     let print = "print/";
     for i in 1..2 {
         if i == 1 {
+            format!("{}{}", initramfs, print);
             format!("{}{}", commandn, print);
             format!("{}{}", commandr, print);
             format!("{}{}", commandp, print);
+            format!("{}{}", commandi, print);
+            format!("{}{}", initramfs, print);
         }
+
         process::Command::new("svn")
             .arg("checkout")
             .arg(commandr)
             .spawn()
             .expect("Cannot run command");
 
-        fs::rename(commandn, commandp);
-        fs::remove_dir(commandn);
+        fs::rename(commandi, initramfs);
     }
 }
 
@@ -59,7 +64,12 @@ fn lib_dir() {
 
 }
 
-// User stuff
+// User[s], name[s], password[s], settings
+fn config_dir() {
+
+}
+
+// User directory
 fn home_dir() {
 
 }
@@ -73,6 +83,8 @@ fn root() {
     bin_dir();
     fs::create_dir("initramfs/lib/");
     lib_dir();
+    fs::create_dir("initramfs/user/");
+    config_dir();
     fs::create_dir("initramfs/home/");
     home_dir();
 }

@@ -23,5 +23,4 @@ arch = { path = "arch/" }
 kernel = { path = "kernel/" }
 
 [build-dependencies]
-serde_json = "1.0.60"
 cc = "1.0.65"
