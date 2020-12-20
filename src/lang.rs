@@ -1,3 +1,12 @@
+/* src/lang.rs
+ *
+ * Build/compile:
+ * cargo build
+ *
+ * Description:
+ * Panic handler and memory management.
+ */
+
 use core::panic::{PanicInfo};
 
 #[panic_handler]

@@ -1,3 +1,11 @@
+/* build.rs
+ *
+ * Build/compile:
+ * cargo build
+ *
+ * Description:
+ * Build script for FOMOSv2-CL, compiles and makes files for FOMOS.
+ */
 #![feature(default_free_fn)]
 extern crate cc;
 

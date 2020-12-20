@@ -2,6 +2,7 @@
  *
  * Build/compile:
  * cargo build
+ * sh build.sh <arch>
  *
  * Description:
  * This is FOMOSv2-CL's main file, main.c calls init_main() which then starts all the processes

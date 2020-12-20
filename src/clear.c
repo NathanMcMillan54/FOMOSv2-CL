@@ -1,3 +1,12 @@
+/* src/clear.c
+ *
+ * Build/compile:
+ * cargo build
+ *
+ * Description:
+ * Clears all the text that is current;y on the screen
+ */
+
 #include <unistd.h>
 
 int clearScreen() {

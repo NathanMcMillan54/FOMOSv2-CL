@@ -1,3 +1,13 @@
+/* src.main.c
+ *
+ * Build/compile:
+ * <arch>-gcc -static src/main.c target/<arch>/debug/libFOMOSv2-CL.a -o init
+ *
+ * Description:
+ * After the Linux kernel is done it's setup, this file starts to run and calls init_main() from src/lib.rs to start
+ * FOMOS.
+ */
+
 #include <stdio.h>
 #include <unistd.h>
 

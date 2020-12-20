@@ -1,5 +1,13 @@
+/* kernel/src/lib.rs
+ *
+ * Build/compile:
+ * cargo build
+ *
+ * Description:
+ * This lets FOMOS run it's main and most important processes.
+ */
+
 #![no_std]
-#![no_main]
 #![feature(lang_items)]
 #![crate_type = "staticlib"]
 

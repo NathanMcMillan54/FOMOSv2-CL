@@ -1,4 +1,9 @@
 #!/bin/bash
+# build.sh
+#
+# Description:
+# Compiles and links FOMOSv2-CL
+#
 
 ARCH=$1
 

@@ -1,3 +1,12 @@
+/* src/memory.rs
+ *
+ * Build/compile:
+ * cargo build
+ *
+ * Description:
+ * Alloc memory management
+ */
+
 use core::alloc::{GlobalAlloc, Layout};
 use core::ptr::{null_mut};
 
