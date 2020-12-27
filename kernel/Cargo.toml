@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
+include = { path = "../include/" }
 fk_std = "0.2.3"
 libc = "0.2.81"
 

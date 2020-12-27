@@ -7,6 +7,7 @@
  * This file starts the command line and it's main processes
  */
 
+use include::{filePath};
 use fk_std::{printfk, printf};
 use libc::{c_char};
 
