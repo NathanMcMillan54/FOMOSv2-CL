@@ -100,7 +100,7 @@ fn root() {
 fn main() {
     println!("cargo:rerun-if-changed=src/clear.c");
     cc::Build::new()
-        .file("src/clear.c")
+        .file("kernel/src/clear.c")
         .compile("clear");
 
     fs::create_dir("initramfs/");

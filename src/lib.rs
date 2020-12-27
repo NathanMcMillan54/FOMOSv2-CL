@@ -24,10 +24,7 @@ use fk_std::{printfk, print, fkstd_print};
 
 extern crate arch;
 extern crate kernel;
-
-extern "C" {
-    fn clearScreen();
-}
+use kernel::{clearScreen};
 
 #[no_mangle]
 pub extern "C" fn init_main() -> ! {

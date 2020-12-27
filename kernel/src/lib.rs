@@ -12,9 +12,14 @@
 #![crate_type = "staticlib"]
 
 extern crate fk_std;
+extern crate libc;
 
 // Files
 mod cl;
+
+extern "C" {
+    pub fn clearScreen();
+}
 
 pub fn main_loop() {
     cl::cl::cl_main();

@@ -1,10 +1,10 @@
-/* src/clear.c
+/* kernel/src/clear.c
  *
  * Build/compile:
  * cargo build
  *
  * Description:
- * Clears all the text that is current;y on the screen
+ * Clears all the text that is currently on the screen
  */
 
 #include <unistd.h>
