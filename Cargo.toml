@@ -12,14 +12,16 @@ path = "src/lib.rs"
 
 [workspace]
 members = [
-    "kernel/",
     "arch/",
+    "include/",
+    "kernel/",
 ]
 
 
 [dependencies]
 fk_std = "0.2.3"
 arch = { path = "arch/" }
+include = { path = "include/" }
 kernel = { path = "kernel/" }
 
 [build-dependencies]
