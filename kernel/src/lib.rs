@@ -11,6 +11,9 @@
 #![feature(lang_items)]
 #![crate_type = "staticlib"]
 
+#[macro_use]
+extern crate alloc;
+
 extern crate include;
 extern crate fk_std;
 extern crate libc;

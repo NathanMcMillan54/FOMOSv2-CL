@@ -9,7 +9,6 @@
 
 use include::{filePath};
 use fk_std::{printfk, printf};
-use libc::{c_char};
 
 extern "C" {
     fn cl_input() -> &'static str;
@@ -22,5 +21,12 @@ pub fn cl_main() {
 
 #[no_mangle]
 pub fn command_exists(command: &str) {
+    printfk!("It didn't break!\n\0");
+    if unsafe { filePath(command) } == true {
+        printfk!("It exists!\n\0");
+    } else {
+        printfk!("Command not found\n\0");
+    }
+    printfk!("It still didn't break!\n\0");
     loop {  }
 }

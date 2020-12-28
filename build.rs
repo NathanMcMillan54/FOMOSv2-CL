@@ -11,7 +11,6 @@ extern crate cc;
 
 extern crate std;
 use std::{fs, process, io::Write};
-use std::default::default;
 
 // OS image, kernel image, FOMOS image
 fn boot_dir() {
@@ -40,31 +39,16 @@ fn os_dir() -> std::io::Result<()> {
 
 // Installed binaries
 fn bin_dir() {
-    let commandp = "initramfs/bin/commands/";
-    let commandr = "https://github.com/sbFomos/builtin_commands/trunk/";
-    let commandn: &str = "";
-    let commandi = "trunk/";
-    let initramfs = "initramfs/bin/";
+    process::Command::new("git")
+        .arg("clone")
+        .arg("https://github.com/sbFomos/builtin_commands.git")
+        .spawn()
+        .expect("Cannot install builtin_commands\nInstall it yourself");
 
-    let print = "print/";
-    for i in 1..2 {
-        if i == 1 {
-            format!("{}{}", initramfs, print);
-            format!("{}{}", commandn, print);
-            format!("{}{}", commandr, print);
-            format!("{}{}", commandp, print);
-            format!("{}{}", commandi, print);
-            format!("{}{}", initramfs, print);
-        }
-
-        process::Command::new("svn")
-            .arg("checkout")
-            .arg(commandr)
-            .spawn()
-            .expect("Cannot run command");
-
-        fs::rename(commandi, initramfs);
-    }
+    process::Command::new("sh")
+        .arg("builtin_commands/fomos.sh")
+        .spawn()
+        .expect("Cannot run builtin_commands/fomos.sh\nRun it yourself");
 }
 
 // Installed libraries

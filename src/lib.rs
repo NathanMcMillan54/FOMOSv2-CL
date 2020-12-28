@@ -20,7 +20,7 @@ mod memory;
 
 #[macro_use]
 extern crate fk_std;
-use fk_std::{printfk, print, fkstd_print};
+use fk_std::{printfk};
 
 extern crate arch;
 extern crate kernel;

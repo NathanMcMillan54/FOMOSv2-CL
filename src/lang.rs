@@ -4,7 +4,7 @@
  * cargo build
  *
  * Description:
- * Panic handler and memory management.
+ * Panic handler and alloc memory management.
  */
 
 use core::panic::{PanicInfo};

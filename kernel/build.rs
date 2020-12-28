@@ -13,6 +13,6 @@ fn main() {
 
     println!("caro:rerun-if-changed=src/cl/input.c");
     cc::Build::new()
-        .file("src/cl/input.c")
+        .file("src/cl/command.c")
         .compile("input");
 }
