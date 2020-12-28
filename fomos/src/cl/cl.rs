@@ -1,4 +1,4 @@
-/* kernel/src/cl/cl.rs
+/* fomos/src/cl/cl.rs
  *
  * Build/compile:
  * cargo build

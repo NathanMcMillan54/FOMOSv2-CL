@@ -12,7 +12,7 @@ extern crate cc;
 extern crate std;
 use std::{fs, process, io::Write};
 
-// OS image, kernel image, FOMOS image
+// OS image, fomos image, FOMOS image
 fn boot_dir() {
 
 }
@@ -82,11 +82,6 @@ fn root() {
 }
 
 fn main() {
-    println!("cargo:rerun-if-changed=src/clear.c");
-    cc::Build::new()
-        .file("kernel/src/clear.c")
-        .compile("clear");
-
     fs::create_dir("initramfs/");
     root();
 }

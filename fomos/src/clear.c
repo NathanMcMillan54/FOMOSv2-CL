@@ -1,4 +1,4 @@
-/* kernel/src/clear.c
+/* fomos/src/clear.c
  *
  * Build/compile:
  * cargo build

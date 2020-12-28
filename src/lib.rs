@@ -23,15 +23,15 @@ extern crate fk_std;
 use fk_std::{printfk};
 
 extern crate arch;
-extern crate kernel;
-use kernel::{clearScreen};
+extern crate fomos;
+use fomos::{clearScreen};
 
 #[no_mangle]
 pub extern "C" fn init_main() -> ! {
     unsafe { clearScreen(); }
     printfk!("FOMOSv2-CL v2.3.5\n\0");
 
-    kernel::main_loop();
+    fomos::main_loop();
 
     #[cfg(target_arch = "arm")]
     arch::arm::shutdown::shutdown();

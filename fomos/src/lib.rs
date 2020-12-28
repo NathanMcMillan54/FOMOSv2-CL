@@ -1,4 +1,4 @@
-/* kernel/src/lib.rs
+/* fomos/src/lib.rs
  *
  * Build/compile:
  * cargo build
@@ -12,7 +12,6 @@
 #![crate_type = "staticlib"]
 
 extern crate fk_std;
-extern crate libc;
 
 // Files
 mod cl;
