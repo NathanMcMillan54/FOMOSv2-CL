@@ -1,15 +1,26 @@
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 char commandInput[999];
 char *binPath = "/bin/";
 char commandPath[1004];
 
-void command_exists(char command);
+void run_command();
+void commandExists();
 
 void cl_input() {
     scanf("%s", commandInput);
     strcat(commandPath, binPath);
     strcat(commandPath, commandInput);
-    command_exists(*commandPath);
+    commandExists();
+}
+
+void commandExists() {
+    printf("%s\n", commandPath);
+    if (access(commandPath, F_OK) != -1) {
+        run_command();
+    } else {
+        printf("%s - Command not found\n", commandInput);
+    }
 }

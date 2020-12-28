@@ -24,7 +24,6 @@ use fk_std::{printfk};
 
 extern crate arch;
 extern crate kernel;
-extern crate include;
 use kernel::{clearScreen};
 
 #[no_mangle]

@@ -11,10 +11,6 @@
 #![feature(lang_items)]
 #![crate_type = "staticlib"]
 
-#[macro_use]
-extern crate alloc;
-
-extern crate include;
 extern crate fk_std;
 extern crate libc;
 
@@ -26,5 +22,7 @@ extern "C" {
 }
 
 pub fn main_loop() {
-    cl::cl::cl_main();
+    loop {
+        cl::cl::cl_main();
+    }
 }
