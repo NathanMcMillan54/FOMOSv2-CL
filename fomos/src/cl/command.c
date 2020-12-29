@@ -10,6 +10,7 @@ void run_command();
 void commandExists();
 
 void cl_input() {
+    commandPath[0] = '\0';
     scanf("%s", commandInput);
     strcat(commandPath, binPath);
     strcat(commandPath, commandInput);
