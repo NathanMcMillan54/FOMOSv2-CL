@@ -8,8 +8,10 @@
  * FOMOS.
  */
 
-#include <stdio.h>
 #include <unistd.h>
+#include <stdio.h>
+
+#include "power.h"
 
 extern void init_main();
 
@@ -18,5 +20,5 @@ int main() {
     printf("Starting initramfs...\n");
     sleep(1);
     init_main();
-    while (1) {  }
+    while (1) {    }
 }

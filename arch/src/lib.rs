@@ -14,3 +14,9 @@ extern crate fk_std;
 
 pub mod arm;
 pub mod x86;
+
+#[cfg(any(target_arch = "x86", target_arch = "x86_64"))]
+pub use x86::ARCH;
+
+#[cfg(any(target_arch = "arm", target_arch = "aarch64"))]
+pub use arm::ARCH;

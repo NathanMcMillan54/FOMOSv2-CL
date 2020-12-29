@@ -1,2 +1,3 @@
 // arch/src/x86/mod.rs
-pub mod shutdown;
+
+pub const ARCH: &'static str = "x86";

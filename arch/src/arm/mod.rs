@@ -1,2 +1,3 @@
 // arch/src/arm/mod.rs
-pub mod shutdown;
+
+pub const ARCH: &'static str = "arm";

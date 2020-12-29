@@ -17,6 +17,8 @@
 
 mod lang;
 mod memory;
+mod power;
+use power::{shutdown, restart};
 
 #[macro_use]
 extern crate fk_std;
@@ -28,16 +30,12 @@ use fomos::{clearScreen};
 
 #[no_mangle]
 pub extern "C" fn init_main() -> ! {
-    unsafe { clearScreen(); }
+    unsafe { clearScreen() }
     printfk!("FOMOSv2-CL v2.3.5\n\0");
 
     fomos::main_loop();
 
-    #[cfg(target_arch = "arm")]
-    arch::arm::shutdown::shutdown();
-
-    #[cfg(target_arch = "x86_64")]
-    arch::x86::shutdown::shutdown()
+    unsafe { shutdown() }
 }
 
 fn main() {
