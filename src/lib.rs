@@ -20,6 +20,9 @@ mod memory;
 mod power;
 use power::{shutdown, restart};
 
+mod setup;
+use setup::{setup::start_setup};
+
 #[macro_use]
 extern crate fk_std;
 use fk_std::{printfk};
@@ -33,6 +36,7 @@ pub extern "C" fn init_main() -> ! {
     unsafe { clearScreen() }
     printfk!("FOMOSv2-CL v2.3.5\n\0");
 
+    start_setup();
     fomos::main_loop();
 
     unsafe { shutdown() }

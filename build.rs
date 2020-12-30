@@ -42,13 +42,9 @@ fn bin_dir() {
     process::Command::new("git")
         .arg("clone")
         .arg("https://github.com/sbFomos/builtin_commands.git")
-        .spawn()
-        .expect("Cannot install builtin_commands\nInstall it yourself");
+        .spawn();
 
-    process::Command::new("sh")
-        .arg("builtin_commands/fomos.sh")
-        .spawn()
-        .expect("Cannot run builtin_commands/fomos.sh\nRun it yourself");
+    fs::copy("builtin_commands/print/print", "initramfs/bin/print");
 }
 
 // Installed libraries
@@ -57,8 +53,10 @@ fn lib_dir() {
 }
 
 // User[s], name[s], password[s], settings
-fn config_dir() {
-
+fn config_dir() -> std::io::Result<()> {
+    fs::create_dir("initramfs/configs/boot/");
+    let mut cbst = fs::File::create("initramfs/configs/boot/startupTimes")?;
+    cbst.write_all(b"0")
 }
 
 // User directory
@@ -67,15 +65,15 @@ fn home_dir() {
 }
 
 fn root() {
+    fs::create_dir("initramfs/bin/");
+    bin_dir();
     fs::create_dir("initramfs/boot/");
     boot_dir();
     fs::create_dir("initramfs/os/");
     os_dir();
-    fs::create_dir("initramfs/bin/");
-    bin_dir();
     fs::create_dir("initramfs/lib/");
     lib_dir();
-    fs::create_dir("initramfs/user/");
+    fs::create_dir("initramfs/configs/");
     config_dir();
     fs::create_dir("initramfs/home/");
     home_dir();

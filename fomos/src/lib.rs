@@ -13,12 +13,10 @@
 
 extern crate fk_std;
 
-// Files
 mod cl;
 
-extern "C" {
-    pub fn clearScreen();
-}
+extern "C" { pub fn clearScreen(); }
+extern "C" { pub fn readFile(file: &str) -> &str; }
 
 pub fn main_loop() {
     loop {
