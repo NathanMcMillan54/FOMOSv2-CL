@@ -1,16 +1,11 @@
 use fk_std::{printfk};
-use fomos::readFile;
-use crate::setup::first_setup::first_time_setup;
+use super::configSetup;
 
-fn config_setup() {
-    printfk!("\nReading configuration files...\n\0");
-    let times_started = unsafe { readFile("/configs/boot/startupTimes") };
-    if times_started == "0" {
-        printfk!("/configs/startupTimes = 0\n\0");
-        first_time_setup();
-    }
+fn regular_setup() {
+    printfk!("Starting setup...\n\0");
 }
 
-pub fn start_setup() {
-    config_setup();
+pub unsafe fn start_setup() {
+    configSetup();
+    regular_setup();
 }

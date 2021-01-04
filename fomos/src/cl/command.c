@@ -18,7 +18,7 @@ void cl_input() {
 }
 
 void commandExists() {
-    printf("%s\n", commandPath);
+    // printf("%s\n", commandPath);
     if (access(commandPath, F_OK) != -1) {
         run_command();
     } else {

@@ -6,7 +6,7 @@
  * Description:
  * Build script for FOMOSv2-CL, compiles and makes files for FOMOS.
  */
-#![feature(default_free_fn)]
+
 extern crate cc;
 
 extern crate std;
@@ -18,7 +18,7 @@ fn boot_dir() {
 }
 
 // OS info
-fn os_dir() -> std::io::Result<()> {
+fn os_dir() -> std::io::Result<()>{
     fs::create_dir("initramfs/os/kernel/");
     fs::create_dir("initramfs/os/kernel/linux");
 
@@ -80,6 +80,11 @@ fn root() {
 }
 
 fn main() {
+    println!("carg:rerun-if-changed=src/setup/config.c");
+    cc::Build::new()
+        .file("src/setup/config.c")
+        .compile("config");
+
     fs::create_dir("initramfs/");
     root();
 }
