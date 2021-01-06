@@ -80,7 +80,7 @@ fn root() {
 }
 
 fn main() {
-    println!("carg:rerun-if-changed=src/setup/config.c");
+    println!("cargo:rerun-if-changed=src/setup/config.c");
     cc::Build::new()
         .file("src/setup/config.c")
         .compile("config");

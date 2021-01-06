@@ -27,14 +27,12 @@ use fk_std::{printfk};
 
 extern crate arch;
 extern crate fomos;
-use fomos::{clearScreen, readDir};
+use fomos::{clearScreen};
 
 #[no_mangle]
 pub extern "C" fn init_main() -> ! {
     unsafe { clearScreen() }
     printfk!("FOMOSv2-CL v2.3.5\n\0");
-
-    unsafe { readDir("/os/"); }
 
     unsafe { setup::setup::start_setup(); }
     fomos::main_loop();

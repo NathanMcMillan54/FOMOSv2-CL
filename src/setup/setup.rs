@@ -1,11 +1,11 @@
-use fk_std::{printfk};
-use super::configSetup;
+use fk_std::{printfk, printf};
+use super::{configSetup, first_setup::first_setup};
 
-fn regular_setup() {
+#[no_mangle]
+pub extern "C" fn regular_setup() {
     printfk!("Starting setup...\n\0");
 }
 
 pub unsafe fn start_setup() {
     configSetup();
-    regular_setup();
 }
