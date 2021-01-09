@@ -1,6 +1,0 @@
-#ifndef FOMOSV2_CL_FILES_H
-#define FOMOSV2_CL_FILES_H
-
-#define MAXCHAR 999
-
-#endif //FOMOSV2_CL_FILES_H
