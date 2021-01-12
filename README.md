@@ -19,10 +19,10 @@ they can work together easier.
 - [x] Add proper memory management (very important)
 - [x] x86 compiles (very important)
 - [x] x86 runs as Linux initramfs (very important)
-- [ ] armv6/7 compiles (very important)
-- [ ] armv6/7 runs as Linux initramfs (very important)
-- [ ] Add user name setup
-- [ ] Add password setup for x86
+- [x] armv6/7 compiles (very important)
+- [x] armv6/7 runs as Linux initramfs (very important)
+- [x] Add user name setup
+- [x] Add password setup for x86
 - [ ] Write Documentation for FOMOS (not very important now)
 
 ## Contributions

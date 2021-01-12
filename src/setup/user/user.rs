@@ -38,9 +38,7 @@ pub unsafe fn make_password() {
         // arm_specific_password();
         setup_password();
     } else if ARCH == "x86" {
-        printfk!("x86 setup_password\n\0");
         setup_password();
-        printfk!("x86 setup_password done\n\0");
     }
 }
 
