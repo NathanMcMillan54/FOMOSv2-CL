@@ -8,7 +8,7 @@
 ARCH=$1
 
 echo "Compiling FOMOSv2-CL v2.3.5 for $ARCH..."
-if [ "$ARCH" = 'armv' ]; then
+if [ "$ARCH" = 'arm' ]; then
     cargo build --target=armv7-unknown-linux-gnueabihf
     arm-linux-gnueabihf-gcc -static src/main.c target/armv7-unknown-linux-gnueabihf/debug/libFOMOSv2_CL.a -o init
     mv init initramfs/ && cd initramfs/

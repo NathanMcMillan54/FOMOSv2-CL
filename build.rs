@@ -89,10 +89,15 @@ fn main() {
         .file("src/setup/config.c")
         .compile("config");
 
-    println!("cargo:rerun-if-changed=src/setup/user/password.c");
+    println!("cargo:rerun-if-changed=src/setup/user/setupPassword.c");
     cc::Build::new()
         .file("src/setup/user/setupPassword.c")
         .compile("setup_password");
+
+    println!("cargo:rerun-if-changed=src/setup/user/setupName.c");
+    cc::Build::new()
+        .file("src/setup/user/setupName.c")
+        .compile("user_name");
 
     fs::create_dir("initramfs/");
     root();

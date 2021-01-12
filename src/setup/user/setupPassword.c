@@ -7,3 +7,10 @@ int addPassword(char password) {
     fclose(fp);
     return 0;
 }
+
+int makePassword() {
+    char inputPassword[24];
+    scanf("%s", inputPassword);
+    addPassword(*inputPassword);
+}
+
