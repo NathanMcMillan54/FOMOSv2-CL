@@ -33,10 +33,14 @@ fn arm_specific_password() {
 }
 
 pub unsafe fn make_password() {
+    printfk!("src/setup/user/user.rs - 36:43\n\0");
     if ARCH == "arm" {
-        arm_specific_password();
-    } else if ARCH == "x86" {
+        // arm_specific_password();
         setup_password();
+    } else if ARCH == "x86" {
+        printfk!("x86 setup_password\n\0");
+        setup_password();
+        printfk!("x86 setup_password done\n\0");
     }
 }
 

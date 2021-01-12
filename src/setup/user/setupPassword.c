@@ -12,5 +12,6 @@ int makePassword() {
     char inputPassword[24];
     scanf("%s", inputPassword);
     addPassword(*inputPassword);
+    return 0;
 }
 
