@@ -15,7 +15,7 @@ if [ "$ARCH" = 'armv' ]; then
     find . | cpio -o -H newc | gzip > ../FOMOSv2-CL_v2_3_5.cpio.gz
 elif [ "$ARCH" = 'x86' ]; then
     cargo build --target=x86_64-unknown-linux-gnu
-    gcc -static src/main.c target/x86_64-unknown-linux-gnu/debug/libFOMOSv2_CL.a -o init
+    x86_64-linux-gnu-gcc -static src/main.c target/x86_64-unknown-linux-gnu/debug/libFOMOSv2_CL.a -o init
     mv init initramfs/ && cd initramfs/
     find . | cpio -o -H newc | gzip > ../FOMOSv2-CL_v2_3_5.cpio.gz
 else
