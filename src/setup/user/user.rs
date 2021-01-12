@@ -8,21 +8,21 @@ pub fn user_name() {
 
 }
 
-pub fn setup_password() {
+pub unsafe fn setup_password() {
 
 }
 
 pub fn make_password() {
     if ARCH == "arm" {
         user_name();
-        let arm_pass_options = password_options();
+        let arm_pass_options = unsafe { password_options() };
         if arm_pass_options == 2 {
-            setup_password()
+            unsafe { setup_password() }
         } else {
             short_password();
         }
     } else if ARCH == "x86" {
-        setup_password();
+        unsafe { setup_password(); }
     }
 }
 

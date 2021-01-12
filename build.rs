@@ -4,13 +4,14 @@
  * cargo build
  *
  * Description:
- * Build script for FOMOSv2-CL, compiles and makes files for FOMOS.
+ * Build script for FOMOSv2-CL, compiles and makes root directory for FOMOS.
  */
 
 extern crate cc;
 
 extern crate std;
 use std::{fs, process, io::Write};
+use std::fs::File;
 
 // OS image, fomos image, FOMOS image
 fn boot_dir() {
@@ -53,10 +54,13 @@ fn lib_dir() {
 }
 
 // User[s], name[s], password[s], settings
-fn config_dir() -> std::io::Result<()> {
+fn config_dir() -> std::io::Result<File> {
     fs::create_dir("initramfs/configs/boot/");
+    fs::create_dir("initramfs/configs/user/");
     let mut cbst = fs::File::create("initramfs/configs/boot/startupTimes")?;
-    cbst.write_all(b"0")
+    cbst.write_all(b"0");
+    fs::File::create("initramfs/configs/user/password")?;
+    fs::File::create("initramfs/configs/user/name")
 }
 
 // User directory
@@ -84,6 +88,11 @@ fn main() {
     cc::Build::new()
         .file("src/setup/config.c")
         .compile("config");
+
+    println!("cargo:rerun-if-changed=src/setup/user/password.c");
+    cc::Build::new()
+        .file("src/setup/user/setupPassword.c")
+        .compile("setup_password");
 
     fs::create_dir("initramfs/");
     root();

@@ -4,13 +4,12 @@
 
 #include "config.h"
 
-int updateStartupTimes(int updated) {
+void updateStartupTimes(int updated) {
     FILE *fp;
     char updateChar[] = {'0', updated, '\0'};
     fp = fopen("/configs/boot/startupTimes", "w");
     fputs(updateChar, fp);
     fclose(fp);
-    return 0;
 }
 
 int configSetup() {

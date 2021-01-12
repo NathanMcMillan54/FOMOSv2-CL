@@ -10,6 +10,7 @@
 #![no_std]
 #![crate_type = "staticlib"]
 
+#[macro_use]
 extern crate fk_std;
 
 pub mod arm;

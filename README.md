@@ -20,7 +20,9 @@ they can work together easier.
 - [x] x86 compiles (very important)
 - [x] x86 runs as Linux initramfs (very important)
 - [ ] armv6/7 compiles (very important)
-- [ ] armv6/7 runs as Linux initramfs (very important)  
+- [ ] armv6/7 runs as Linux initramfs (very important)
+- [ ] Add user name setup
+- [ ] Add password setup for x86
 - [ ] Write Documentation for FOMOS (not very important now)
 
 ## Contributions
