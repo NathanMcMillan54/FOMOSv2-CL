@@ -44,8 +44,6 @@ fn bin_dir() {
         .arg("clone")
         .arg("https://github.com/sbFomos/builtin_commands.git")
         .spawn();
-
-    fs::copy("builtin_commands/print/print", "initramfs/bin/print");
 }
 
 // Installed libraries

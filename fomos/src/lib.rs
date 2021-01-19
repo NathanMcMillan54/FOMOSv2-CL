@@ -11,6 +11,7 @@
 #![feature(lang_items)]
 #![crate_type = "staticlib"]
 
+extern crate builtin_commands;
 extern crate fk_std;
 
 mod cl;
