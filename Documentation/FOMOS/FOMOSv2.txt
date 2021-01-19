@@ -1,7 +1,7 @@
 FOMOSv2-CL v2.3.5 is a small OS based off Linux kernel v5.9. You can find the source code for the Linux kernel here:
 
     https://github.com/torvalds/linux/
-    Or https://github.com/sbFomos/linux/ (Used fro FOMOS)
+    Or https://github.com/sbFomos/linux/ (Used for FOMOS)
 
 FOMOS stands for: Free, Opensource, Mobile, Operating, System. FOMOS is an OS that anyone can edit made for mobile
 devices. If you want to contribute to FOMOSv2-CL you need to run your code and have it work at least 5 times in a row.
