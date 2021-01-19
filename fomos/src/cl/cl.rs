@@ -10,7 +10,7 @@
 use fk_std::{printfk, printf};
 
 extern "C" {
-    fn cl_input() -> &'static str;
+    fn cl_input();
 }
 
 pub fn cl_main() {

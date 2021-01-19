@@ -2,22 +2,12 @@
 #include <string.h>
 #include <unistd.h>
 
-char commandName;
-char commandArg;
+char commandName[999];
+char commandArg[999];
 
-void run_command();
-void commandExists();
+extern void run_command(char *command, char *argument);
 
 void cl_input() {
-    scanf("%s %s", &commandName, &commandArg);
-    printf("\nfomos/src/cl/command.c command: %s argument[s]: %s\n", &commandName, &commandArg)
-    // commandExists();
-}
-
-void commandExists() {
-    if (access(commandPath, F_OK) != -1) {
-        run_command(*commandInput, *commandArg);
-    } else {
-        printf("%s - Command not found\n", fullCommand);
-    }
+    scanf("%s %s", commandName, commandArg);
+    run_command(commandName, commandArg);
 }
