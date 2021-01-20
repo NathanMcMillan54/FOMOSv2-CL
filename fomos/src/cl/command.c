@@ -2,12 +2,15 @@
 #include <string.h>
 #include <unistd.h>
 
-char commandName[999];
-char commandArg[999];
-
-extern void run_command(char *command, char *argument);
+extern void run_command(int command, char *argument);
 
 void cl_input() {
-    scanf("%s %s", commandName, commandArg);
-    run_command(commandName, commandArg);
+    char commandName[50];
+    char commandArguments[50];
+    scanf("%s %s", commandName, commandArguments);
+    if (!strcmp(commandName, "print")) {
+        run_command(1, commandArguments);
+    } else {
+        printf("It's not print, it's: %s\n", commandName);
+    }
 }

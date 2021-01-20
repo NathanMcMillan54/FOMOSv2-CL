@@ -12,6 +12,7 @@
 #![crate_type = "staticlib"]
 
 extern crate builtin_commands;
+#[macro_use]
 extern crate fk_std;
 
 mod cl;

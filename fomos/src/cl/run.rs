@@ -1,10 +1,8 @@
-use fk_std::{printfk, printf, c_char};
-use builtin_commands::print_main;
-
 #[no_mangle]
-pub extern "C" fn run_command(commad: &str, arguments: &str) {
-    printfk!("\nArgument[s]:\n\0");
-    print_main(arguments);
-    printfk!("\nCommand:\n\0");
-    print_main(commad);
+pub extern "C" fn run_command(mut command: i32, argument: &str) {
+    if command == 1 {
+        builtin_commands::print_main(argument);
+    } else {
+        printfk!("Command not found\n\0");
+    }
 }
