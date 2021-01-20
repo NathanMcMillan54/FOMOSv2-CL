@@ -11,6 +11,6 @@ void cl_input() {
     if (!strcmp(commandName, "print")) {
         run_command(1, commandArguments);
     } else {
-        printf("It's not print, it's: %s\n", commandName);
+        run_command(0, commandArguments);
     }
 }
