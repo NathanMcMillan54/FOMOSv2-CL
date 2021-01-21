@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include <linux/fs.h>
+
 #include "config.h"
+
 
 void printName() {
     char str[MAXCHAR];
@@ -11,6 +14,7 @@ void printName() {
     while (fgets(str, MAXCHAR, fp) != NULL) {
         printf("Hello %s\n", str);
     }
+    fclose(fp);
 }
 
 void makeUserName() {
@@ -30,16 +34,15 @@ void makePassword() {
     scanf("%s", inputPassword);
     fp = fopen("/configs/user/password", "a");
     fputs(inputPassword, fp);
-    while (fgets(str, MAXCHAR, fp) != NULL)
-        printf("\nPassword = %s\n\n", str);
     fclose(fp);
 }
 
 void updateStartupTimes(int updated) {
     FILE *fp;
-    char updateChar[] = {'0', updated, '\0'};
-    fp = fopen("/configs/boot/startupTimes", "a");
-    fputs(updateChar, fp);
+    printf("This function was called with the argument updated which = %d\n", updated);
+    printf("Adding %d to /configs/boot/startupTimes...\n", updated);
+    fp = fopen("/configs/boot/startupTimes", "w");
+    fputs("1", fp);
     fclose(fp);
 }
 
@@ -54,13 +57,16 @@ void configSetup() {
         printf("\nStartup times = %s\n\n", str);
     inte = atoi(str);
     updatedInte = inte + 1;
+    fclose(fp);
     if (inte == 0) {
         updateStartupTimes(updatedInte);
+        fp = fopen("/configs/boot/startupTimes", "r");
+        while (fgets(str, MAXCHAR, fp) != NULL)
+            printf("\nStartup times is now = %s\n\n", str);
         fclose(fp);
         first_setup();
     } else {
         updateStartupTimes(updatedInte);
-        fclose(fp);
         regular_setup();
     }
 }
