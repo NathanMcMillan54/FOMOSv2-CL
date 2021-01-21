@@ -25,6 +25,9 @@ they can work together easier.
 - [x] Add password setup for x86
 - [ ] Write Documentation for FOMOS (not very important now)
 
+#### 2.4.5 (maybe) TODO list
+- [ ] Get kernel to save root directory information
+
 ## Contributions
 ``Documentation/editing/`` talks a lot about requirements for contributing to FOMOSv2-CL. It also talks about how to 
 edit FOMOS and shows some examples of how to add things to FOMOSv2-CL.
