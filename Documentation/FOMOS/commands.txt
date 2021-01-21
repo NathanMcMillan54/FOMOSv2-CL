@@ -1,0 +1,9 @@
+FOMOSv2-CL builtin commands
+
+Command Number | Command Name |
+-------------------------------
+0              | Command not
+               | found
+---------------|---------------
+1              | print <arg>
+---------------|---------------

@@ -1,0 +1,1 @@
+Pull the Linux kernel for FOMOSv2-CL from https://github.com/sbFomos/linux/
