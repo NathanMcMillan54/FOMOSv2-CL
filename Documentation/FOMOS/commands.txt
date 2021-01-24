@@ -5,5 +5,11 @@ Command Number | Command Name |
 0              | Command not
                | found
 ---------------|---------------
-1              | print <arg>
+1              | print <text>
 ---------------|---------------
+2              | asku (ask user)
+               | <u>
+-------------------------------
+3              | shutdown
+               | <seconds>
+-------------------------------

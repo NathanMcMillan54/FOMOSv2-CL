@@ -1,3 +1,6 @@
 // fomos/src/cl/mod.rs
 pub mod cl;
-pub mod run;
+
+extern "C" {
+    fn cl_input();
+}

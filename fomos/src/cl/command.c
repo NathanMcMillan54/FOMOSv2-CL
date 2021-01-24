@@ -10,7 +10,12 @@ void cl_input() {
     scanf("%s %[^\n]", commandName, commandArguments);
     if (!strcmp(commandName, "print")) {
         run_command(1, commandArguments);
-    } else {
+    } else if (!strcmp(commandName, "asku")) {
+        run_command(2, commandArguments);
+    } else if (!strcmp(commandName, "shutdown")) {
+        run_command(3, commandArguments);
+    }
+    else {
         run_command(0, commandArguments);
     }
 }
