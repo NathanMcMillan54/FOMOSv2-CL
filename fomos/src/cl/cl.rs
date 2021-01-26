@@ -8,6 +8,7 @@
  */
 
 use super::cl_input;
+use super::help;
 
 pub fn cl_main() {
     printfk!(">>> \0");
@@ -22,8 +23,7 @@ pub extern "C" fn run_command(mut command: i32, argument: &str) {
         builtin_commands::asku_main();
     } else if command == 3 {
         builtin_commands::shutdown_main(argument);
-    }
-    else {
+    } else {
         printfk!("Command not found\n\0");
     }
 }

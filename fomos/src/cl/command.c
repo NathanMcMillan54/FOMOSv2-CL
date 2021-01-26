@@ -2,6 +2,8 @@
 #include <string.h>
 #include <unistd.h>
 
+#include "command.h"
+
 extern void run_command(int command, char *argument);
 
 void cl_input() {
@@ -14,6 +16,8 @@ void cl_input() {
         run_command(2, commandArguments);
     } else if (!strcmp(commandName, "shutdown")) {
         run_command(3, commandArguments);
+    } else if (!strcmp(commandName, "help")) {
+        help_command(commandArguments);
     }
     else {
         run_command(0, commandArguments);
