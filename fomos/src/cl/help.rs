@@ -1,3 +1,12 @@
+/* fomos/src/cl/help.rs
+ *
+ * Build/compile:
+ * cargo build
+ *
+ * Description:
+ * The help command for FOMOS
+ */
+
 use fk_std::{c_char, printf};
 
 #[no_mangle]

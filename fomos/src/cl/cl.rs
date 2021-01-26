@@ -4,7 +4,7 @@
  * cargo build
  *
  * Description:
- * This file starts the command line and it's main processes
+ * This file starts the command line and runs commands
  */
 
 use super::cl_input;

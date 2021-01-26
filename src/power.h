@@ -1,3 +1,4 @@
+// src/power.h
 #ifndef FOMOSV2_CL_POWER_H
 #define FOMOSV2_CL_POWER_H
 

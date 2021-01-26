@@ -1,3 +1,12 @@
+/* fomos/src/cl/command.c
+ *
+ * Build/compile:
+ * cargo build
+ *
+ * Description:
+ * This file gets command input then sends the command and argument to cl.rs so it can run.
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>

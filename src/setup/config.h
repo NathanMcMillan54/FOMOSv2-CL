@@ -1,3 +1,4 @@
+// src/setup/config.h
 #ifndef FOMOSV2_CL_CONFIG_H
 #define FOMOSV2_CL_CONFIG_H
 
