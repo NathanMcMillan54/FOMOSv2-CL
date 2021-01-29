@@ -23,10 +23,11 @@ they can work together easier.
 - [x] armv6/7 runs as Linux initramfs (very important)
 - [x] Add user name setup
 - [x] Add password setup for x86
-- [ ] Write Documentation for FOMOS (not very important now)
+- [x] Write Documentation for FOMOS (not very important now)
 
 #### 2.4.5 (maybe) TODO list
 - [ ] Get kernel to save root directory information
+- [ ] Make kernel save user data
 
 ## Contributions
 ``Documentation/editing/`` talks a lot about requirements for contributing to FOMOSv2-CL. It also talks about how to 
