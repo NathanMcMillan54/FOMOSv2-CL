@@ -23,7 +23,10 @@ pub extern "C" fn run_command(mut command: i32, argument: &str) {
         builtin_commands::asku_main();
     } else if command == 3 {
         builtin_commands::shutdown_main(argument);
-    } else {
+    } else if command == 5 {
+        builtin_commands::makefile_main(argument);
+    }
+    else {
         printfk!("Command not found\n\0");
     }
 }

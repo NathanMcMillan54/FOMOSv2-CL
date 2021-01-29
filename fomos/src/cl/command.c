@@ -27,6 +27,8 @@ void cl_input() {
         run_command(3, commandArguments);
     } else if (!strcmp(commandName, "help")) {
         help_command(commandArguments);
+    } else if (!strcmp(commandName, "makefile")) {
+        run_command(5, commandArguments);
     }
     else {
         run_command(0, commandArguments);

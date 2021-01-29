@@ -16,3 +16,5 @@ Command Number | Command Name |
 4              | help <command/
                | all>
 -------------------------------
+5              | makefile <file>
+               |
