@@ -11,4 +11,6 @@ init
 
 # Ignored directories
 .idea/
+builtin_commands/
+initramfs/
 target/

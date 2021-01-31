@@ -1,19 +1,25 @@
-/* main.c
+/* src.main.c
  *
- * Build:
- * gcc -static main.c -o init
+ * Build/compile:
+ * <arch>-gcc -static src/main.c target/<arch>/debug/libFOMOSv2-CL.a -o init
  *
  * Description:
- * This is the initramfs file that the Linux kernel will run to start FOMOSv2-CL.
- * */
+ * After the Linux fomos is done it's setup, this file starts to run and calls init_main() from src/lib.rs to start
+ * FOMOS.
+ */
 
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+#include "power.h"
 
 extern void init_main();
 
-int main()
-{
+int main() {
+    sleep(1);
     printf("Starting initramfs...\n");
-    // init_main();
+    sleep(1);
+    init_main();
     while (1) {    }
 }

@@ -1,1 +1,0 @@
-TODO: explain linux booting process and how FOMOS will use that to start

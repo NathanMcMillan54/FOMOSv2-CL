@@ -2,6 +2,7 @@
  *
  * Build/compile:
  * cargo build
+ * sh build.sh <arch>
  *
  * Description:
  * This is FOMOSv2-CL's main file, main.c calls init_main() which then starts all the processes
@@ -11,23 +12,34 @@
 #![no_main]
 #![no_std]
 #![feature(lang_items)]
+#![feature(alloc_error_handler)]
 #![crate_type = "staticlib"]
 
 mod lang;
+mod memory;
+mod power;
+use power::{shutdown, restart};
+mod setup;
+
+#[macro_use]
+extern crate fk_std;
 
 extern crate arch;
-extern crate kernel;
-
-use kernel::*;
-
-extern crate libc;
+extern crate fomos;
+use fomos::{clearScreen};
 
 #[no_mangle]
-pub extern "C" fn init_main() {
-    // printfk!("FOMOSv2-CL v2.3.5");
-    const TEXT: &'static str = "FOMOSv2-CL v2.3.5 Rust libc\n";
-    unsafe { libc::printf(TEXT.as_ptr() as *const _); }
-    loop {  }
+pub extern "C" fn init_main() -> ! {
+    unsafe {
+        clearScreen();
+        clearScreen();
+    }
+    printfk!("\nFOMOSv2-CL v2.3.5\n\0");
+
+    unsafe { setup::setup::start_setup(); }
+    fomos::main_loop();
+
+    unsafe { shutdown() }
 }
 
 fn main() {
