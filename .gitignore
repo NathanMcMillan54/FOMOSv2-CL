@@ -7,10 +7,8 @@
 
 # Ignored files
 Cargo.lock
-init
 
 # Ignored directories
 .idea/
-builtin_commands/
 initramfs/
 target/
