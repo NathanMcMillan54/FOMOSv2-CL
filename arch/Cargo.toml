@@ -5,7 +5,7 @@ edition = "2018"
 
 
 [dependencies]
-fk_std = "0.2.3"
+fk_std = "0.3.3"
 
 [build-dependencies]
 cc = "1.0.66"

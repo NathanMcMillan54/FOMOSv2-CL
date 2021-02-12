@@ -18,7 +18,7 @@ members = [
 
 
 [dependencies]
-fk_std = "0.2.3"
+fk_std = "0.3.3"
 arch = { path = "arch/" }
 fomos = { path = "fomos/" }
 

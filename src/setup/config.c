@@ -17,16 +17,6 @@ void printName() {
     fclose(fp);
 }
 
-void printPassword() {
-    char str[MAXCHAR];
-    FILE *fp;
-    fp = fopen("/configs/user/password", "r");
-    while (fgets(str, MAXCHAR, fp) != NULL) {
-        printf("Password is: %s\n", str);
-    }
-    fclose(fp);
-}
-
 void makeUserName() {
     FILE *fp;
     char inputName[100];
@@ -45,7 +35,6 @@ void makePassword() {
     fp = fopen("/configs/user/password", "a");
     fputs(inputPassword, fp);
     fclose(fp);
-    printPassword();
 }
 
 void updateStartupTimes(int updated) {

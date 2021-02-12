@@ -1,5 +1,3 @@
-use fk_std::read;
-
 extern "C" {
     fn addPassword(password: &'static str);
 }

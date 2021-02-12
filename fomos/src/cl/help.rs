@@ -7,7 +7,7 @@
  * The help command for FOMOS
  */
 
-use fk_std::{c_char, printf};
+use fk_std::{c_char, libc::printf};
 
 #[no_mangle]
 pub extern "C" fn help_main(arg: i32) {

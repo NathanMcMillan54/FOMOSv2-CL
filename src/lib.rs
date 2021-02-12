@@ -12,11 +12,9 @@
 #![no_main]
 #![no_std]
 #![feature(lang_items)]
-#![feature(alloc_error_handler)]
 #![crate_type = "staticlib"]
 
 mod lang;
-mod memory;
 mod power;
 use power::{shutdown, restart};
 mod setup;
@@ -34,7 +32,7 @@ pub extern "C" fn init_main() -> ! {
         clearScreen();
         clearScreen();
     }
-    printfk!("\nFOMOSv2-CL v2.3.5\n\0");
+    printfk!("\nFOMOSv2-CL v2.3.5\n");
 
     unsafe { setup::setup::start_setup(); }
     fomos::main_loop();
