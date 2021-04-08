@@ -6,5 +6,5 @@ you compiled it for your device's CPU just run:
     ./init
 
 To run FOMOSv2-CL properly, run FOMOSv2-CL_v2_3_5.cpio.gz as an initramf/initrd in the Linux kernel (version v5.x). Or
-you could clone the FOMOS_installer from https://github.com/sbFomos/FOMOS_installer/, read the README for instructions
+you could clone the FOMOS_installer from https://github.com/NathanMcMillan54/FOMOS_installer/, read the README for instructions
 for compiling FOMOS and Linux.

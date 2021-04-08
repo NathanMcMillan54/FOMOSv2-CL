@@ -1,4 +1,4 @@
-Clone the Linux kernel for FOMOSv2-CL from https://github.com/sbFomos/linux/ and compile it by running these commands:
+Clone the Linux kernel for FOMOSv2-CL from https://github.com/NathanMcMillan54/linux/ and compile it by running these commands:
 
     make ARCH=<arch type> <configuration[s]>
     make ARCH=<arch type> CROSS_COMPILE=<cross compiler name>

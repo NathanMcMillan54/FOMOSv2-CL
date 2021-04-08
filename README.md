@@ -3,7 +3,7 @@
 
 ## About
 FOMOS stands for: Free, Opensource, Mobile, Operating, System. FOMOS is an OS that runs in the 
-[Linux](https://github.com/torvalds/linux/) [kernel](https://github.com/sbFomos/linux/) that is meant to run on mobile devices.
+[Linux](https://github.com/torvalds/linux/) [kernel](https://github.com/NathanMcMillan54/linux/) that is meant to run on mobile devices.
 
 Most mobile devices have ARM CPUs so FOMOS will be supported on ARM devices first.
 
