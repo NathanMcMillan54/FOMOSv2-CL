@@ -1,3 +1,0 @@
-If a company or organization is editing FOMOSv2-CL or releasing or selling their own versions all they need to do is:
-make a file in the top level directory saying their product is based off FOMOSv2-CL and a link to where they got the
-code for FOMOSv2-CL.

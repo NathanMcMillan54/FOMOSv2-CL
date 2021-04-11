@@ -1,8 +1,0 @@
-To compile FOMOSv2-CL run build.sh, when you run build.sh you need to give it an argument which would be the CPU you're
-compiling FOMOSv2-CL for.
-
-    sh build.sh <armv6, armv7, x86>
-
-This will compile FOMOSv2-CL and link it to a file that the Linux Kernel will run, the compiled file is named init which
-can run this without Qemu if you compiled for the CPU your device has. Read Documentation/setup/running.txt for running
-FOMOSv2-CL.
