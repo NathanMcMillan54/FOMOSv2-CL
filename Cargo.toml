@@ -1,26 +1,13 @@
 [package]
 name = "FOMOSv2_CL"
 version = "2.3.5"
+authors = ["Nathan McMillan <nathanmcmillan54@gmail.com>"]
 edition = "2018"
 
-
-[lib]
-name = "FOMOSv2_CL"
-crate-type = ["staticlib"]
-path = "src/lib.rs"
-
-
-[workspace]
-members = [
-    "arch/",
-    "fomos/",
-]
-
-
 [dependencies]
-fk_std = "0.3.3"
-arch = { path = "arch/" }
-fomos = { path = "fomos/" }
+bootloader = "0.9.18"
 
-[build-dependencies]
-cc = "1.0.65"
+[dependencies.novusk]
+git = "https://github.com/NathanMcMillan54/novusk"
+tag = "v3-beta-k2"
+features = ["bios_boot"]
